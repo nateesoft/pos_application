@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="226" pageHeight="841" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1a9f3e45-7027-438f-a8b4-7719e265f276">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="32" y="2" width="130" height="20" uuid="a3d8cab9-4853-479f-be67-8ba00f053200"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ใบกำกับภาษี/ใบเสร็จรับเงิน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="22" width="57" height="20" uuid="4d58c2c0-962e-4a0d-8e4c-76399a11529b"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[เลขที่เอกสาร]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="57" height="20" uuid="99f23ebc-0b4b-4eb9-8a77-3bb0b56477cf"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[วันที่ (Date)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="516" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="40" width="57" height="20" uuid="87d7baa0-0bb8-4a25-b24a-b337259a9407"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tel. :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="57" height="20" uuid="5510c3b3-30b7-40f2-a8bd-a98f9f4c0f0c"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fax :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="57" height="20" uuid="3296a755-3023-4dd7-85e4-0632e77d9435"/>
+				<textElement>
+					<font fontName="TH Sarabun New" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[วันที่ (Date)]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

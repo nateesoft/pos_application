@@ -1,0 +1,105 @@
+package com.softpos.main.program;
+
+import java.util.Date;
+
+public class TranRecord {
+    //TTran_Rec = Record     {Transaction / Balance Record.......}
+      public static String R_PrintOK="" ;
+      public static String R_Que="" ;
+      public static String R_Index="" ;
+      public static Date R_Date  ;
+      public static String R_Table="";
+      public static String R_RefNo="";   //For Balance Record
+      public static String R_Time="";
+      public static String Macno="";
+      public static String Cashier="";
+      public static String R_Emp="" ;
+      public static String R_PluCode="" ;
+      public static String R_PName="" ;
+      public static String R_Unit="" ;
+      public static String R_Group="" ;
+      public static String R_Status="" ;
+      public static String R_Stock="" ;
+      public static String R_Set="";
+      public static String R_Normal="" ;
+      public static String R_Discount="" ;
+      public static String R_Service="";
+      public static String R_Vat="";
+      public static String R_Type="" ;
+      public static String R_ETD="";
+      public static Double R_Quan=0.00 ;
+      public static Double R_Price=0.00 ;
+      public static Double R_Total=0.00 ;
+      public static String R_XPro1="" ;
+      public static String R_XPro2="" ;
+      public static String R_XPro3="" ;
+      public static Double R_QuanCanDisc=0.00;
+      public static String R_PrCode="";
+      public static String R_PrType="" ;
+      public static String R_PrChkType="" ;
+      public static Double R_PrDisc=0.00 ;
+      public static Double R_PrQuan=0.00 ;
+      public static Double R_PrBath=0.00 ;
+      public static Double R_PrAmt=0.00 ;    // For Balance
+      public static Double R_PRAdj=0.00 ;    // For Balance
+      public static String R_PrCode2="";
+      public static String R_PrType2="" ;
+      public static String R_PrChkType2="" ;
+      public static Double R_PrDisc2=0.00 ;
+      public static Double R_PrQuan2=0.00 ;
+      public static Double R_PrBath2=0.00 ;
+      public static Double R_PrAmt2=0.00 ;    // For Balance
+      public static Double R_PRAdj2=0.00 ;    // For Balance
+
+      public static String R_PrCuCode="";
+      public static String R_PrCuType="";
+      public static Double R_PrCuDisc=0.00 ;
+      public static Double R_PrCuQuan=0.00 ;
+      public static Double R_PrCuAmt=0.00 ;
+      public static Double R_PrCuBath=0.00 ;
+      public static Double R_PRCuAdj=0.00 ;    // For Balance
+
+      public static String R_PrSubType="" ;
+      public static String R_PrSubCode="";
+      public static Double R_PrSubDisc=0.00 ;
+      public static Double R_PrSubQuan=0.00 ;
+      public static Double R_PrSubAmt=0.00 ;
+      public static Double R_PrSubBath=0.00;
+      public static Double R_PrSubAdj=0.00 ;
+      public static Double R_NetTotal=0.00 ;  // For Balance
+      public static Double R_DiscBath=0.00 ;  // For Balance
+      public static Double R_Redule = 0.00 ;
+      public static Double R_ReduleAmt=0.00 ;
+      public static String R_KIC="" ;
+      public static String R_KicPrint="" ;
+      public static String R_PrnTime1="" ;
+      public static String R_PrnTime2="" ;
+      public static int R_PrnCnt=0 ;
+      public static String R_Void="" ;
+      public static String R_VoidUser="" ;
+      public static String R_VoidTime="" ;
+      public static String R_Opt1="";
+      public static String R_Opt2="";
+      public static String R_Opt3="";
+      public static String R_Opt4="";
+      public static String R_Opt5="";
+      public static String R_Opt6="" ;
+      public static String R_Opt7="" ;
+      public static String R_Opt8="" ;
+      public static String R_Opt9="" ;
+      public static String R_Serve="";
+      public static String R_KicOk="" ;
+      public static String R_HoldTable="-" ;
+      public static String R_HoldCashier="" ;
+      public static String R_HoldMacNo="" ;
+      public static String R_HoldDate="2010-01-01" ;
+      public static String R_HoldTime="" ;
+      public static Double R_GrossPrice= 0.00 ;
+      public static Double R_GrossTotal= 0.00;
+      public static Double R_PriceDown= 0.00 ;
+      public static String R_Set1 = "" ;
+      public static String R_Set2 = "" ;
+      public static String R_Set3 = "" ;
+      public static String R_Set4 = "" ;
+      public static String R_Set5 = "" ;
+}

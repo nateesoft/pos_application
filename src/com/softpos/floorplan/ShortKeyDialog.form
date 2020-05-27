@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="title" type="java.lang.String" value="&#xe15;&#xe35;&#xe22;&#xe4c;&#xe25;&#xe31;&#xe14;&#xe15;&#xe48;&#xe32;&#xe07;&#xe46; &#xe17;&#xe35;&#xe48;&#xe43;&#xe0a;&#xe49;&#xe23;&#xe30;&#xe1a;&#xe1a;"/>
+    <Property name="undecorated" type="boolean" value="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jScrollPane1" pref="382" max="32767" attributes="0"/>
+                  <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="20" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Key &#xe25;&#xe31;&#xe14;&#xe01;&#xe48;&#xe2d;&#xe19;&#xe40;&#xe1b;&#xe34;&#xe14;&#xe42;&#xe15;&#xe4a;&#xe30;&#xe2d;&#xe32;&#xe2b;&#xe32;&#xe23;"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tb1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Norasi" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="2" rowCount="10">
+                <Column editable="false" title="Key_Name" type="java.lang.Object">
+                  <Data value="F1"/>
+                  <Data value="F2"/>
+                  <Data value="F5"/>
+                  <Data value="F6"/>
+                  <Data value="F7"/>
+                  <Data value="F8"/>
+                  <Data value="F9"/>
+                  <Data value="F11"/>
+                  <Data value="F12"/>
+                  <Data value="ESC"/>
+                </Column>
+                <Column editable="false" title="Key_Control" type="java.lang.Object">
+                  <Data value="Open Floor Plan (&#xe40;&#xe1b;&#xe34;&#xe14;&#xe42;&#xe15;&#xe4a;&#xe30;)"/>
+                  <Data value="Customer Count (&#xe23;&#xe30;&#xe1a;&#xe38;&#xe08;&#xe33;&#xe19;&#xe27;&#xe19;&#xe25;&#xe39;&#xe01;&#xe04;&#xe49;&#xe32;)"/>
+                  <Data value="Table Available (&#xe15;&#xe23;&#xe27;&#xe08;&#xe2a;&#xe2d;&#xe1a;&#xe42;&#xe15;&#xe4a;&#xe30;)"/>
+                  <Data value="Duplicate Bill (&#xe1e;&#xe34;&#xe21;&#xe1e;&#xe4c;&#xe2a;&#xe33;&#xe40;&#xe19;&#xe32;&#xe1a;&#xe34;&#xe25;)"/>
+                  <Data value="Refund Bill (&#xe22;&#xe01;&#xe40;&#xe25;&#xe34;&#xe01;&#xe1a;&#xe34;&#xe25;)"/>
+                  <Data value="Paid In (&#xe19;&#xe33;&#xe40;&#xe07;&#xe34;&#xe19;&#xe40;&#xe02;&#xe49;&#xe32;&#xe25;&#xe34;&#xe49;&#xe19;&#xe0a;&#xe31;&#xe01;&#xe40;&#xe01;&#xe47;&#xe1a;&#xe40;&#xe07;&#xe34;&#xe19;)"/>
+                  <Data value="Paid Out (&#xe19;&#xe33;&#xe40;&#xe07;&#xe34;&#xe19;&#xe2d;&#xe2d;&#xe01;&#xe08;&#xe32;&#xe01;&#xe25;&#xe34;&#xe49;&#xe19;&#xe0a;&#xe31;&#xe01;&#xe40;&#xe01;&#xe47;&#xe1a;&#xe40;&#xe07;&#xe34;&#xe19;)"/>
+                  <Data value="Member (&#xe23;&#xe30;&#xe1a;&#xe1a;&#xe2a;&#xe21;&#xe32;&#xe0a;&#xe34;&#xe01;)"/>
+                  <Data value="AR Payment (&#xe0a;&#xe33;&#xe23;&#xe30;&#xe41;&#xe1a;&#xe1a;&#xe25;&#xe39;&#xe01;&#xe2b;&#xe19;&#xe35;&#xe49;&#xe01;&#xe32;&#xe23;&#xe04;&#xe49;&#xe32;)"/>
+                  <Data value="Logout (&#xe2d;&#xe2d;&#xe01;&#xe08;&#xe32;&#xe01;&#xe23;&#xe30;&#xe1a;&#xe1a;)"/>
+                </Column>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="50" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="350" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tb1KeyPressed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tb2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Norasi" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="2" rowCount="5">
+                <Column editable="false" title="Key_Name" type="java.lang.Object">
+                  <Data value="F1"/>
+                  <Data value="F3"/>
+                  <Data value="F4"/>
+                  <Data value="F6"/>
+                  <Data value="F9"/>
+                </Column>
+                <Column editable="false" title="Key_Control" type="java.lang.Object">
+                  <Data value="Find PLU List (&#xe04;&#xe49;&#xe19;&#xe2b;&#xe32;&#xe23;&#xe32;&#xe22;&#xe01;&#xe32;&#xe23;&#xe2a;&#xe34;&#xe19;&#xe04;&#xe49;&#xe32;)"/>
+                  <Data value="Hold Table (&#xe1e;&#xe31;&#xe01;&#xe42;&#xe15;&#xe4a;&#xe30;)"/>
+                  <Data value="Payment Screen (&#xe23;&#xe31;&#xe1a;&#xe0a;&#xe33;&#xe23;&#xe30;&#xe40;&#xe07;&#xe34;&#xe19;)"/>
+                  <Data value="Print Chekc Bill (&#xe1e;&#xe34;&#xe21;&#xe1e;&#xe4c;&#xe1a;&#xe34;&#xe25;&#xe15;&#xe23;&#xe27;&#xe08;&#xe2a;&#xe2d;&#xe1a;)"/>
+                  <Data value="Customer Count (&#xe23;&#xe30;&#xe1a;&#xe38;&#xe08;&#xe33;&#xe19;&#xe27;&#xe19;&#xe25;&#xe39;&#xe01;&#xe04;&#xe49;&#xe32;)"/>
+                </Column>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="50" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="350" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Close / &#xe1b;&#xe34;&#xe14;&#xe2b;&#xe19;&#xe49;&#xe32;&#xe15;&#xe48;&#xe32;&#xe07;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="20" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Key &#xe25;&#xe31;&#xe14;&#xe2b;&#xe25;&#xe31;&#xe07;&#xe08;&#xe32;&#xe01;&#xe40;&#xe1b;&#xe34;&#xe14;&#xe42;&#xe15;&#xe4a;&#xe30;&#xe2d;&#xe32;&#xe2b;&#xe32;&#xe23;"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
