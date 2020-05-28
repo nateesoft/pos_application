@@ -1,9 +1,14 @@
 package com.softpos.main.program;
 
-import com.softpos.cupon.CuponBean;
-import com.softpos.cupon.CuponControl;
-import com.softpos.cupon.CuponListControl;
-import com.softpos.cupon.CuponlistBean;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.CouponRec;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.CuponBean;
+import com.softpos.main.controller.CuponControl;
+import com.softpos.main.controller.CuponListControl;
+import com.softpos.main.model.CuponlistBean;
 import com.softpos.main.controller.TempCuponController;
 import com.softpos.main.model.TempCuponBean;
 import java.awt.Color;
@@ -421,25 +426,25 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
 
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
 
     }
 
-    public void AssignGrid(CouponRec[] CuArray) {
+    public void AssignGrid(CouponRec[] cuArray) {
         int RowCount = model2.getRowCount();
         for (int i = 0; i <= RowCount - 1; i++) {
             model2.removeRow(0);
         }
-        int CuponSize = CuArray.length;
+        int CuponSize = cuArray.length;
         for (int i = 0; i < CuponSize; i++) {
             Object[] input = {
                 "",
                 "",
-                CuArray[i].CuName,
-                CuArray[i].CuQty
+                cuArray[i].CuName,
+                cuArray[i].CuQty
             };
             model2.addRow(input);
         }
@@ -1032,7 +1037,7 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1103,7 +1108,7 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1141,7 +1146,7 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.executeUpdate(sql3);
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1168,7 +1173,7 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             rs.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

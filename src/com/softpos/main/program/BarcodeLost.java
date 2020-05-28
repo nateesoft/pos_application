@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
 import java.awt.event.KeyEvent;
 import database.MySQLConnect;
 import java.sql.ResultSet;
@@ -231,7 +233,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
                 prn.print("----------------------------------------");
                 prn.print(" ");

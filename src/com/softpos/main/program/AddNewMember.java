@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
 import database.MySQLConnect;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
@@ -826,7 +827,7 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -878,7 +879,7 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR_MSG(this, e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }
@@ -935,7 +936,7 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR_MSG(this, e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }
@@ -1046,7 +1047,7 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR_MSG(this, e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally{
                     mysql.close();
                 }
@@ -1081,7 +1082,7 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally{
             mysql.close();
         }

@@ -24,7 +24,7 @@ public class Jdi_dailyReport_Hourly_Plu extends javax.swing.JDialog {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (Exception ex) {
-                ex.printStackTrace();
+                
             }
         }
         initComponents();

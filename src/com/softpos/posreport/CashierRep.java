@@ -7,11 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import com.softpos.main.program.CreditRec;
-import com.softpos.main.program.FinalcialRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
+import com.softpos.main.model.PublicVar;
 import util.MSG;
 
 
@@ -335,7 +335,7 @@ private void txtCashNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         
         if (datafound) {
@@ -358,7 +358,7 @@ private void txtCashNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             try {
                 Statement stmt =  mysql.getConnection().createStatement();
@@ -379,7 +379,7 @@ private void txtCashNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             try {
                 Statement stmt =  mysql.getConnection().createStatement();
@@ -400,7 +400,7 @@ private void txtCashNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             
             mysql.close();

@@ -199,7 +199,7 @@ public class HomeImageDialog extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -285,7 +285,7 @@ public class HomeImageDialog extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -311,7 +311,7 @@ public class HomeImageDialog extends javax.swing.JDialog {
 
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

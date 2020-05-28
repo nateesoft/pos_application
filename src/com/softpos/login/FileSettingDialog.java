@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.Value;
 
 public class FileSettingDialog extends javax.swing.JDialog {
 

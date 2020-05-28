@@ -205,7 +205,7 @@ public class TextPrinter implements Printable {
             System.out.println("doPrint returns " + didit);
         } catch (Exception e) {
             System.err.println("Error printing: " + e);
-            e.printStackTrace();
+            
         }
     }
 }

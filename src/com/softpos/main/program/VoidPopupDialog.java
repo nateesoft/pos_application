@@ -1,6 +1,6 @@
 package com.softpos.main.program;
 
-import com.softpos.member.MemberBean;
+import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;

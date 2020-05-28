@@ -1,6 +1,7 @@
 package com.softpos.main.program;
 
 
+import com.softpos.main.model.HourlyRec;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.math.BigDecimal;

@@ -25,17 +25,17 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
-import com.softpos.main.program.BillControl;
-import com.softpos.main.program.BillNoBean;
+import com.softpos.main.controller.BillControl;
+import com.softpos.main.model.BillNoBean;
 import com.softpos.main.program.CreditPaymentRec;
 import com.softpos.main.program.GetUserAction;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.TranRecord;
-import com.softpos.main.program.UserRecord;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.TranRecord;
+import com.softpos.main.model.UserRecord;
+import com.softpos.main.model.Value;
 import soft.virtual.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
@@ -445,7 +445,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             String sql = "update t_sale set r_refund='V' "
@@ -456,7 +456,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -468,7 +468,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             String sql = "update t_cupon set refund='V' "
@@ -479,7 +479,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -491,7 +491,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             String sql = "update t_gift set fat='V'  where (macno='" + macno + "') and (refno='" + BillNo + "')";
@@ -500,7 +500,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             String sql = "delete from accr where (arno='" + PublicVar.Branch_Code + "/" + macno + "/" + BillNo + "')";
@@ -509,7 +509,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (!memcode.equals("")) {
@@ -524,7 +524,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             try {
                 String SqlQuery = "delete from mtran where m_billno='" + macno + "/" + BillNo + "'";
@@ -533,7 +533,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             try {
                 String SqlQuery = "delete from mtranplu where m_billno='" + macno + "/" + BillNo + "'";
@@ -542,7 +542,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         }
         // Return Stock
@@ -566,7 +566,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         
         mysql.close();
@@ -639,7 +639,7 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
             
             InitRefund();
         }finally{

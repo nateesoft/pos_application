@@ -21,9 +21,9 @@ import javax.swing.UnsupportedLookAndFeelException;
 import com.softpos.floorplan.FloorPlanDialog;
 import com.softpos.main.program.GetPassword;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.UserRecord;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.UserRecord;
+import com.softpos.main.model.Value;
 import soft.virtual.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
@@ -532,7 +532,7 @@ public class Login extends javax.swing.JDialog {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(this, e.getMessage());
-                e.printStackTrace();
+                
                 clearlogin();
             } finally {
                 mysql.close();
@@ -610,7 +610,7 @@ public class Login extends javax.swing.JDialog {
                         try {
                             Thread.sleep(25);
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            
                         }
                     }
 
@@ -630,7 +630,7 @@ public class Login extends javax.swing.JDialog {
             c.getConnection().createStatement().executeUpdate(sql);
             c.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
     }
 

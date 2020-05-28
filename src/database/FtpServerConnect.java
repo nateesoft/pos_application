@@ -67,7 +67,7 @@ public class FtpServerConnect {
 
         } catch (IOException ex) {
             System.out.println("Error: " + ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             try {
                 if (ftpClient.isConnected()) {
@@ -75,7 +75,7 @@ public class FtpServerConnect {
                     ftpClient.disconnect();
                 }
             } catch (IOException ex) {
-                ex.printStackTrace();
+                
             }
         }
     }

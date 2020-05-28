@@ -8,8 +8,8 @@ package com.softpos.posreport;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Frame;
 import java.awt.Point;
@@ -414,7 +414,7 @@ public class MTDCoupon extends javax.swing.JDialog {
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }
@@ -493,7 +493,7 @@ public class MTDCoupon extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

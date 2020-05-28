@@ -10,8 +10,8 @@ import javax.swing.UIManager;
 import com.softpos.main.program.Jdi_depReport;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PluRec;
+import com.softpos.main.model.Value;
 import util.MSG;
 
 public class DeptRep extends javax.swing.JDialog {
@@ -29,7 +29,7 @@ public class DeptRep extends javax.swing.JDialog {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (Exception ex) {
-                ex.printStackTrace();
+                
             }
         }
         initComponents();

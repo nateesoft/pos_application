@@ -41,7 +41,7 @@ public class TCuponControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -82,7 +82,7 @@ public class TCuponControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -119,7 +119,7 @@ public class TCuponControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -165,7 +165,7 @@ public class TCuponControl {
                 stmt1.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
                 isResult = false;
 
             } finally {
@@ -203,7 +203,7 @@ public class TCuponControl {
             return true;
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

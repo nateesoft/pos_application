@@ -37,7 +37,7 @@ public class NumberToString {
         try {
             decimalText = numTextDecimal.substring(numTextDecimal.lastIndexOf(".") + 1);
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
         if (!decimalText.equals("00")) {
 //            int roundDecimal = numTextDecimal.length();

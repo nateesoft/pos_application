@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;

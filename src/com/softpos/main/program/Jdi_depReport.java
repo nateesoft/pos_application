@@ -1,4 +1,5 @@
 package com.softpos.main.program;
+import com.softpos.main.model.PluRec;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.math.BigDecimal;
@@ -23,7 +24,7 @@ public class Jdi_depReport extends javax.swing.JDialog {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (Exception ex) {
-                ex.printStackTrace();
+                
             }
         }
         initComponents();

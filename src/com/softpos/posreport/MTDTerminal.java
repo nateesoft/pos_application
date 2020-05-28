@@ -14,14 +14,14 @@ import util.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.CreditRec;
-import com.softpos.main.program.FinalcialRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.program.POSConfigSetup;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import database.ConfigFile;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -1330,7 +1330,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                 }
 
             } catch (Exception e) {
-                e.printStackTrace();
+                
                 c.close();
             }
         }
@@ -1880,7 +1880,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
             listObj.add(new Object[]{countb_refnoD});
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -1923,7 +1923,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
             stmt.close();
         } catch (SQLException ex) {
             MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1969,7 +1969,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
             stmt.close();
         } catch (SQLException ex) {
             MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2001,7 +2001,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
             stmt.close();
         } catch (SQLException ex) {
             MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }

@@ -5,7 +5,9 @@
  */
 package com.softpos.main.program;
 
-import com.softpos.member.MemberBean;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

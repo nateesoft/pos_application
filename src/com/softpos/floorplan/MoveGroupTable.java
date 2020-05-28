@@ -5,11 +5,11 @@ import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import printReport.PrintSimpleForm;
-import com.softpos.main.program.BalanceControl;
+import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.program.EMPListDialog;
-import com.softpos.main.program.TableFileBean;
-import com.softpos.main.program.TableFileControl;
-import com.softpos.main.program.TableMoveControl;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.controller.TableMoveControl;
 import java.sql.SQLException;
 import java.sql.Statement;
 import soft.virtual.KeyBoardDialog;
@@ -650,7 +650,7 @@ public class MoveGroupTable extends javax.swing.JDialog {
 
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -681,7 +681,7 @@ public class MoveGroupTable extends javax.swing.JDialog {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -693,7 +693,7 @@ public class MoveGroupTable extends javax.swing.JDialog {
                         s.KIC_FORM_Move(txtTable1.getText(), txtTable2.getText(), RKic1);
                     } catch (Exception ex) {
                         MSG.ERR(ex.getMessage());
-                        ex.printStackTrace();
+                        
                     }
                 }
 
@@ -949,7 +949,7 @@ public class MoveGroupTable extends javax.swing.JDialog {
                 rs.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -1043,7 +1043,7 @@ public class MoveGroupTable extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

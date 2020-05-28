@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.BalanceBean;
 import java.awt.Color;
 import database.MySQLConnect;
 import java.awt.Rectangle;

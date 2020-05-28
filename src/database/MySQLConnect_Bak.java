@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.Value;
 import javax.swing.JOptionPane;
 import util.MSG;
 
@@ -131,7 +131,7 @@ public class MySQLConnect_Bak {
             ds.close();
             fs.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            
             MSG.ERR(e.getMessage());
         }
     }
@@ -143,7 +143,7 @@ public class MySQLConnect_Bak {
             try {
                 return getStatement().executeQuery(sql);
             } catch (Exception e) {
-                e.printStackTrace();
+                
                 showError(e);
                 return null;
             }
@@ -157,7 +157,7 @@ public class MySQLConnect_Bak {
             try {
                 return con.createStatement().executeUpdate(sql);
             } catch (SQLException e) {
-                e.printStackTrace();
+                
                 showError(e);
                 return -1;
             }
@@ -171,7 +171,7 @@ public class MySQLConnect_Bak {
             try {
                 return con.createStatement();
             } catch (SQLException e) {
-                e.printStackTrace();
+                
                 showError(e);
                 return null;
             }
@@ -186,7 +186,7 @@ public class MySQLConnect_Bak {
             try {
                 return con.prepareStatement(sql);
             } catch (SQLException e) {
-                e.printStackTrace();
+                
                 showError(e);
                 return null;
             }

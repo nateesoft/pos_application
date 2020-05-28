@@ -19,11 +19,11 @@ import javax.swing.JEditorPane;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import com.softpos.main.program.BalanceBean;
-import com.softpos.main.program.BalanceControl;
-import com.softpos.main.program.PublicVar;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.PublicVar;
 import com.softpos.main.program.SendTerminalReportAuto;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.Value;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -58,16 +58,16 @@ public class PrintDriver {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } catch (IllegalAccessException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } catch (InstantiationException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } catch (UnsupportedLookAndFeelException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
     }
 
@@ -173,7 +173,7 @@ public class PrintDriver {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(null, e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -221,7 +221,7 @@ public class PrintDriver {
             output.write(text);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            
         } finally {
             if (output != null) {
                 try {
@@ -248,7 +248,7 @@ public class PrintDriver {
 
             editor.print(null, null, false, getPrinterKitchen(), attr, false);
         } catch (PrinterException ex) {
-            ex.printStackTrace();
+            
 //            MSG.ERR(ex.getMessage());
         }
         close();

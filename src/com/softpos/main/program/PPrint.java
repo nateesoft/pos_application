@@ -1,5 +1,19 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.TranRecord;
+import com.softpos.main.model.PluRec;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
+import com.softpos.main.model.HourlyRec;
+import com.softpos.main.model.FinalcialRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.BillNoBean;
+import com.softpos.main.model.TSaleBean;
+import com.softpos.main.controller.BillControl;
+import com.softpos.main.model.BalanceBean;
 import database.ConfigFile;
 import printReport.PrintDriver;
 import gnu.io.CommPortIdentifier;
@@ -32,7 +46,6 @@ import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.PrinterName;
 import javax.swing.JOptionPane;
-import sun.natee.project.util.NumberFormat;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 
@@ -136,16 +149,15 @@ public class PPrint {
                             serialPort = (SerialPort) portId.open("SimpleWriteApp", 1000);
                         } catch (PortInUseException e) {
                             PUtility.ShowMsg("Can not Open Port...1\n" + e.getMessage());
-                            e.printStackTrace();
+                            
                         } catch (RuntimeException re) {
                             MSG.ERR("Com Port ไม่สามารถใช้งานได้ " + portId.getName() + "\n" + re.getMessage());
-                            re.printStackTrace();
                         }
                         try {
                             outputStream = serialPort.getOutputStream();
                         } catch (IOException e) {
                             PUtility.ShowMsg("Can not Open Port...2\n" + e.getMessage());
-                            e.printStackTrace();
+                            
                         }
                         try {
                             try {
@@ -153,7 +165,7 @@ public class PPrint {
                                 Thread.sleep(100);
                             } catch (InterruptedException ex) {
                                 PUtility.ShowMsg("Can not Open Port...2\n" + ex.getMessage());
-                                ex.printStackTrace();
+                                
                             }
                             serialPort.setSerialPortParams(9600, //boardrate
                                     SerialPort.DATABITS_8,
@@ -163,7 +175,7 @@ public class PPrint {
                             OpenStatus = true;
                         } catch (UnsupportedCommOperationException e) {
                             PUtility.ShowMsg("Can not Open Port...3\n" + e.getMessage());
-                            e.printStackTrace();
+                            
                         }
                     }
                 }
@@ -240,7 +252,7 @@ public class PPrint {
             LineCount = 0;
         } catch (IOException ex) {
             if (ex.getMessage().indexOf("nativeDrain") != -1) {
-                //ex.printStackTrace();
+                //
                 //System.err.println(ex.getMessage());
             } else {
                 MSG.ERR(ex.getMessage());
@@ -546,7 +558,7 @@ public class PPrint {
                 outputStream.close();
             } catch (IOException e) {
                 if (e.getMessage().indexOf("nativeDrain") != -1) {
-                    //e.printStackTrace();
+                    //
                     //System.err.println(e.getMessage());
                 } else {
                     MSG.ERR(e.getMessage());
@@ -712,7 +724,7 @@ public class PPrint {
                         rsGetCountBillno.close();
                         c.close();
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        
                     }
                 }
                 Date dateP = new Date();
@@ -987,7 +999,7 @@ public class PPrint {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(null, e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -1084,7 +1096,7 @@ public class PPrint {
                         rsGetCountBillno.close();
                         c.close();
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        
                     }
                 }
                 Date dateP = new Date();
@@ -1376,7 +1388,7 @@ public class PPrint {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(null, e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -1711,7 +1723,7 @@ public class PPrint {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(null, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -2897,7 +2909,7 @@ public class PPrint {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -3563,7 +3575,7 @@ public class PPrint {
                     }
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    
                     c.close();
                 }
 
@@ -3854,7 +3866,7 @@ public class PPrint {
 //                    }
 //
 //                } catch (Exception e) {
-//                    e.printStackTrace();
+//                    
 //                    c.close();
 //                }
 //
@@ -5295,7 +5307,7 @@ public class PPrint {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(null, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -5660,7 +5672,7 @@ public class PPrint {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(null, e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -6271,7 +6283,7 @@ public class PPrint {
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                
             }
 
         }
@@ -6343,7 +6355,7 @@ public class PPrint {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -6425,7 +6437,7 @@ public class PPrint {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -6708,7 +6720,7 @@ public class PPrint {
 
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -6804,7 +6816,7 @@ public class PPrint {
             rs.close();
             stmt.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            
             MSG.ERR(e.getMessage());
         } finally {
             mysql.close();
@@ -6837,7 +6849,7 @@ public class PPrint {
             rs.close();
             stmt.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            
             MSG.ERR(e.getMessage());
         } finally {
             mysql.close();

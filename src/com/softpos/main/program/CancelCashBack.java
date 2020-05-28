@@ -256,7 +256,7 @@ public class CancelCashBack extends javax.swing.JDialog {
             }
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

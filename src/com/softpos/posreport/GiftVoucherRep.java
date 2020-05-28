@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 
 public class GiftVoucherRep extends javax.swing.JDialog {

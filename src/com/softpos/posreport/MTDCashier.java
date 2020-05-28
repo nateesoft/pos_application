@@ -13,13 +13,13 @@ import java.util.Locale;
 import util.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
-import com.softpos.main.program.CreditRec;
-import com.softpos.main.program.FinalcialRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import soft.virtual.KeyBoardDialog;
 import util.MSG;
 

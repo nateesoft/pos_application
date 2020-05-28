@@ -8,7 +8,7 @@ import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_SalePLU;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
+import com.softpos.main.model.PluRec;
 import soft.virtual.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;

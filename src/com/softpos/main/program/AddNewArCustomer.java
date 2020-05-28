@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
 import database.MySQLConnect;
 import java.awt.event.KeyEvent;
 import java.awt.image.ImageObserver;
@@ -600,7 +601,7 @@ private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
                 ClearVariable();
             }
@@ -637,7 +638,7 @@ private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
                 ClearVariable();
             } else {
@@ -720,7 +721,7 @@ private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally{
                 mysql.close();
             }
@@ -750,7 +751,7 @@ private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         
         return RetVal;

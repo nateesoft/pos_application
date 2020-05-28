@@ -305,7 +305,7 @@ public class LooksTab extends JPanel {
 			try {
 				balloonTip.setStyle(new TexturedBalloonStyle(5, 5, CompleteExample.class.getResource("/balloon/bgPattern.png"), borderColor));
 			} catch (Exception e) {
-				e.printStackTrace();
+				
 			}
 			break;
 		case 6:

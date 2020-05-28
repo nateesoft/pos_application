@@ -29,8 +29,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingConstants;
-import com.softpos.main.program.BalanceBean;
-import com.softpos.main.program.BalanceControl;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.program.CheckBill;
 import com.softpos.main.program.CheckProductNotEnough;
 import com.softpos.main.program.CheckStockNow;
@@ -45,10 +45,10 @@ import com.softpos.main.program.GetUserAction;
 import com.softpos.main.program.POSConfigSetup;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PublicVar;
+import com.softpos.main.model.PublicVar;
 import com.softpos.main.program.SetupButtonTable;
-import com.softpos.main.program.TableFileControl;
-import com.softpos.main.program.Value;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.Value;
 import util.MSG;
 import java.awt.event.MouseAdapter;
 import java.text.SimpleDateFormat;
@@ -58,13 +58,13 @@ import com.softpos.main.program.MainSale;
 import com.softpos.main.program.ModalPopup;
 import com.softpos.main.program.PUtility;
 import com.softpos.main.program.PopupItemJDialog;
-import com.softpos.main.program.PosControl;
-import com.softpos.main.program.PrintKicControl;
-import com.softpos.main.program.ProductBean;
-import com.softpos.main.program.ProductControl;
+import com.softpos.main.controller.PosControl;
+import com.softpos.main.view.PrintKicControl;
+import com.softpos.main.model.ProductBean;
+import com.softpos.main.controller.ProductControl;
 import com.softpos.main.program.SplitBillPayment;
 import com.softpos.main.program.UpdateData;
-import com.softpos.main.program.UserRecord;
+import com.softpos.main.model.UserRecord;
 import com.softpos.main.program.VoidPopupDialog;
 import java.awt.Image;
 import java.util.Date;
@@ -74,8 +74,8 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import sun.natee.project.util.ThaiUtil;
 import util.Option;
-import com.softpos.member.MemberBean;
-import com.softpos.member.MemberControl;
+import com.softpos.main.model.MemberBean;
+import com.softpos.main.controller.MemberControl;
 import util.DateConvert;
 
 public class FloorPlanDialog extends javax.swing.JFrame {
@@ -994,7 +994,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1630,7 +1630,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                             stmt1.close();
                         } catch (SQLException e) {
                             MSG.ERR(e.getMessage());
-                            e.printStackTrace();
+                            
                         }
 
 //                        btn.setText(bean.getTableNo() + "(" + bean.getCustomer() + ")" + r_time);
@@ -1677,7 +1677,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
 
                 } catch (NumberFormatException e) {
                     MSG.ERR(this, e.getMessage());
-                    e.printStackTrace();
+                    
                 }
             }
 
@@ -1685,7 +1685,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1729,7 +1729,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1796,7 +1796,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                     stmt.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                     System.exit(0);
                 } finally {
                     mysql.close();
@@ -1840,7 +1840,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             return true;
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
             return false;
         } finally {
             mysql.close();
@@ -1865,7 +1865,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1931,7 +1931,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1952,7 +1952,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                 ms.setVisible(true);
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -2074,7 +2074,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2222,7 +2222,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                                             stmt3.close();
                                         } catch (SQLException e9) {
                                             MSG.ERR(e9.getMessage());
-                                            e9.printStackTrace();
                                         }
 
                                         Value.EMP_CODE = login.getLoginPWD();
@@ -2242,7 +2241,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                                     login.setVisible(false);
 //                                    login.dispose();
                                     MSG.ERR(e1.getMessage());
-                                    e1.printStackTrace();
                                 }
                             } else {
                                 showPOS(tableNo);
@@ -2253,7 +2251,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                         stmt.close();
                     } catch (SQLException e3) {
                         MSG.ERR(e3.getMessage());
-                        e3.printStackTrace();
                     } finally {
                         mysql.close();
                     }
@@ -2281,7 +2278,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                 c.getConnection().createStatement().executeUpdate(sql);
                 c.close();
             } catch (Exception e) {
-                e.printStackTrace();
+                
             }
             ms.setVisible(true);
             setVisible(true);
@@ -2544,7 +2541,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                 stmt2.close();
             } catch (Exception e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             rs.close();
@@ -2586,7 +2583,7 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

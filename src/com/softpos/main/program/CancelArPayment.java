@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -104,7 +106,7 @@ public class CancelArPayment extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         tblShow.requestFocus();
@@ -140,7 +142,7 @@ public class CancelArPayment extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -149,7 +151,7 @@ public class CancelArPayment extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -158,7 +160,7 @@ public class CancelArPayment extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -167,7 +169,7 @@ public class CancelArPayment extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();

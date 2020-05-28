@@ -109,7 +109,7 @@ public class SendMTDToEmailAuto extends javax.swing.JDialog {
                     }
                     c.close();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    
                 }
                 dialog.setVisible(true);
 

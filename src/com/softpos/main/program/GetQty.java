@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;

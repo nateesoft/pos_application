@@ -1,6 +1,7 @@
 package com.softpos.main.program;
 
-import com.softpos.member.MemberBean;
+import com.softpos.main.model.Value;
+import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
@@ -526,7 +527,7 @@ public class MemberDialog extends javax.swing.JDialog {
             mysql.getConnection().createStatement().executeUpdate(sqlUpdate);
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

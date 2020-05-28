@@ -1,6 +1,11 @@
 package com.softpos.main.program;
 
-import com.softpos.member.MemberBean;
+import com.softpos.main.model.Value;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
@@ -306,7 +311,7 @@ public class SplitBillPayment extends javax.swing.JDialog {
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }
@@ -382,7 +387,7 @@ public class SplitBillPayment extends javax.swing.JDialog {
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }

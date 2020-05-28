@@ -1,6 +1,6 @@
 package com.softpos.main.controller;
 
-import com.softpos.main.program.ProductBean;
+import com.softpos.main.model.ProductBean;
 
 public class PriceController {
     

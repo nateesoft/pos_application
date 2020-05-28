@@ -5,6 +5,7 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.print.PrinterJob;
 import javax.print.PrintService;

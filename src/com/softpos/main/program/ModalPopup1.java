@@ -1,6 +1,6 @@
 package com.softpos.main.program;
 
-import com.softpos.main.controller.TempSetBean;
+import com.softpos.main.model.TempSetBean;
 import com.softpos.main.controller.TempSetController;
 import database.MySQLConnect;
 import java.awt.Color;
@@ -1648,7 +1648,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
                             stmt1.close();
                         } catch (SQLException e) {
                             MSG.ERR(null, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -1666,7 +1666,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1956,7 +1956,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
                             stmt1.close();
                         } catch (SQLException e) {
                             MSG.ERR(null, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -1974,7 +1974,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
         } catch (SQLException e) {
             System.err.println(e.getMessage());
             MSG.ERR(null, e.getMessage());
-            e.printStackTrace();
+            
         }
     }
 
@@ -2275,7 +2275,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -2295,7 +2295,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2560,7 +2560,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -2574,7 +2574,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
             System.err.println(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2600,7 +2600,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
             System.err.println(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2637,7 +2637,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2665,7 +2665,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2935,7 +2935,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(null, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -2953,7 +2953,7 @@ public class ModalPopup1 extends javax.swing.JDialog {
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage());
             System.err.println(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

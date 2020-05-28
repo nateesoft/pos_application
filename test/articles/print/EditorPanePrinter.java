@@ -277,7 +277,6 @@ public class EditorPanePrinter extends JPanel implements Pageable, Printable {
                 tmp.dispose();
             }
         } catch (PrinterException e1) {
-            e1.printStackTrace();
         }
     }
 }

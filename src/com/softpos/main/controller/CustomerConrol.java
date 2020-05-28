@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.controller;
 
 import database.MySQLConnect;
@@ -11,10 +6,6 @@ import posbean.CustomerBean;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 
-/**
- *
- * @author Dell
- */
 public class CustomerConrol {
 
     public CustomerBean getCustomer(String custCode) {

@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import util.MSG;
 
@@ -247,7 +247,7 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     } finally {
                         mysql.close();
                     }
@@ -330,7 +330,7 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -401,7 +401,7 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
 //                    stmt.close();
 //                } catch (SQLException e) {
 //                    MSG.ERR(e.getMessage());
-//                    e.printStackTrace();
+//                    
 //                } finally {
 //                    mysql.close();
 //                }

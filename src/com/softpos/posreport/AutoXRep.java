@@ -11,15 +11,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.CreditRec;
-import com.softpos.main.program.FinalcialRec;
-import com.softpos.main.program.HourlyRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
+import com.softpos.main.model.HourlyRec;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PluRec;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import util.MSG;
 
 public class AutoXRep extends javax.swing.JDialog {
@@ -611,7 +611,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -640,7 +640,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -796,7 +796,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -815,7 +815,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -834,7 +834,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -853,7 +853,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -960,7 +960,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         prn.print("----------------------------------------");
@@ -987,7 +987,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print(PUtility.DataFullR("     เงินสด Cash              ", 26) + PUtility.DataFull(DecFmt.format(SumCash), 13));
         prn.print(PUtility.DataFullR("     บัตรกำนัล Coupon          ", 26) + PUtility.DataFull(DecFmt.format(SumCupon), 13));
@@ -1007,7 +1007,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         prn.print("ยอดรับชำระ AR    : " + PUtility.DataFull(IntFmt.format(CntBill), 6));
@@ -1032,7 +1032,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print("----------------------------------------");
         prn.print("");
@@ -1069,7 +1069,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1225,7 +1225,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -1244,7 +1244,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -1263,7 +1263,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -1281,7 +1281,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -1385,7 +1385,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print("----------------------------------------");
         prn.print(PUtility.DataFullR("Total Amount  ", 26) + PUtility.DataFull(DecFmt.format(SumAmt), 13));
@@ -1411,7 +1411,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print(PUtility.DataFullR("     เงินสด Cash              ", 26) + PUtility.DataFull(DecFmt.format(SumCash), 13));
         prn.print(PUtility.DataFullR("     บัตรกำนัล Coupon          ", 26) + PUtility.DataFull(DecFmt.format(SumCupon), 13));
@@ -1431,7 +1431,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print("ยอดรับชำระ AR    : " + PUtility.DataFull(IntFmt.format(CntBill), 6));
         prn.print("----------------------------------------");
@@ -1455,7 +1455,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         prn.print("----------------------------------------");
         prn.print("");
@@ -1492,7 +1492,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             prn.print("----------------------------------------");
             prn.print("จำนวน Void :" + PUtility.DataFull(IntFmt.format(SumVoid), 5) + "  จำนวนเงิน :" + PUtility.DataFull(DecFmt.format(SumAmount), 11));
@@ -1703,7 +1703,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1986,7 +1986,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2310,7 +2310,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
 //            stmt.close();
 //        } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-//            e.printStackTrace();
+//            
 //        } finally {
 //            mysql.close();
 //        }
@@ -2615,7 +2615,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -2682,7 +2682,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -2725,7 +2725,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -2749,7 +2749,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -2803,7 +2803,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             if (SumCard > 0) {
                 prn.print("       Total Slip " + PUtility.DataFull(IntFmt.format(SumCard), 6) + "    " + PUtility.DataFull(DecFmt.format(SumCardAmt), 11));
@@ -2846,7 +2846,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2897,7 +2897,7 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }

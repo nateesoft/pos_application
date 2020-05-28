@@ -1,8 +1,18 @@
 package com.softpos.main.program;
 
-import com.softpos.cupon.CuponBean;
-import com.softpos.discount.DiscountBean;
-import com.softpos.discount.DiscountDialog;
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.PosControl;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.BillNoBean;
+import com.softpos.main.controller.BranchControl;
+import com.softpos.main.controller.BillControl;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.model.CuponBean;
+import com.softpos.main.model.DiscountBean;
+import com.softpos.main.view.DiscountDialog;
 //import com.softpos.floorplan.DailyRep;
 //import com.softpos.floorplan.DiarySale;
 //import com.softpos.floorplan.MoveGroupTable;
@@ -10,8 +20,8 @@ import com.softpos.discount.DiscountDialog;
 //import com.softpos.floorplan.RefundBill;
 //import com.softpos.floorplan.ResonPaidoutFrm;
 //import com.softpos.floorplan.ShowTable;
-import static com.softpos.main.program.BalanceControl.updateProSerTable;
-import com.softpos.member.MemberBean;
+import static com.softpos.main.controller.BalanceControl.updateProSerTable;
+import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.awt.Color;
 import java.awt.Component;
@@ -2642,7 +2652,7 @@ public class CheckBill extends javax.swing.JDialog {
                     stmt2.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
 
                 txtArAmount.setFocusable(true);
@@ -2661,7 +2671,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2711,7 +2721,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException ex) {
             MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2732,7 +2742,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2805,7 +2815,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
     }
 
@@ -2829,12 +2839,12 @@ public class CheckBill extends javax.swing.JDialog {
                     stmt2.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
             }
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2854,7 +2864,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -3072,7 +3082,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.executeUpdate(sql);
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -3099,7 +3109,7 @@ public class CheckBill extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

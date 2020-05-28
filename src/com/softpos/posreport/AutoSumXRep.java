@@ -10,15 +10,15 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import com.softpos.main.program.CreditRec;
-import com.softpos.main.program.FinalcialRec;
-import com.softpos.main.program.HourlyRec;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
+import com.softpos.main.model.HourlyRec;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PluRec;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import util.MSG;
 
 public class AutoSumXRep extends javax.swing.JDialog {
@@ -606,7 +606,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -737,7 +737,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -767,7 +767,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -802,7 +802,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -986,7 +986,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -1117,7 +1117,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         //prn.Print_Str("    เลขที่เริ่มต้น  :" + frec.StBill + "   ถึง  : " + frec.SpBill);
@@ -1263,7 +1263,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1419,7 +1419,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1440,7 +1440,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -1458,7 +1458,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -1476,7 +1476,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -1581,7 +1581,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         prn.print("----------------------------------------");
@@ -1896,7 +1896,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2174,7 +2174,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2487,7 +2487,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2795,7 +2795,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2858,7 +2858,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2895,7 +2895,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         try {
@@ -2969,7 +2969,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         if (SumCard > 0) {
             prn.print("       Total Slip " + PUtility.DataFull(IntFmt.format(SumCard), 6) + "    " + PUtility.DataFull(DecFmt.format(SumCardAmt), 11));
@@ -3012,7 +3012,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -3060,7 +3060,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -3144,7 +3144,7 @@ private void ChkChargeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
 
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }

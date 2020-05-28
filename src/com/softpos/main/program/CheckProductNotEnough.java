@@ -346,7 +346,7 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -379,7 +379,7 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -414,7 +414,7 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
             rs.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -442,7 +442,7 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
                 }
             } catch (SQLException e) {
                 MSG.ERR(this, e.getMessage());
-                e.printStackTrace();
+                
             } finally{
                 mysql.close();
             }

@@ -360,7 +360,7 @@ private void cmdOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
         stmt.close();
     } catch (SQLException e) {
         MSG.ERR(this, e.getMessage());
-        e.printStackTrace();
+        
     } finally {
         mysql.close();
     }
@@ -552,7 +552,7 @@ private void cmdCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally{
             mysql.close();
         }

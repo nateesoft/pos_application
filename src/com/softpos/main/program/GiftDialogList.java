@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.sql.ResultSet;
@@ -193,7 +194,7 @@ public class GiftDialogList extends javax.swing.JDialog {
             rs.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

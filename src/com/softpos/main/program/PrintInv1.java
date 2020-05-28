@@ -1,5 +1,11 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.controller.PosControl;
+import com.softpos.main.model.BranchBean;
+import com.softpos.main.model.CompanyBean;
+import com.softpos.main.controller.BranchControl;
 import com.softpos.main.controller.CustomerConrol;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
@@ -2182,7 +2188,7 @@ private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                
             }
         }
         pd.printHTML();

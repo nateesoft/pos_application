@@ -74,7 +74,7 @@ public class PrintTest extends javax.swing.JDialog {
             jTextPane1.setBackground(Color.WHITE);
             jTextPane1.print(null, null, show, null, null, show);
         } catch (java.awt.print.PrinterException ex) {
-            ex.printStackTrace();
+            
         }
     }//GEN-LAST:event_jButton1ActionPerformed
     

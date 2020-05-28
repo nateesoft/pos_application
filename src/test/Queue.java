@@ -24,7 +24,7 @@ public class Queue {
             clip.start();
         } catch (Exception ex) {
             System.out.println("Error with playing sound.");
-            ex.printStackTrace();
+            
         }
     }
 

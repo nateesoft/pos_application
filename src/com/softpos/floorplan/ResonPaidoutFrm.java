@@ -2,7 +2,7 @@ package com.softpos.floorplan;
 
 import database.MySQLConnect;
 import java.sql.Statement;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.Value;
 import java.sql.SQLException;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
@@ -166,7 +166,7 @@ public class ResonPaidoutFrm extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

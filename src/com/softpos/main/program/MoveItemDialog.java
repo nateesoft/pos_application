@@ -1,5 +1,10 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.controller.TableMoveControl;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.BalanceBean;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
@@ -473,7 +478,7 @@ public class MoveItemDialog extends javax.swing.JDialog {
                             stmt.close();
                         } catch (SQLException e) {
                             MSG.ERR(this, e.getMessage());
-                            e.printStackTrace();
+                            
                         } finally {
                             mysql.close();
                         }
@@ -791,7 +796,7 @@ public class MoveItemDialog extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

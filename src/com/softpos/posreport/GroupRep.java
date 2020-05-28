@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
+import com.softpos.main.model.PluRec;
 import util.MSG;
 
 public class GroupRep extends javax.swing.JDialog {

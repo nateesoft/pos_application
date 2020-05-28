@@ -197,7 +197,7 @@ public class CheckStockNow extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally{
             mysql.close();
         }

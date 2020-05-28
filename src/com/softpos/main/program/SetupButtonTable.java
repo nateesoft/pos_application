@@ -363,7 +363,7 @@ public class SetupButtonTable extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException ex) {
             MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         }finally{
             mysql.close();
         }

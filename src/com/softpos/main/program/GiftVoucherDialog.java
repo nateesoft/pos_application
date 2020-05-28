@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
 import database.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
@@ -307,7 +309,7 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
                 }
             } catch (SQLException e) {
                 MSG.ERR(this, e.getMessage());
-                e.printStackTrace();
+                
             }
         }
 
@@ -466,7 +468,7 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
             stmt.close();
             PublicVar.VoucherType = "";
         } catch (SQLException e) {
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -512,7 +514,7 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
 //                return;
 //            }
 //        } catch (Exception e) {
-//            e.printStackTrace();
+//            
 //        }
     }
 
@@ -547,7 +549,7 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.ConnectBean;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

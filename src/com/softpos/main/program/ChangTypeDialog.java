@@ -1,5 +1,8 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.BalanceBean;
 import database.MySQLConnect;
 import java.awt.Color;
 import java.awt.Rectangle;
@@ -102,7 +105,7 @@ public class ChangTypeDialog extends javax.swing.JDialog {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(this, e.getMessage());
-            e.printStackTrace();
+            
         }
     }
 

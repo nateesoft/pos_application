@@ -63,7 +63,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -83,7 +83,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             String sqlBranch = "SELECT * FROM branch ";
@@ -100,7 +100,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             File file = new File("/root/report/receive.jrxml");
             try {
@@ -122,10 +122,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -166,7 +166,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -187,7 +187,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             String sqlBranch = "SELECT * FROM branch ";
@@ -204,7 +204,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             File file = new File("/root/report/tranin.jrxml");
@@ -226,10 +226,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -270,7 +270,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -290,7 +290,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             String sqlBranch = "SELECT * FROM branch ";
@@ -305,7 +305,7 @@ public final class ViewReport {
                 }
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             File file = new File("/root/report/tranout.jrxml");
@@ -327,10 +327,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -369,7 +369,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -389,7 +389,7 @@ public final class ViewReport {
                 rs.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             String sqlBranch = "SELECT * FROM branch ";
@@ -404,7 +404,7 @@ public final class ViewReport {
                 }
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             File file = new File("/root/report/lose.jrxml");
             try {
@@ -426,10 +426,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -467,7 +467,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -488,7 +488,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             String sqlBranch = "SELECT * FROM branch ";
@@ -505,7 +505,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             File file = new File("/root/report/free.jrxml");
@@ -527,10 +527,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -572,7 +572,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         String sql = "SELECT *  FROM invcashdoc  WHERE invNo = '" + vatNo + "' ;";
@@ -605,7 +605,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -624,7 +624,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             File file = new File("/root/report/inVat.jrxml");
             try {
@@ -696,10 +696,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");
@@ -742,7 +742,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         String sql = "SELECT *  FROM invcashdoc  WHERE invNo = '" + vatNo + "' ;";
@@ -801,7 +801,7 @@ public final class ViewReport {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         if (check > 0) {
@@ -820,7 +820,7 @@ public final class ViewReport {
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             File file = new File("/root/report/debtVat.jrxml");
             try {
@@ -876,10 +876,10 @@ public final class ViewReport {
 
             } catch (NumberFormatException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } catch (JRException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         } else {
             MSG.WAR("ไมพบข้อมูลที่ต้องการพิมพ์");

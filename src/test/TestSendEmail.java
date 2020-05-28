@@ -73,7 +73,7 @@ public class TestSendEmail {
                 try {
                     attachPart.attachFile(filePath);
                 } catch (IOException ex) {
-                    ex.printStackTrace();
+                    
                 }
  
                 multipart.addBodyPart(attachPart);
@@ -114,7 +114,7 @@ public class TestSendEmail {
             System.out.println("Email sent.");
         } catch (Exception ex) {
             System.out.println("Could not send email.");
-            ex.printStackTrace();
+            
         }
     }
 }

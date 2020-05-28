@@ -25,7 +25,7 @@ public class StoreDept {
             return i > 0;
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage() + "\n" + sql);
-            e.printStackTrace();
+            
             return false;
         } finally{
             mysql.close();
@@ -53,7 +53,7 @@ public class StoreDept {
             return i > 0;
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage() + "\n" + sql);
-            e.printStackTrace();
+            
             return false;
         }
     }

@@ -1,6 +1,6 @@
 package com.softpos.floorplan;
 
-import com.softpos.main.program.BalanceControl;
+import com.softpos.main.controller.BalanceControl;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -21,9 +21,9 @@ import javax.swing.table.TableColumnModel;
 import database.MySQLConnect;
 import java.awt.GraphicsEnvironment;
 import java.sql.Statement;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.TableFileControl;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.model.Value;
 import util.MSG;
 
 public class ShowTable extends javax.swing.JDialog {
@@ -231,7 +231,7 @@ private void ShowTableLoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             } finally {
                 mysql.close();
             }
@@ -354,7 +354,7 @@ private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:ev
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -403,7 +403,7 @@ private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:ev
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

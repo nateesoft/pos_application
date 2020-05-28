@@ -5,6 +5,9 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.controller.BranchControl;
 import database.MySQLConnect;
 import java.awt.Cursor;
 import java.awt.Frame;
@@ -273,7 +276,7 @@ public class PrintToKic extends javax.swing.JFrame {
                         c.getConnection().createStatement().executeUpdate(sqlDel);
                         c.close();
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        
                     }
                 }
             }

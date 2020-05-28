@@ -17,8 +17,8 @@ import com.softpos.main.program.Jdi_dailyReport_Hourly_Plu;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 
@@ -97,7 +97,7 @@ public class HourlyByPlu extends javax.swing.JDialog {
         try {
             txtTime1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##:##")));
         } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
+            
         }
         txtTime1.setFont(new java.awt.Font("Norasi", 1, 14)); // NOI18N
         txtTime1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -109,7 +109,7 @@ public class HourlyByPlu extends javax.swing.JDialog {
         try {
             txtTime2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##:##")));
         } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
+            
         }
         txtTime2.setFont(new java.awt.Font("Norasi", 1, 14)); // NOI18N
         txtTime2.addKeyListener(new java.awt.event.KeyAdapter() {

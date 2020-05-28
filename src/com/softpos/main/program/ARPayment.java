@@ -1,5 +1,9 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.SmpCoupon;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Color;
 import java.awt.Rectangle;
@@ -2023,7 +2027,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2082,7 +2086,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                     prm.close();
                 } catch (SQLException e) {
                     MSG.ERR_MSG(this, e.getMessage());
-                    e.printStackTrace();
+                    
                 } finally {
                     mysql.close();
                 }
@@ -2143,7 +2147,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         TempBill = TempBill + 1;
         String TempStr = IntFmt.format(TempBill);
@@ -2155,7 +2159,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt1.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -2197,7 +2201,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
             try {
                 Statement stmt = mysql.getConnection().createStatement();
@@ -2226,7 +2230,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             if ((_Cr_Amount1 > 0 && CreditCnt > 0)) {
@@ -2250,7 +2254,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                         stmt.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     }
                 }
             }
@@ -2274,7 +2278,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             mysql.close();
@@ -2585,7 +2589,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2619,7 +2623,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         }
         return RetVal;
     }
@@ -2653,7 +2657,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         }
 
         return RetVal;
@@ -2700,7 +2704,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2748,7 +2752,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -2775,7 +2779,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -2847,7 +2851,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR_MSG(this, e.getMessage());
-                e.printStackTrace();
+                
             }
         }
         try {
@@ -2865,7 +2869,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();
@@ -2899,7 +2903,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
                 stmt.close();
             } catch (SQLException e) {
                 MSG.ERR_MSG(this, e.getMessage());
-                e.printStackTrace();
+                
             }
         }
         try {
@@ -2918,7 +2922,7 @@ private void _CrCardNoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:even
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR_MSG(this, e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();

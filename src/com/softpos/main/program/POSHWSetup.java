@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.PosControl;
+
 public class POSHWSetup {
 
     private String Terminal;

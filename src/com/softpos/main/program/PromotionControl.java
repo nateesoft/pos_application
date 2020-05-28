@@ -1,5 +1,14 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.ProductBean;
+import com.softpos.main.controller.ProductControl;
+import com.softpos.main.controller.DateControl;
+import com.softpos.main.controller.PosControl;
+import com.softpos.main.controller.DiscountControl;
+import com.softpos.main.controller.StockControl;
+import com.softpos.main.model.ProtabBean;
+import com.softpos.main.model.BalanceBean;
 import database.MySQLConnect;
 import java.math.BigDecimal;
 import java.sql.ResultSet;
@@ -33,7 +42,7 @@ public class PromotionControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1131,7 +1140,7 @@ public class PromotionControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1150,7 +1159,7 @@ public class PromotionControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1178,7 +1187,7 @@ public class PromotionControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1197,7 +1206,7 @@ public class PromotionControl {
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

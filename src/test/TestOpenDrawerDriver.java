@@ -5,7 +5,7 @@
  */
 package test;
 
-import com.softpos.main.program.Value;
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import javax.print.Doc;
 import javax.print.DocFlavor;

@@ -18,8 +18,8 @@ import com.softpos.main.program.Jdi_dailyReport_Topsale;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import soft.virtual.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
@@ -49,7 +49,7 @@ public class TopSaleRep extends javax.swing.JDialog {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (Exception ex) {
-                ex.printStackTrace();
+                
             }
         }
         initComponents();
@@ -802,7 +802,7 @@ private void bntF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            //e.printStackTrace();
+            //
         } finally {
             mysql.close();
         }

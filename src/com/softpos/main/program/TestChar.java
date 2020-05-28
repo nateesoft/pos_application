@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.TranRecord;
+
 public class TestChar {
 
     static int arraySize;

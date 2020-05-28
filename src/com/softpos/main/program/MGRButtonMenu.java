@@ -1222,7 +1222,7 @@ ResultSet rs = stmt.executeQuery(sql);
                     stmt1.close();
                 } catch (SQLException e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
 
                 txtShortName.setText(m.getMenuShowText());
@@ -1264,7 +1264,7 @@ ResultSet rs = stmt.executeQuery(sql);
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }finally{
             mysql.close();
         }

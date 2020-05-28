@@ -11,8 +11,8 @@ import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
 import printReport.PrintDriver;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import java.sql.SQLException;
 import java.sql.Statement;
 import sun.natee.project.util.ThaiUtil;
@@ -120,7 +120,7 @@ public class PaidoutFrm extends javax.swing.JDialog {
             stmt.executeUpdate(sql);
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }

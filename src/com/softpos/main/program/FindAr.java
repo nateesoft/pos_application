@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.PublicVar;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;

@@ -18,9 +18,9 @@ import com.softpos.main.program.Jdi_MTDdepReport;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PluRec;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PluRec;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import java.util.ArrayList;
 import printReport.PrintDriver;
 import soft.virtual.KeyBoardDialog;
@@ -1224,7 +1224,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
             listObj.add(new Object[]{countb_refnoD});
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
 
         mysql.close();

@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Rectangle;

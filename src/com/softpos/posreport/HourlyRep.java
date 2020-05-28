@@ -5,7 +5,7 @@ import database.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.softpos.main.program.HourlyRec;
+import com.softpos.main.model.HourlyRec;
 import com.softpos.main.program.Jdi_report_HourlyReport;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;

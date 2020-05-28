@@ -176,7 +176,7 @@ public class PrintApp extends JFrame {
             m.setAccessible(true);
             return ((Number)m.invoke(source, new Object[] {axis, childIndex})).intValue();
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
 
         return 0;
@@ -188,7 +188,7 @@ public class PrintApp extends JFrame {
             m.setAccessible(true);
             return ((Number)m.invoke(source)).shortValue();
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
 
         return 0;
@@ -200,7 +200,7 @@ public class PrintApp extends JFrame {
             m.setAccessible(true);
             return ((Number)m.invoke(source)).shortValue();
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
 
         return 0;

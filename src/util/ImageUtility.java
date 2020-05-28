@@ -29,7 +29,7 @@ public class ImageUtility {
                 imgURL = file.toURL();
             } catch (MalformedURLException ex) {
                 imgURL = null;
-                //ex.printStackTrace();
+                //
             }
         }
         if (imgURL != null) {

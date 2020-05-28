@@ -5,6 +5,7 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Cursor;
 import java.io.IOException;

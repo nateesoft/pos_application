@@ -5,6 +5,10 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.CreditRec;
+import com.softpos.main.model.FinalcialRec;
 import database.MySQLConnect;
 import java.awt.Cursor;
 import java.io.IOException;
@@ -235,7 +239,7 @@ public class SendTerminalReportAuto {
             rsGetEntertain.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         
         try {
@@ -254,7 +258,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -272,7 +276,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -290,7 +294,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         try {
             Statement stmt = mysql.getConnection().createStatement();
@@ -340,7 +344,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         PrintTerminalEngFormDriver(frec, CrArray, "001", "999");
     }
@@ -585,7 +589,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -767,7 +771,7 @@ public class SendTerminalReportAuto {
             listObj.add(new Object[]{countb_refnoD});
         } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         }
         
         mysql.close();
@@ -810,7 +814,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException ex) {
 //            MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -856,7 +860,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException ex) {
 //            MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -888,7 +892,7 @@ public class SendTerminalReportAuto {
             stmt.close();
         } catch (SQLException ex) {
 //            MSG.ERR(ex.getMessage());
-            ex.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1022,7 +1026,7 @@ public class SendTerminalReportAuto {
             c.close();
         } catch (Exception e) {
             MSG.ERR(e.toString());
-//            e.printStackTrace();
+//            
         }
     }
 }

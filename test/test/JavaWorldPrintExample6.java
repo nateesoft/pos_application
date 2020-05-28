@@ -61,7 +61,6 @@ public class JavaWorldPrintExample6 {
             try {
                 printJob.print();
             } catch (Exception PrintException) {
-                PrintException.printStackTrace();
             }
         }
     }
@@ -180,7 +179,6 @@ public class JavaWorldPrintExample6 {
                 imageURL = new URL(
                         "file:///c:/softdev/java/articles/javaworld/printing/part_2/ss2.jpg");
             } catch (MalformedURLException me) {
-                me.printStackTrace();
             }
 
             //--- Load the image and wait for it to load

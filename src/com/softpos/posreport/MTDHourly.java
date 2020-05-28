@@ -14,12 +14,12 @@ import util.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.HourlyRec;
+import com.softpos.main.model.HourlyRec;
 import com.softpos.main.program.POSHWSetup;
 import com.softpos.main.program.PPrint;
 import com.softpos.main.program.PUtility;
-import com.softpos.main.program.PublicVar;
-import com.softpos.main.program.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.Value;
 import soft.virtual.KeyBoardDialog;
 import util.MSG;
 

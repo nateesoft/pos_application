@@ -180,7 +180,7 @@ public class DateUtil {
                     Integer.parseInt(minute.format(day)),
                     Integer.parseInt(second.format(day)));
         } catch (Exception ex) {
-            ex.printStackTrace();
+            
         }
         return cal;
     }

@@ -1,6 +1,17 @@
 package com.softpos.main.program;
 
-import com.softpos.discount.DiscountDialog;
+import com.softpos.main.model.Value;
+import com.softpos.main.model.PublicVar;
+import com.softpos.main.model.UserRecord;
+import com.softpos.main.controller.BalanceControl;
+import com.softpos.main.model.ProductBean;
+import com.softpos.main.model.TableFileBean;
+import com.softpos.main.controller.TableFileControl;
+import com.softpos.main.controller.ProductControl;
+import com.softpos.main.model.BranchBean;
+import com.softpos.main.controller.BranchControl;
+import com.softpos.main.model.BalanceBean;
+import com.softpos.main.view.DiscountDialog;
 import com.softpos.floorplan.DailyRep;
 import com.softpos.floorplan.DiarySale;
 import com.softpos.floorplan.FloorPlanDialog;
@@ -11,13 +22,13 @@ import com.softpos.floorplan.ShowTable;
 import com.softpos.floorplan.PaidinFrm;
 import com.softpos.floorplan.ResonPaidoutFrm;
 import com.softpos.main.controller.PriceController;
-import com.softpos.main.controller.TempSetBean;
+import com.softpos.main.model.TempSetBean;
 import com.softpos.main.controller.TempSetController;
-import static com.softpos.main.program.BalanceControl.updateProSerTable;
-import static com.softpos.main.program.BalanceControl.updateProSerTableMem;
-import static com.softpos.main.program.BalanceControl.updateProSerTableMemVIP;
-import com.softpos.member.MemberBean;
-import com.softpos.member.MemberControl;
+import static com.softpos.main.controller.BalanceControl.updateProSerTable;
+import static com.softpos.main.controller.BalanceControl.updateProSerTableMem;
+import static com.softpos.main.controller.BalanceControl.updateProSerTableMemVIP;
+import com.softpos.main.model.MemberBean;
+import com.softpos.main.controller.MemberControl;
 import database.ConfigFile;
 import database.MySQLConnect;
 import java.awt.Color;
@@ -234,7 +245,7 @@ public class MainSale extends javax.swing.JDialog {
 //            stmt.close();
 //        } catch (SQLException e) {
 //            MSG.ERR(this, e.getMessage());
-//            e.printStackTrace();
+//            
 //        }
 //        //check cr_cardno1 max = 100;
 //        try {
@@ -259,7 +270,7 @@ public class MainSale extends javax.swing.JDialog {
 //            stmt.close();
 //        } catch (SQLException e) {
 //            //MSG.ERR(this, e.getMessage());
-//            e.printStackTrace();
+//            
 //        }
 //
 //        mysql.close();
@@ -1405,7 +1416,7 @@ private void txtTableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
 //            stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -1486,7 +1497,7 @@ private void txtTableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
 //            txtPluCode.requestFocus();
 //        } catch (SQLException e) {
 //            MSG.ERR(e.getMessage());
-//            e.printStackTrace();
+//            
 //        } finally {
 //            mysql.close();
 //        }
@@ -1837,7 +1848,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                 c.getConnection().createStatement().executeUpdate(sqlTurnPrintKicOff);
                 c.close();
             } catch (Exception e) {
-                e.printStackTrace();
+                
             }
         }
         if (lbTotalAmount.getText().equals("0.00")) {
@@ -2190,7 +2201,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                     stmt.close();
                 } catch (Exception e) {
                     MSG.ERR(e.getMessage());
-                    e.printStackTrace();
+                    
                 }
 
                 if (!hasValue) {
@@ -2229,7 +2240,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                                     stmt.close();
                                 } catch (Exception e) {
                                     MSG.ERR(e.getMessage());
-                                    e.printStackTrace();
+                                    
                                 }
 
                                 if (!hasValue) {
@@ -2275,7 +2286,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                                     stmt.close();
                                 } catch (SQLException e) {
                                     MSG.ERR(e.getMessage());
-                                    e.printStackTrace();
+                                    
                                 }
 
                                 if (!hasValue) {
@@ -4573,7 +4584,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                 stmt2.close();
             } catch (Exception e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
 
             rs.close();
@@ -4615,7 +4626,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             stmt.close();
         } catch (SQLException e) {
             MSG.ERR(e.getMessage());
-            e.printStackTrace();
+            
         } finally {
             mysql.close();
         }
@@ -4744,7 +4755,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                         stmt1.close();
                     } catch (SQLException e) {
                         MSG.ERR(e.getMessage());
-                        e.printStackTrace();
+                        
                     }
 
                     //ตรวจสอบถ้าเป็น menu set ให้ลบข้อมูลภายใน Set ด้วย
@@ -4792,7 +4803,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                                     stmt4.close();
                                 } catch (SQLException e) {
                                     MSG.ERR(e.getMessage());
-                                    e.printStackTrace();
+                                    
                                 }
                             }
 
@@ -4800,7 +4811,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                             stmt2.close();
                         } catch (Exception e) {
                             MSG.ERR(e.getMessage());
-                            e.printStackTrace();
+                            
                         }
                     }
                     // ################ END คืน Stock 
@@ -4808,7 +4819,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
             } catch (Exception e) {
                 MSG.ERR(e.getMessage());
-                e.printStackTrace();
+                
             }
         }
 

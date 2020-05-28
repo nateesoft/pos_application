@@ -25,7 +25,7 @@ public class StoreList {
             return i > 0;
         } catch (SQLException e) {
             MSG.ERR(null, e.getMessage() + "\n" + sql);
-            e.printStackTrace();
+            
             return false;
         } finally{
             mysql.close();
