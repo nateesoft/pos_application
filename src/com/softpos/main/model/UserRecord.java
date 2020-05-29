@@ -113,9 +113,6 @@ public class UserRecord {
     public String Stock45 = "N";
 
     public boolean GetUserAction(String XUserCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -2616,9 +2616,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void arCodeExits() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -2700,9 +2697,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void LoadDisc() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2727,9 +2721,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void clearTempSet(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2798,9 +2789,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void backupTempBalnace() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2818,9 +2806,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void restoreTempBalance() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2850,9 +2835,6 @@ public class CheckBill extends javax.swing.JDialog {
     }
 
     private void clearTempGift() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2899,9 +2881,6 @@ public class CheckBill extends javax.swing.JDialog {
                     + "and R_Kic<>'' "
                     + "group by r_kic "
                     + "order by r_kic";
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -3068,9 +3047,6 @@ public class CheckBill extends javax.swing.JDialog {
 //        Dis.setVisible(false);
 //    }
     private void clearCuponSpecail() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //clear temp cupon
@@ -3115,9 +3091,6 @@ public class CheckBill extends javax.swing.JDialog {
 
     private boolean isTakeOrder() {
         boolean isTakeOrder = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -280,9 +280,6 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
                     prn.print("----------------------------------------");
                     int Sumtotal = 0;
                     Double SumtotalAmount = 0.0;
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -368,9 +365,6 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("-----------------------------------------" + "_");
         int Sumtotal = 0;
         Double SumtotalAmount = 0.0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

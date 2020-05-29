@@ -241,9 +241,6 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                     prn.print("ใบเสร็จ   เวลาพิมพ์     จำนวนเงิน   ภาษี(Vat)");
                     prn.print("----------------------------------------");
 
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -338,9 +335,6 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("ใบเสร็จ" + Space + "เวลาพิมพ์" + Space + "จำนวนเงิน" + Space + "ภาษี(Vat)" + "_");
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("----------------------------------------") + "_";
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

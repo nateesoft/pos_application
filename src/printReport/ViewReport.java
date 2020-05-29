@@ -38,9 +38,6 @@ public final class ViewReport {
         int check = 0;
         String amoutlist = "";
         String amoutprice = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -141,9 +138,6 @@ public final class ViewReport {
         int check = 0;
         String amoutlist = "";
         String amoutprice = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -245,9 +239,6 @@ public final class ViewReport {
         int check = 0;
         String amoutlist = "";
         String amoutprice = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -345,9 +336,6 @@ public final class ViewReport {
         int check = 0;
         String amoutlist = "";
         String amoutprice = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -444,9 +432,6 @@ public final class ViewReport {
         int check = 0;
         String amoutlist = "";
         String amoutprice = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -543,9 +528,6 @@ public final class ViewReport {
         String sqlCompany = "SELECT c.Name, c.Address, c.Subprovince,"
                 + " c.Province, c.City, c.POST, c.Tel, c.Fax, c.Tax"
                 + " FROM mycpssysutf.company c";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -713,9 +695,6 @@ public final class ViewReport {
         String sqlCompany = "SELECT c.Name, c.Address, c.Subprovince,"
                 + " c.Province, c.City, c.POST, c.Tel, c.Fax, c.Tax"
                 + " FROM mycpssysutf.company c";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

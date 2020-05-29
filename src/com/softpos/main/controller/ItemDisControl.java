@@ -102,9 +102,6 @@ public class ItemDisControl {
         bean.setR_Total(R_Total);
 
         /* SAve data to database */
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

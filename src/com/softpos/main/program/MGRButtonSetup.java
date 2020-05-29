@@ -29,9 +29,6 @@ public class MGRButtonSetup extends javax.swing.JDialog {
         this.menuCode = menuCode;
         this.menuIndex = menuIndex;
         
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1191,9 +1188,6 @@ public class MGRButtonSetup extends javax.swing.JDialog {
     }
 
     private void loadSideDish() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1224,9 +1218,6 @@ public class MGRButtonSetup extends javax.swing.JDialog {
     }
 
     private void loadExtra() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1257,9 +1248,6 @@ public class MGRButtonSetup extends javax.swing.JDialog {
     }
 
     private void loadAutoAdd() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

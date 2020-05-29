@@ -23,9 +23,6 @@ public class StockControl {
     }
 
     public String GET_STOCK_NAME(String PCode, String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "select PCode,PGroup,PDesc,POSStk, MSStk from product "
@@ -110,9 +107,6 @@ public class StockControl {
     }
 
     public boolean Active(String stock) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "select * from stockfile where StkCode='" + stock + "' and flage='Y'";
@@ -137,9 +131,6 @@ public class StockControl {
     public double GET_PRODUCT_QTY(String PCode, String stockCode) {
         double qty = 0;
         SimpleDateFormat sp = new SimpleDateFormat("MM");
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -163,9 +154,6 @@ public class StockControl {
 
     public StkFileBean getDataStkFile(String sql) {
         StkFileBean bean = new StkFileBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -231,9 +219,6 @@ public class StockControl {
         String sql = "UPDATE stkfile "
                 + "set BQty" + month + "=BQty" + month + "-1 "
                 + "where BPCode='" + BPCode + "' and BStk='" + StockCode + "'";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -261,9 +246,6 @@ public class StockControl {
         String sql = "UPDATE stkfile "
                 + "set BQty" + month + "=BQty" + month + "+1 "
                 + "where BPCode='" + BPCode + "' and BStk='" + StockCode + "'";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -287,9 +269,6 @@ public class StockControl {
         
          ตัวอย่างการ void สินค้า
          19/11/2013	E1-09:44:59	NULL	0	1501	A1	0	-1	0	-16	0	SAL	9999	19/11/2013	9:44	NULL 
-         */
-        /**
-         * * OPEN CONNECTION **
          */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
@@ -335,9 +314,6 @@ public class StockControl {
     }
 
     public void saveSubTCard(STCardBean bean, String ETD) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

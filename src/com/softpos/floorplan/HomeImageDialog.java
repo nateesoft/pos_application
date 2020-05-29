@@ -186,9 +186,6 @@ public class HomeImageDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -269,9 +266,6 @@ public class HomeImageDialog extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void loadImageHome() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -294,9 +288,6 @@ public class HomeImageDialog extends javax.swing.JDialog {
     }
 
     private void saveImageReady() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 

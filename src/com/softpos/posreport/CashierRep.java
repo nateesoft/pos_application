@@ -185,9 +185,6 @@ private void txtCashNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         CrArray = null;
 
         int ArraySize = 0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

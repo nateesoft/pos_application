@@ -43,9 +43,6 @@ public class BillControl {
 
     public static String getBillIDCurrent() {
         String ReceNo1 = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -85,9 +82,6 @@ public class BillControl {
 
     public static String getExistCurrent() {
         String ReceNo1 = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -126,9 +120,6 @@ public class BillControl {
     }
 
     public static void updateNextBill() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -147,9 +138,6 @@ public class BillControl {
     }
 
     public static void saveBillNo(BillNoBean bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         BranchControl branchControl = new BranchControl();
         BranchBean branchBean = branchControl.getBranch();
         MySQLConnect mysql = new MySQLConnect();
@@ -242,9 +230,6 @@ public class BillControl {
 
     public static String getQueUpdate() {
         String q = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -283,9 +268,6 @@ public class BillControl {
 
     public static void saveTSale(TSaleBean bean) {
         //update table t_sale
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -706,9 +688,6 @@ public class BillControl {
                 tableControl.setDefaultTableFile(table);
 
                 //move tempgift
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1128,9 +1107,6 @@ public class BillControl {
                 tableControl.setDefaultTableFile(table);
 
                 //move tempgift
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1215,9 +1191,6 @@ public class BillControl {
             sql += "order by R_Status, R_Index";
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         ArrayList<TSaleBean> data = new ArrayList<>();
@@ -1251,9 +1224,6 @@ public class BillControl {
     public ArrayList<TSaleBean> getAllTSale(String billNo) {
         String sql = "select * from t_sale where R_Refno='" + billNo + "' order by R_Index";
         ArrayList<TSaleBean> data = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1356,9 +1326,6 @@ public class BillControl {
     public ArrayList<TSaleBean> getAllTSaleNovoid(String billNo) {
         String sql = "select * from t_sale where R_Refno='" + billNo + "' and r_void<>'V' order by R_Index";
         ArrayList<TSaleBean> data = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1468,9 +1435,6 @@ public class BillControl {
 //                + " order by R_Index";
         String sql = "select * from t_sale where R_Refno='" + billNo + "' and r_void<>'V' order by R_Index";
         ArrayList<TSaleBean> data = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1661,9 +1625,6 @@ public class BillControl {
 
     public BillNoBean getData(String billNo) {
         BillNoBean bean = new BillNoBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

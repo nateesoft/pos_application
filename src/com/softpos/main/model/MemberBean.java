@@ -96,9 +96,6 @@ public class MemberBean {
 
     public static MemberBean getMember(String MemberCode) {
         MemberBean bean = null;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

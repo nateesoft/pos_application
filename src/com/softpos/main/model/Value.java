@@ -89,9 +89,6 @@ public class Value {
 
         if (!macno.equals("")) {
             //check macno in database
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {

@@ -642,9 +642,6 @@ private void bntOKMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:even
                     prn.print("    ....DELIVERY....   .....PINTO.......");
                     prn.print("    ...WHOLE SALE...   .....TOTAL.......");
                     prn.print("----------------------------------------");
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -722,9 +719,6 @@ private void bntOKMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:even
         PluRec[] GArray;
         GArray = new PluRec[1];
         ArraySize = 0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -985,9 +979,6 @@ private void bntOKMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:even
         t += "colspan=3 align=left><font face=Angsana New size=1>" + (TAB + "....DELIVERY...." + TAB + ".....PINTO.......") + TAB + "_";
         t += "colspan=3 align=left><font face=Angsana New size=1>" + (TAB + "...WHOLE SALE..." + TAB + ".....TOTAL.......") + TAB + "_";
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("-----------------------------------------------------") + "_";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

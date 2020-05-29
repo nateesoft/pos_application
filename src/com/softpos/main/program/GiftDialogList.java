@@ -179,9 +179,6 @@ public class GiftDialogList extends javax.swing.JDialog {
         for (int i = 0; i < size; i++) {
             model.removeRow(0);
         }
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -92,9 +92,6 @@ public class ChangTypeDialog extends javax.swing.JDialog {
     }
 
     void updateBalance(String R_Index, String R_ETD) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

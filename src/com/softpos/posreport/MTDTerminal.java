@@ -430,9 +430,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
         CrArray = null;
 
         int ArraySize = 0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -757,9 +754,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                 prn.print("----------------------------------------");
                 prn.print(PUtility.DataFullR("จำนวนลูกค้าทั้งสิ้น                ", 26) + PUtility.DataFull(IntFmt.format(frec.Customer), 8) + " คน");
                 prn.print(PUtility.DataFullR("จำนวนใบกำกับภาษีอย่างย่อ         ", 26) + PUtility.DataFull(IntFmt.format(frec.CntBill), 8) + " ใบ");
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1086,9 +1080,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     prn.print(PUtility.DataFullR("MGR Void                    ", 20) + PUtility.DataFull(IntFmt.format(frec.CntVoid), 6) + PUtility.DataFull(DecFmt.format(frec.VoidValue), 13));
                     prn.print("----------------------------------------");
                     prn.print(PUtility.DataFullR("Docket                      ", 26) + PUtility.DataFull(IntFmt.format(frec.CntBill), 8) + " ");
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -1390,9 +1381,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
         t += ("colspan=2 align=left><font face=Angsana New size=1>" + "MGR Void" + Space + TAB + PUtility.DataFull(IntFmt.format(frec.CntVoid), 6) + Space + "Items." + "</td><td align=right><font face=Angsana New size=1>" + PUtility.DataFullR(DecFmt.format(frec.VoidValue), 13) + "_");
         t += ("colspan=3 align=center><font face=Angsana New size=1>" + "-----------------------------------------------") + "_";
         t += ("colspan=2 align=left><font face=Angsana New size=1>" + "Docket" + "</td><td align=right><font face=Angsana New size=1>" + IntFmt.format(frec.CntBill) + " ") + "_";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1671,9 +1659,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 //        t += ("colspan=2 align=left><font face=Angsana New size=1>" + "MGR Void" + Space + TAB + PUtility.DataFull(IntFmt.format(frec.CntVoid), 6) + Space + "Items." + "</td><td align=right><font face=Angsana New size=1>" + PUtility.DataFull(DecFmt.format(frec.VoidValue), 13) + "_");
 //        t += ("colspan=3 align=center><font face=Angsana New size=1>" + "------------------------------------------------------------------") + "_";
 //        t += ("colspan=2 align=left><font face=Angsana New size=1>" + "Docket" + "</td><td align=right><font face=Angsana New size=1>" + IntFmt.format(frec.CntBill) + " ") + "_";
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {
@@ -1772,9 +1757,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                 + "and b_void<>'V'"
                 + "and b_etd='D' "
                 + "group by b_etd";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1887,9 +1869,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
     private ArrayList<String[]> CreName(String macNo1, String macNo2) {
         ArrayList<String[]> list = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1930,9 +1909,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
     private String[] credit(String macNo1, String macNo2) {
         String[] credit = new String[]{"", ""};
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1976,9 +1952,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
     private String[] specialCupon(String macNo1, String macNo2) {
         String[] cupon = new String[]{"", ""};
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

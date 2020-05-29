@@ -857,9 +857,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         discBean.setBahtDiscount(BahtDiscount);
         discBean.setCuponSpecialDiscount(CuponSpecialDiscount);
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -1222,9 +1219,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         if (chkInputAmt()) {
             // update tablefile for discount
 
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -1368,9 +1362,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1440,9 +1431,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1512,9 +1500,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1584,9 +1569,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1653,9 +1635,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void CheckDis1() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -1680,9 +1659,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void CheckDis2() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1706,9 +1682,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void CheckDis3() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1732,9 +1705,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void CheckDis4() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1758,9 +1728,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void CheckDis5() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1809,9 +1776,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_EE = 0.00;
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1886,9 +1850,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_EE = 0.00;
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1936,9 +1897,6 @@ public class DiscountDialog extends javax.swing.JDialog {
             if (confirm == JOptionPane.YES_OPTION) {
                 Value.MemberAlready = false;
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1977,9 +1935,6 @@ public class DiscountDialog extends javax.swing.JDialog {
                 CheckDis3();
                 // update member in tablefile
                 SimpleDateFormat simp = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -2038,9 +1993,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_EE = 0.00;
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2108,9 +2060,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         double TOTAL_EE = 0.00;
         double TOTAL_DD = 0.00;
         double TOTAL_TT = 0.00;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2217,9 +2166,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void LoadDist() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2318,9 +2264,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     private void clearCuponSpecail() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //clear temp cupon
@@ -2370,9 +2313,6 @@ public class DiscountDialog extends javax.swing.JDialog {
     }
 
     public void clearMemberDiscount() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //clear temp cupon

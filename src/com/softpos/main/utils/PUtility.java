@@ -44,9 +44,6 @@ public class PUtility {
         int RetVal = 0;
         SimpleDateFormat XYear = new SimpleDateFormat("yyyy", Locale.ENGLISH);
         SimpleDateFormat XMonth = new SimpleDateFormat("MM", Locale.ENGLISH);
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -97,9 +94,6 @@ public class PUtility {
 
     public static String GetStkCode() {
         String RetVal = "A1";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -124,9 +118,6 @@ public class PUtility {
 
     public static String GetStockOnLine() {
         String RetVal = "N";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -160,9 +151,6 @@ public class PUtility {
             Date TDate = new Date();
             int TempAct = GetActionMon(TDate);
             String T_Mon = "bqty" + String.valueOf(TempAct);
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -275,9 +263,6 @@ public class PUtility {
 
     public static Boolean SeekStkFile(String TempCode, String T_Stk) {
         Boolean RetVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -325,9 +310,6 @@ public class PUtility {
             SetProc = false;
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -419,9 +401,6 @@ public class PUtility {
             SetProc = false;
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -490,9 +469,6 @@ public class PUtility {
 
     public static boolean CheckPSetSelect(String PCode) {
         boolean RetValue = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -518,9 +494,6 @@ public class PUtility {
         SimpleDateFormat DateFmt = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
         SimpleDateFormat TimeFmt = new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH);
         Date date = new Date();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -611,9 +584,6 @@ public class PUtility {
         SimpleDateFormat DateFmt = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
         SimpleDateFormat TimeFmt = new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH);
         Date date = new Date();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -708,9 +678,6 @@ public class PUtility {
         SimpleDateFormat TimeFmt = new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH);
         String XDocNo = DocNo.substring(1, 8);
         Date date = new Date();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -868,9 +835,6 @@ public class PUtility {
 
     public static boolean CheckCouponRedule(String XCode2) {
         Boolean ReturnVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -899,9 +863,6 @@ public class PUtility {
     public static int GetUserRound(String XUser) {
         int ReturnVal = 1;
         String TempUser = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         for (int i = 1; i < 30; i++) {
@@ -934,9 +895,6 @@ public class PUtility {
 
     public static boolean CheckCashierClose(String XUser) {
         boolean ReturnVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1315,9 +1273,6 @@ public class PUtility {
 
     public static String ReadRefBillNo(String Macno) {
         String StrRefBillNo = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1344,9 +1299,6 @@ public class PUtility {
 
     public static String ReadChargeBillNo(String Macno) {
         String StrRefBillNo = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1378,9 +1330,6 @@ public class PUtility {
         String XPT3 = "";
         String XPT4 = "";
         String XPT5 = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1435,9 +1384,6 @@ public class PUtility {
             String CurTime = TimeFormat.format(CurDate);
             String CurDay = DayFormat.format(CurDate);
 
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -1489,9 +1435,6 @@ public class PUtility {
 
     public static Boolean SeekPromotion(String XPro1) {
         Boolean ReturnVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1563,9 +1506,6 @@ public class PUtility {
     }
 
     public static void ClearTempPromotion(String Table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1669,9 +1609,6 @@ public class PUtility {
 
     public static String SeekGroupName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1697,9 +1634,6 @@ public class PUtility {
 
     public static String SeekProductName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1725,9 +1659,6 @@ public class PUtility {
 
     public static String SeekProductUnit(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1752,9 +1683,6 @@ public class PUtility {
 
     public static double getPricePluCodeEtdType(String TCode, String Etd) {
         double ReturnValues = 0.0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1793,9 +1721,6 @@ public class PUtility {
 
     public static String SeekCreditName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1821,9 +1746,6 @@ public class PUtility {
 
     public static String SeekCuponName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1849,9 +1771,6 @@ public class PUtility {
 
     public static String SeekArName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1877,9 +1796,6 @@ public class PUtility {
 
     public static String SeekRegNo(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1905,9 +1821,6 @@ public class PUtility {
 
     public static String SeekPromotionName(String TCode) {
         String ReturnValues = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1932,9 +1845,6 @@ public class PUtility {
 
     public static Boolean SeekPromotion2(String Macno, String TCode) {
         boolean ReturnVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

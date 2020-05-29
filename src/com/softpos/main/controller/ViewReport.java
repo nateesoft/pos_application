@@ -174,9 +174,6 @@ public final class ViewReport {
                         MSG.ERR(null, e.toString());
                     }
 
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, mysql.getConnection());
                     JasperViewer v = new JasperViewer(jasperPrint, false);
                     JDialog j = new JDialog(new JFrame(), true);
@@ -345,9 +342,6 @@ public final class ViewReport {
                 parameters.put("vat", doubleFmt.format(vt));
                 parameters.put("amount", doubleFmt.format(amt));
                 JasperReport jasperReport = (JasperReport) JRLoader.loadObject(getClass().getResource("/report/file/debtVat.jasper"));
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, mysql.getConnection());
@@ -410,9 +404,6 @@ public final class ViewReport {
                     MSG.ERR(null, e.toString());
                 }
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
 //                MySQLConnect mysql = new MySQLConnect();
 //                mysql.open();
                 JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, mysql.getConnection());
@@ -481,9 +472,6 @@ public final class ViewReport {
                 MSG.ERR(null, e.toString());
             }
 
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, mysql.getConnection());
@@ -522,9 +510,6 @@ public final class ViewReport {
     }
 
     public void printCompile() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

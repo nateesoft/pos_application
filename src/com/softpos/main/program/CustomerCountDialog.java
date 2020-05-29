@@ -511,9 +511,6 @@ public class CustomerCountDialog extends javax.swing.JDialog {
     }
 
     private void SaveCus(String Cus) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -546,9 +543,6 @@ public class CustomerCountDialog extends javax.swing.JDialog {
     }
 
     private void LoadCustomer() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -420,9 +420,6 @@ public class Login extends javax.swing.JDialog {
             MSG.ERR(this, "กรุณาป้อนรหัสผู้ใช้งาน(Username)/รหัสผ่าน(Password)");
             clearlogin();
         } else {
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
 
@@ -547,9 +544,6 @@ public class Login extends javax.swing.JDialog {
     }
 
     private void UpdateLogin(String UserCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

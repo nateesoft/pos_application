@@ -238,9 +238,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
     }
 
     public void bntClearAllClick() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -313,9 +310,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
                     if (SeekGiftPrice(GiftPrice)) {
                         if (!GiftExp.equals("000000")) {
                             if (ChkExpDate(GiftExp, GiftExp2)) {
-                                /**
-                                 * * OPEN CONNECTION **
-                                 */
                                 MySQLConnect mysql = new MySQLConnect();
                                 mysql.open();
                                 try {
@@ -342,9 +336,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
                                 }
                             }
                         } else {
-                            /**
-                             * * OPEN CONNECTION **
-                             */
                             MySQLConnect mysql = new MySQLConnect();
                             mysql.open();
                             try {
@@ -377,9 +368,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
             if (SeekGiftPrice(GiftPrice)) {
                 if (!GiftExp.equals("000000")) {
                     if (ChkExpDate(GiftExp, GiftExp2)) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -406,9 +394,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
                         }
                     }
                 } else {
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -441,9 +426,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
 
     public Boolean SeekGiftStatus(String GiftCode, String GiftNo) {
         Boolean ReturnValue = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -472,9 +454,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
 
     public Boolean SeekGiftPrice(String GiftPrice) {
         Boolean ReturnValue = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -519,9 +498,6 @@ private void tblShowKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_t
     public void ShowDataToGrid() {
         ClearGrid();
         int LineCnt = 1;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

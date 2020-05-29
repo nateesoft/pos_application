@@ -304,9 +304,6 @@ private void bntOK2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         Double S22 = 0.0;
         Double S23 = 0.0;
         Double SumS = 0.0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -673,9 +670,6 @@ private void bntOK2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         Double S23 = 0.0;
         Double SumS = 0.0;
         
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

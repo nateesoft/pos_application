@@ -318,9 +318,6 @@ private void txtGroup2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         GArray = new PluRec[1];
         ArraySize = 0;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

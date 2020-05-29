@@ -371,9 +371,6 @@ public class MTDCoupon extends javax.swing.JDialog {
                     prn.print("----------------------------------------");
                     prn.print("บัตรคูปอง                 จำนวน      ส่วนลด ");
                     prn.print("----------------------------------------");
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -449,9 +446,6 @@ public class MTDCoupon extends javax.swing.JDialog {
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("----------------------------------------------") + "_";
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("บัตรคูปอง" + Space + "จำนวน" + Space + "ส่วนลด ") + "_";
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("----------------------------------------------") + "_";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

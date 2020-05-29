@@ -204,9 +204,6 @@ public class MenuSetChoice extends javax.swing.JDialog {
             etd = "PPrice15";
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -252,9 +249,6 @@ public class MenuSetChoice extends javax.swing.JDialog {
 
     private String CheckPset(String subcode, String name, String price) {
         String index = TableNo + "/001";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -307,9 +301,6 @@ public class MenuSetChoice extends javax.swing.JDialog {
     }
 
     private void CheckPset(String subcode, String name, String price, String index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -336,9 +327,6 @@ public class MenuSetChoice extends javax.swing.JDialog {
     }
 
     private void SavePSet(String subcode, String name, String price, String index, double qty) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -375,9 +363,6 @@ public class MenuSetChoice extends javax.swing.JDialog {
     }
 
     private void CheckOption(String subcode, String index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

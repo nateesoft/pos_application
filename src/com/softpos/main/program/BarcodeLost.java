@@ -213,9 +213,6 @@ private void bntOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
                 prn.print("ชื่อพนักงาน       เวลาที่กดปุ่มเครื่องอ่านบาร์โค๊ดเสีย ");
                 prn.print("----------------------------------------");
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {

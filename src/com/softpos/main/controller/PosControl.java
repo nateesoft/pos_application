@@ -24,9 +24,6 @@ public class PosControl {
 
     private CompanyBean getDataCompany() {
         CompanyBean bean = new CompanyBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -93,9 +90,6 @@ public class PosControl {
 
     public POSConfigSetup getData() {
         POSConfigSetup bean = new POSConfigSetup();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -175,9 +169,6 @@ public class PosControl {
 
     public POSHWSetup getData(String macno) {
         POSHWSetup poshwsetup = new POSHWSetup();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -289,9 +280,6 @@ public class PosControl {
 
     public static int getRefreshTime() {
         int refrechTime = 1;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

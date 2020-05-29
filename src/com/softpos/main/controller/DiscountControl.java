@@ -19,9 +19,6 @@ public class DiscountControl {
 
     public void updateDiscount(String tableNo) {
         //หามูลค่าส่วนลดรายการ
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

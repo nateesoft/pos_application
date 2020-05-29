@@ -15,9 +15,6 @@ public class TempCuponController {
 
     public ArrayList<TempCuponBean> listTempcupon() {
         ArrayList<TempCuponBean> listBean = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -57,9 +54,6 @@ public class TempCuponController {
 
     public ArrayList<TempCuponBean> listTempcupon(String R_Index) {
         ArrayList<TempCuponBean> listBean = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -100,9 +94,6 @@ public class TempCuponController {
 
     public TempCuponBean getTempcupon(String R_Index) {
         TempCuponBean bean = new TempCuponBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -139,9 +130,6 @@ public class TempCuponController {
     }
 
     public void clearTempOld(String index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -169,9 +157,6 @@ public class TempCuponController {
     }
 
     public void saveTempCupon(TempCuponBean bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

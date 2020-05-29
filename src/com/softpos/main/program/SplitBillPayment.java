@@ -287,9 +287,6 @@ public class SplitBillPayment extends javax.swing.JDialog {
                     BalanceControl balanceControl = new BalanceControl();
 
                     boolean isLoop = false;
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -363,9 +360,6 @@ public class SplitBillPayment extends javax.swing.JDialog {
                     BalanceControl balanceControl = new BalanceControl();
 
                     boolean isLoop = false;
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {

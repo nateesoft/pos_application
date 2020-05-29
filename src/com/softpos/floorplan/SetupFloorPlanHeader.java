@@ -359,9 +359,6 @@ public class SetupFloorPlanHeader extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void saveItem() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -387,10 +384,6 @@ public class SetupFloorPlanHeader extends javax.swing.JDialog {
     }
 
     private void loadDefaultTab() {
-        //load header for tab
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

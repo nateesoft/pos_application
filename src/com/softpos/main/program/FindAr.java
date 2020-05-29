@@ -172,9 +172,6 @@ public void LoadDataToGrid() {
         for (int i = 0; i <= RowCount - 1; i++) {
             model2.removeRow(0);
         }
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -12,9 +12,6 @@ public class TCuponControl {
 
     public ArrayList<TCuponBean> listTCupon() {
         ArrayList<TCuponBean> listBean = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -51,9 +48,6 @@ public class TCuponControl {
 
     public ArrayList<TCuponBean> listTCupon(String R_Index) {
         ArrayList<TCuponBean> listBean = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -92,9 +86,6 @@ public class TCuponControl {
 
     public TCuponBean getTCupon(String R_Index) {
         TCuponBean bean = new TCuponBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -129,9 +120,6 @@ public class TCuponControl {
 
     public boolean saveTCupon(TCuponBean bean) {
         boolean isResult = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         if (bean.getTerminal() == null || bean.getCuCode() == null) {
@@ -178,9 +166,6 @@ public class TCuponControl {
     }
 
     public boolean updateTCupon(TCuponBean bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

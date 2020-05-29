@@ -655,9 +655,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                         prn.print("ลูกหนี้    วันที่      เลขที่เอกสาร     จำนวนเงิน");
                         prn.print("----------------------------------------");
 
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -802,9 +799,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
                 model2.removeRow(0);
             }
 
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {

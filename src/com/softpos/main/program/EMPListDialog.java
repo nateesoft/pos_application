@@ -213,9 +213,6 @@ public class EMPListDialog extends javax.swing.JDialog {
             model.removeRow(0);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

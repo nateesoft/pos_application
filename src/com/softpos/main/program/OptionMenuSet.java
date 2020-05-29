@@ -313,9 +313,6 @@ public class OptionMenuSet extends javax.swing.JDialog {
     private void btnFindProduct2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProduct2ActionPerformed
         int row = tbOption.getSelectedRow();
         if (row != -1) {
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -450,9 +447,6 @@ public class OptionMenuSet extends javax.swing.JDialog {
 //        }
 //    }
     private void Save(String pcode, String pdesc, String opcode, String opname) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -484,9 +478,6 @@ public class OptionMenuSet extends javax.swing.JDialog {
             md.removeRow(0);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

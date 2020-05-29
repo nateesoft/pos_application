@@ -220,9 +220,6 @@ public class MainSale extends javax.swing.JDialog {
     }
 
 //    private void loadVariable() {
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {
@@ -1325,9 +1322,6 @@ private void txtTableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
 }//GEN-LAST:event_txtTableKeyPressed
 
     private void tblShowPluShow(String P_Table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1419,9 +1413,6 @@ private void txtTableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     }
 
 //    private void loadDataFromBalance(String P_Table) {
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {
@@ -2151,9 +2142,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         String R_Index = model.getValueAt(row, 10).toString();
         boolean isPermit = false;
         //check permission
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2305,9 +2293,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         BalanceControl bc = new BalanceControl();
         BalanceBean bean = bc.getBalanceIndex(txtTable.getText(), RIndex);
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -2544,9 +2529,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                 Qty = 1;
                 PluCode = TempCode;
             }
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             if (Qty > 0) {
@@ -2667,9 +2649,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         boolean found = false;
         double Qty;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //check outofstock
@@ -2784,9 +2763,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private boolean checkPSetSelect(String PCode) {
         boolean RetValue = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2812,9 +2788,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private String seekBarCode(String BarCode) {
         String RetVal = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2865,9 +2838,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             getPrice();
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -3055,9 +3025,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                     + "and R_Kic<>'' "
                     + "group by r_kic "
                     + "order by r_kic";
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             String sqlGetSaveOrder = "select SaveOrder from branch";
@@ -3262,9 +3229,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                     + "and R_Kic<>'' "
                     + "group by r_kic "
                     + "order by r_kic";
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -3433,9 +3397,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void txtTableOnExit() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -3556,9 +3517,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void updateCustomerCount(int custCount) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -3578,9 +3536,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void holdTableAndSave() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         BalanceBean balanceBean = new BalanceBean();
         mysql.open();
@@ -3613,9 +3568,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             if (model.getRowCount() == 0) {
                 PublicVar.P_LineCount = 1;
                 PublicVar.P_LogoffOK = false;
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -3656,9 +3608,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private boolean updateLogout(String UserCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -3947,9 +3896,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void showMember() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         if (Value.MemberAlready == true) {
@@ -4266,9 +4212,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private boolean checkCanDisc(String RIndex) {
         boolean result = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4296,9 +4239,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         POSConfigSetup.Bean().getP_Service();
         String table = txtTable.getText();
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4338,9 +4278,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         String cus = txtCust.getText();
 //        String ser = txtTotalService.getText();
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4377,9 +4314,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private boolean isTakeOrder() {
         boolean isTakeOrder = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4426,9 +4360,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void updateTempTset(BalanceBean bBean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -4591,9 +4522,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void updateBalanceOptionFromTemp(String R_Index, String TableNo, String PCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4629,9 +4557,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private boolean checkRIndex(String chkRIndex, String code) {
         boolean isCheck = true;//defalse ต้องเป็นถูกไว้ก่อน
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4670,9 +4595,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         String StkRemark = "SAL";
         Date TDate = new Date();
         String DocNo = txtTable.getText() + "/" + Timefmt.format(new Date());
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         for (int i = 0; i < rows.length; i++) {
@@ -4826,9 +4748,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void upDateTableFile() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4848,9 +4767,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void CheckKicPrint() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4949,9 +4865,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                         if (r_etd.equalsIgnoreCase("E") && cusInt > 0) {
                             isAllow = true;
                         } else if (r_etd.equalsIgnoreCase("T") && cusInt > 0) {
-                            /**
-                             * * OPEN CONNECTION **
-                             */
                             MySQLConnect mysql = new MySQLConnect();
                             mysql.open();
                             try {
@@ -4971,9 +4884,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
                                 MSG.ERR(e1.getMessage());
                             }
                         } else if (r_etd.equalsIgnoreCase("D") && cusInt > 0) {
-                            /**
-                             * * OPEN CONNECTION **
-                             */
                             MySQLConnect mysql = new MySQLConnect();
                             mysql.open();
                             try {
@@ -5188,9 +5098,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
                     private String[] checkGroup(String MenuCode) {
                         String[] data = new String[]{"", ""};
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -5288,9 +5195,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
 
     private void loadHeaderMenu() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -5326,9 +5230,6 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
 
     private void printBillVoidCheck() {
         if (Value.useprint) {
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {

@@ -288,9 +288,6 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
         for (int i = 0; i < rows; i++) {
             String GNo = tbGift.getValueAt(i, 0).toString();
             String GAmt = tbGift.getValueAt(i, 1).toString().replace(",", "");
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -456,9 +453,6 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
     }
 
     private void clearModel() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -529,9 +523,6 @@ public class GiftVoucherDialog extends javax.swing.JDialog {
     }
 
     private void loadData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

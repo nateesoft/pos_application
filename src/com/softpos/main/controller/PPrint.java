@@ -952,9 +952,6 @@ public class PPrint {
             if (bBean.getB_GiftVoucher() > 0) {
                 t += ("colspan=3 align=center><font face=Angsana New size=3>" + "-----------------------------------------" + "_");
                 t += ("colspan=2 align=left><font face=Angsana New size=2> " + "บัตรกำนัล.." + "</td><td align=right><font face=Angsana New size=2>" + DecFmt.format(bBean.getB_GiftVoucher())) + "_";
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -984,9 +981,6 @@ public class PPrint {
             if (bBean.getB_CrAmt1() > 0) {
                 //get credit name
                 String crName = "";
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1342,9 +1336,6 @@ public class PPrint {
             if (bBean.getB_GiftVoucher() > 0) {
                 t += ("colspan=3 align=center><font face=Angsana New size=3>" + "-----------------------------------------" + "_");
                 t += ("colspan=2 align=left><font face=Angsana New size=2> " + "บัตรกำนัล.." + "</td><td align=right><font face=Angsana New size=2>" + DecFmt.format(bBean.getB_GiftVoucher())) + "_";
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1373,9 +1364,6 @@ public class PPrint {
             if (bBean.getB_CrAmt1() > 0) {
                 //get credit name
                 String crName = "";
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1708,9 +1696,6 @@ public class PPrint {
                     if (bBean.getB_CrAmt1() > 0) {
                         //get credit name
                         String crName = "";
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -2884,9 +2869,6 @@ public class PPrint {
                 print("----------------------------------------");
                 Double SumTotal = 0.0;
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -3023,9 +3005,6 @@ public class PPrint {
                 print("AR Code    เลขที่ใบเสร็จรับเงิน/วันที่  จำนวนเงิน");
                 print("----------------------------------------");
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -4077,9 +4056,6 @@ public class PPrint {
                     print("AR Code    เลขที่ใบเสร็จรับเงิน/วันที่  จำนวนเงิน");
                     print("----------------------------------------");
 
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -5211,9 +5187,6 @@ public class PPrint {
                         print("     " + PUtility.DataFullR("ลดตามรายการ(Item)", SubLength) + PUtility.DataFull(DecFmt.format(tBean.getB_ItemDiscAmt()), AmtLength));
                     }
                     if (tBean.getB_CuponDiscAmt() > 0) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -5262,9 +5235,6 @@ public class PPrint {
                     if (tBean.getB_GiftVoucher() > 0) {
                         print("     " + PUtility.DataFullR("บัตรกำนัล..............", SubLength) + PUtility.DataFull(DecFmt.format(tBean.getB_GiftVoucher()), AmtLength));
 
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -5292,9 +5262,6 @@ public class PPrint {
                     if (tBean.getB_CrAmt1() > 0) {
                         //get credit name
                         String crName = "";
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -5572,9 +5539,6 @@ public class PPrint {
                 t += ("colspan=2 align=left><font face=Angsana New size=2>" + "ลดตามรายการ(Item)" + "</td></font><td align=right><font face=Angsana New size=2>" + DecFmt.format(tBean.getB_ItemDiscAmt()) + "-_");
             }
             if (tBean.getB_CuponDiscAmt() > 0) {
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -5627,9 +5591,6 @@ public class PPrint {
             if (tBean.getB_GiftVoucher() > 0) {
                 t += ("colspan=2 align=left><font face=Angsana New size=2>" + Space + "บัตรกำนัล...." + "</td><td align=right><font face=Angsana New size=2>" + DecFmt.format(tBean.getB_GiftVoucher()) + "_");
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -5657,9 +5618,6 @@ public class PPrint {
             if (tBean.getB_CrAmt1() > 0) {
                 //get credit name
                 String crName = "";
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -5857,9 +5815,6 @@ public class PPrint {
                         print("     " + PUtility.DataFullR("ลดตามรายการ(Item)", SubLength) + PUtility.DataFull(DecFmt.format(bBean.getB_ItemDiscAmt()), AmtLength));
                     }
                     if (bBean.getB_CuponDiscAmt() > 0) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -5909,9 +5864,6 @@ public class PPrint {
                     if (bBean.getB_GiftVoucher() > 0) {
                         print("     " + PUtility.DataFullR("บัตรกำนัล..............", SubLength) + PUtility.DataFull(DecFmt.format(bBean.getB_GiftVoucher()), AmtLength));
 
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -6167,9 +6119,6 @@ public class PPrint {
             t += ("colspan=2 align=left><font face=Angsana New size=-2> " + "ส่วนลดคูปอง  " + DecFmt.format(bBean.getB_SubDiscAmt())) + "_";
         }
         if (bBean.getB_CuponDiscAmt() > 0) {
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -6227,9 +6176,6 @@ public class PPrint {
         if (bBean.getB_GiftVoucher() > 0) {
             t += ("colspan=2 align=center><font face=Angsana New size=2>" + Space + PUtility.DataFullR("บัตรกำนัล...", SubLength) + "</td><td align=right><font face=Angsana New size=2>" + DecFmt.format(bBean.getB_GiftVoucher()) + "_");
 
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -6329,9 +6275,6 @@ public class PPrint {
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("------------------------------------------------------------") + "_";
         Double SumTotal = 0.0;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6401,9 +6344,6 @@ public class PPrint {
     }
 
     private void UpdatePrintCheckBill(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6422,9 +6362,6 @@ public class PPrint {
 
     private String getName(String TableNo) {
         String name = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6449,9 +6386,6 @@ public class PPrint {
 
     private ArrayList<String[]> CreName(String macNo) {
         ArrayList<String[]> list = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6515,9 +6449,6 @@ public class PPrint {
     private String[] credit(String macNo) {
         CONFIG = POSConfigSetup.Bean();
         String[] credit = new String[]{"", ""};
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6591,9 +6522,6 @@ public class PPrint {
                 + "and b_void<>'V'"
                 + "and b_etd='D' "
                 + "group by b_etd";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6731,9 +6659,6 @@ public class PPrint {
     }
 
     private void Cposhwsetup() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -6756,9 +6681,6 @@ public class PPrint {
     }
 
     private void printEntertain(String b_Table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

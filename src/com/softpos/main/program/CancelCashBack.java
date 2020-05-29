@@ -204,9 +204,6 @@ public class CancelCashBack extends javax.swing.JDialog {
         for (int i = 0; i < size; i++) {
             model.removeRow(0);
         }
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -234,9 +231,6 @@ public class CancelCashBack extends javax.swing.JDialog {
     }
 
     private void updateCashBack(String code) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -1582,9 +1582,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
         button[198] = jButton199;
         button[199] = jButton200;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1608,9 +1605,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
                     }
 
                     private void UpdateTempmenusetProduct(String Index, String PCode, String PName, String ProMain, String Main) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -1898,9 +1892,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
             button1.setBackground(Color.PINK);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1928,9 +1919,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
                     }
 
                     private void UpdateTempmenusetSideDish(String Index, String PCodeSet, String PNameSet, String ProFree, String free) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -2204,9 +2192,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
             }
         });
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2246,9 +2231,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
 
                     private boolean checkLimiExtra(String TableNo) {
                         boolean checkExtra = false;
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -2518,9 +2500,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
             button1.setIcon(null);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2547,9 +2526,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
                     }
 
                     private void UpdateTempmenusetExtraOption(String PCode, String POption) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -2583,9 +2559,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
 
     private boolean showPopupOption(String pCodeItem) {
         boolean isCheck = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2610,9 +2583,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
     }
 
     private void UpdateTempmenusetExtra(String Index, String PCode, String PName, String Option, String TryName) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2647,9 +2617,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
 
     private boolean loadMenu2Pcs() {
         boolean show = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2877,9 +2844,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
         button[198] = jButton199;
         button[199] = jButton200;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         mysql.open();
         try {
             String menuSub = "";
@@ -2908,9 +2872,6 @@ public class ModalPopup1 extends javax.swing.JDialog {
                     }
 
                     private void UpdateTempmenusetProduct(String Index, String PCode, String PName, String ProMain, String Main) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {

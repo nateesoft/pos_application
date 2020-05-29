@@ -30,9 +30,6 @@ public class PromotionControl {
     }
 
     public void saveTempPromotion(TempPromotion bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -129,9 +126,6 @@ public class PromotionControl {
         bean.setR_Total(R_Total);
 
         /* SAve data to database */
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -159,9 +153,6 @@ public class PromotionControl {
     public ProtabBean getData(String proCode) {
         ProtabBean proTab = new ProtabBean();
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -263,9 +254,6 @@ public class PromotionControl {
     private ProtabBean getDataSql(String sql) {
         ProtabBean proTab = new ProtabBean();
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -381,9 +369,6 @@ public class PromotionControl {
 
         double R_Quan = 0.00;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -1008,9 +993,6 @@ public class PromotionControl {
     }
 
     public void saveTPromotion(TPromotionBean bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1050,9 +1032,6 @@ public class PromotionControl {
     }
 
     public void saveTPromotion2(TPromotion2 bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1071,9 +1050,6 @@ public class PromotionControl {
     }
 
     public void clearTPromotion2(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1089,9 +1065,6 @@ public class PromotionControl {
     }
 
     public void saveTPromotion3(TPromotion3 bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1110,9 +1083,6 @@ public class PromotionControl {
     }
 
     public void clearTPromotion3(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1128,9 +1098,6 @@ public class PromotionControl {
     }
 
     public void saveTPromotion4(TPromotion4 bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1150,9 +1117,6 @@ public class PromotionControl {
     }
 
     public void clearTPromotion4(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1175,9 +1139,6 @@ public class PromotionControl {
     }
 
     public void saveTPromotion5(TPromotion5 bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1197,9 +1158,6 @@ public class PromotionControl {
     }
 
     public void clearTPromotion5(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

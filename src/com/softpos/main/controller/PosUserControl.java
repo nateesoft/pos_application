@@ -11,9 +11,6 @@ public class PosUserControl {
     
     public static PosUserBean getData(String username){
         PosUserBean bean = new PosUserBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -453,9 +453,6 @@ public class MoveItemDialog extends javax.swing.JDialog {
                     if (R_Void.equalsIgnoreCase("V")) {
                         JOptionPane.showMessageDialog(this, "รายการสินค้าเป็นรายการยกเลิก ไม่สามารถย้ายรายการได้ !");
                     } else {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -588,9 +585,6 @@ public class MoveItemDialog extends javax.swing.JDialog {
                         if (R_Void.equalsIgnoreCase("V")) {
                             JOptionPane.showMessageDialog(this, "รายการสินค้าเป็นรายการยกเลิก ไม่สามารถย้ายรายการได้ !");
                         } else {
-                            /**
-                             * * OPEN CONNECTION **
-                             */
                             MySQLConnect mysql = new MySQLConnect();
                             mysql.open();
                             try {
@@ -769,9 +763,6 @@ public class MoveItemDialog extends javax.swing.JDialog {
     }
 
     private void backupData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -803,9 +794,6 @@ public class MoveItemDialog extends javax.swing.JDialog {
     }
 
     private void restoreData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

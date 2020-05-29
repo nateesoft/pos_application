@@ -13,9 +13,6 @@ public class CompanyConfigControl {
 
     public boolean includeVat() {
         String vatType = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -39,9 +36,6 @@ public class CompanyConfigControl {
 
     public boolean excludeVat() {
         String vatType = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

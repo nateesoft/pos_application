@@ -25,9 +25,6 @@ public class MemberControl {
                 strDisc = memberBean.getMember_DiscountRate();
             }
         }
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -64,9 +61,6 @@ public class MemberControl {
 //            memCode = memberBean.getMember_Code();
 //            memName = memberBean.getMember_NameThai();
 //        }
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {
@@ -95,9 +89,6 @@ public class MemberControl {
 //    }
 
     public void updateMemberAllBalance(String table, MemberBean memberBean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -166,9 +157,6 @@ public class MemberControl {
     }
 
 //    public void updateMemVIPAllBalance(String table, MemberBean memberBean) {
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {
@@ -246,9 +234,6 @@ public class MemberControl {
 //        }
 //    }
     public void updateMemVIPAllBalance(String table, String discountRate) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

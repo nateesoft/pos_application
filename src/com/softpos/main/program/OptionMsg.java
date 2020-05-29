@@ -100,9 +100,6 @@ public class OptionMsg extends javax.swing.JDialog {
 
     private void LoadDataFromDb() {
         ShowGroup.setText("กลุ่ม : " + PUtility.SeekGroupName(bean.getR_Group()));
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -189,9 +186,6 @@ public class OptionMsg extends javax.swing.JDialog {
     }
 
     public void bntOKClick() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -237,9 +231,6 @@ public class OptionMsg extends javax.swing.JDialog {
             InputMsgToSelectedTable(txtAdd.getText());
             int icon = JOptionPane.showConfirmDialog(this, "ต้องการให้เพิ่มข้อมูลเก็บไว้ในระบบ เพื่อใช้ในครั้งต่อไปหรือไม่ ? \nกด Yes เพื่อยืนยัน.");
             if (icon == JOptionPane.YES_OPTION) {
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {

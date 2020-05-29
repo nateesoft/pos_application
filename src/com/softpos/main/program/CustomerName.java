@@ -218,9 +218,6 @@ public class CustomerName extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void SaveCus() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -255,9 +252,6 @@ public class CustomerName extends javax.swing.JDialog {
     }
 
     private void LoadCustomer() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

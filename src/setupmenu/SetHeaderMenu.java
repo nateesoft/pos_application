@@ -323,9 +323,6 @@ public class SetHeaderMenu extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
 private void cmdOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdOkActionPerformed
-    /**
-     * * OPEN CONNECTION **
-     */
     MySQLConnect mysql = new MySQLConnect();
     mysql.open();
 
@@ -514,9 +511,6 @@ private void cmdCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     // End of variables declaration//GEN-END:variables
 
     void loadData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "SELECT * FROM company";

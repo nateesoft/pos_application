@@ -29,9 +29,6 @@ public class BalanceControl {
 
     public String getLastIndex(String tableNo) {
         String tempIndex = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -210,9 +207,6 @@ public class BalanceControl {
     }
 
     private boolean saveBillNoSQL(BalanceBean bean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -289,9 +283,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getAllBalance(String table) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -413,9 +404,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getAllBalanceSum(String table) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -649,9 +637,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getAllBalanceNoVoid(String table) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -770,9 +755,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getAllBalanceNoVoidSum(String table) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1041,9 +1023,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getBalanceIndex(String R_Index) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1158,9 +1137,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getAllBalancePromotion(String table) {
         ArrayList<BalanceBean> beanData = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1279,9 +1255,6 @@ public class BalanceControl {
 
     public void updateTableHold(String table, String emp) {
         String date_default = "1899-12-30";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1305,9 +1278,6 @@ public class BalanceControl {
 
     public String getIndexBalance(String R_Table) {
         String index = R_Table + "/001";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1363,9 +1333,6 @@ public class BalanceControl {
     }
 
     public void setDefaultBalance(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "delete from balance "
@@ -1383,9 +1350,6 @@ public class BalanceControl {
     }
 
     public boolean checkQuantity(String table, String R_PluCode, double R_Quan) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1416,9 +1380,6 @@ public class BalanceControl {
 
     public BalanceBean getProduct(String PCode, String R_Index) {
         BalanceBean balanceBean = new BalanceBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1523,9 +1484,6 @@ public class BalanceControl {
 
     public BalanceBean getBalanceIndex(String Table, String R_Index) {
         BalanceBean balanceBean = null;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1635,9 +1593,6 @@ public class BalanceControl {
 
     public ArrayList<BalanceBean> getBalanceIndexVoid(String Table) {
         ArrayList<BalanceBean> list = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1756,9 +1711,6 @@ public class BalanceControl {
 
     public String SeekKicItemNo() {
         int KicItemNo = 0;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1797,9 +1749,6 @@ public class BalanceControl {
     }
 
     public void deleteBalance(String r_Table, String r_PluCode, String r_Index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1819,9 +1768,6 @@ public class BalanceControl {
     }
 
     public void deleteProduct(String table, String PCode, String R_Index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1840,9 +1786,6 @@ public class BalanceControl {
     }
 
     public boolean backupBalance(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1878,9 +1821,6 @@ public class BalanceControl {
     }
 
     public boolean restoreBalance(String tableNo, String table2) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

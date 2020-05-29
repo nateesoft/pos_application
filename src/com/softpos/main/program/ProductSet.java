@@ -355,9 +355,6 @@ public class ProductSet extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void Save(String subcode, String desc, String qty) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -384,9 +381,6 @@ public class ProductSet extends javax.swing.JDialog {
             model.removeRow(0);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -420,9 +414,6 @@ public class ProductSet extends javax.swing.JDialog {
     }
 
     private void Delect(String subcode, String desc) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

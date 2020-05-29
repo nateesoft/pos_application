@@ -610,9 +610,6 @@ public class MoveGroupTable extends javax.swing.JDialog {
                 PrintSimpleForm s = new PrintSimpleForm();
 
                 // update customer count
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -929,9 +926,6 @@ public class MoveGroupTable extends javax.swing.JDialog {
 
     private void process() {
         if (!txtUser.getText().equals("")) {
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -1024,9 +1018,6 @@ public class MoveGroupTable extends javax.swing.JDialog {
     }
 
     private void tmpTableBeforeMove(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

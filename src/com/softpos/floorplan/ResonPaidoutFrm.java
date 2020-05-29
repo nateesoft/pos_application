@@ -148,9 +148,6 @@ public class ResonPaidoutFrm extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void SaveResonPaidout() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

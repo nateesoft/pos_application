@@ -81,9 +81,6 @@ public class FindMember extends javax.swing.JDialog {
 
     public void bntShowMemberAllClick() {
         int LineCnt = 1;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -132,9 +129,6 @@ public class FindMember extends javax.swing.JDialog {
                 TMemCode.setText(TempCode);
             }
             String TempStr = TMemCode.getText();
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -192,9 +186,6 @@ public class FindMember extends javax.swing.JDialog {
     public void ShowMemberByName() {
         int LineCnt = 1;
         String TempStr = "%" + TMemName.getText() + "%";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -247,9 +238,6 @@ public class FindMember extends javax.swing.JDialog {
     public void ShowMemberByTel() {
         int LineCnt = 1;
         String TempStr = "%" + TMemTel.getText() + "%";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

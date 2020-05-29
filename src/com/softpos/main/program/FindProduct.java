@@ -259,9 +259,6 @@ public class FindProduct extends javax.swing.JDialog {
         }
 
         String word = ThaiUtil.Unicode2ASCII(txtSearch.getText());
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

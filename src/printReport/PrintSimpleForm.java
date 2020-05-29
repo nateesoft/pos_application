@@ -102,9 +102,6 @@ public class PrintSimpleForm {
         //น้าตะไคร้ใบเตย       2
         //__________________
         //28/04/2014 14:15 001/
-        /**
-         * * OPEN CONNECTION **
-         */
         PrinterJob pj = PrinterJob.getPrinterJob();
         PrintService[] ps = PrinterJob.lookupPrintServices();
         int prnIndex = 0;
@@ -766,9 +763,6 @@ public class PrintSimpleForm {
 //                            sqlAdd += ") ";
 //                        }
 //
-//                        /**
-//                         * * OPEN CONNECTION **
-//                         */
 //                        MySQLConnect mysql = new MySQLConnect();
 //                        mysql.open();
 //                        try {
@@ -1001,9 +995,6 @@ public class PrintSimpleForm {
                             sqlAdd += ") ";
                         }
 
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -1229,9 +1220,6 @@ public class PrintSimpleForm {
 //                            sqlAdd += ") ";
 //                        }
 //
-//                        /**
-//                         * * OPEN CONNECTION **
-//                         */
 //                        MySQLConnect mysql = new MySQLConnect();
 //                        mysql.open();
 //                        try {
@@ -2104,9 +2092,6 @@ public class PrintSimpleForm {
         return t;
     }
 
-    /**
-     * * OPEN CONNECTION **
-     */
     //    public void KIC_FORM_3(final String sql1, final String printerName, final String tableNo, final int R_Kic) {
 //        final int SpaceFront = 25;
 //        final int SetFrontSize = 15;
@@ -2150,9 +2135,6 @@ public class PrintSimpleForm {
 //                    Font newFont = currentFont.deriveFont(currentFont.getSize() * 1.4F);
 //                    if (index == 0) {
 //
-//                        /**
-//                         * * OPEN CONNECTION **
-//                         */
 //                        MySQLConnect mysql = new MySQLConnect();
 //                        mysql.open();
 //                        try {
@@ -2379,9 +2361,6 @@ public class PrintSimpleForm {
 //                }
 //
 //                private int keepTextShow(Graphics2D g2, String R_Index, int qty, int line, String product) {
-//                    /**
-//                     * * OPEN CONNECTION **
-//                     */
 //                    MySQLConnect mysql = new MySQLConnect();
 //                    mysql.open();
 //                    try {
@@ -2468,9 +2447,6 @@ public class PrintSimpleForm {
                 public int print(Graphics g, PageFormat pf, int index) throws PrinterException {
                     Graphics2D g2 = (Graphics2D) g;
                     if (index == 0) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -2681,9 +2657,6 @@ public class PrintSimpleForm {
                 public int print(Graphics g, PageFormat pf, int index) throws PrinterException {
                     Graphics2D g2 = (Graphics2D) g;
                     if (index == 0) {
-                        /**
-                         * * OPEN CONNECTION **
-                         */
                         MySQLConnect mysql = new MySQLConnect();
                         mysql.open();
                         try {
@@ -3305,9 +3278,6 @@ public class PrintSimpleForm {
 //                    Graphics2D g2 = (Graphics2D) g;
 //                    if (index == 0) {
 //                        String t =  "";
-//                        /**
-//                         * * OPEN CONNECTION **
-//                         */
 //                        MySQLConnect mysql = new MySQLConnect();
 //                        mysql.open();
 //                        try {
@@ -3516,9 +3486,6 @@ public class PrintSimpleForm {
         //จำนวน  2 ราคา 90.00
         //__________________
         //T1 28/04/2014 14:15 001/พนักงาน
-        /**
-         * * OPEN CONNECTION **
-         */
         mysql.open();
         try {
             String sql = "select TUser,R_Void,R_Index, R_PluCode, TCode, TCustomer, R_PName, sum(R_Quan) R_Quan,"
@@ -4274,9 +4241,6 @@ public class PrintSimpleForm {
         DecimalFormat QtyIntFmt = new DecimalFormat("###########0");
         int KicItemNo = 0;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -4404,9 +4368,6 @@ public class PrintSimpleForm {
     }
 
     public String getEmpName(String Code) {
-        /**
-         * * OPEN CONNECTION **
-         */
         String empName = "";
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
@@ -4431,9 +4392,6 @@ public class PrintSimpleForm {
     }
 
     public String getEmpBalance(String Code, String r_index, String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         String empName = "";
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();

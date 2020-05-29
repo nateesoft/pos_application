@@ -201,9 +201,6 @@ public class ExtItemList extends javax.swing.JDialog {
         int row = tbCustomer.getSelectedRow();
         if (row != -1) {
             String code = tbCustomer.getValueAt(row, 0).toString();
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {
@@ -279,9 +276,6 @@ public class ExtItemList extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void loadData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

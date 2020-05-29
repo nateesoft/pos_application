@@ -268,9 +268,6 @@ public class MemberDialog extends javax.swing.JDialog {
                 }
                 _MemCode.setText(TempMem);
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
 
@@ -433,9 +430,6 @@ public class MemberDialog extends javax.swing.JDialog {
                 MyArray[i].R_PrSubDisc = 0.0;
                 MyArray[i].R_PrSubAmt = 0.0;
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
 
@@ -493,9 +487,6 @@ public class MemberDialog extends javax.swing.JDialog {
                 TSpecial = TSpecial * TPSpecial / 100;
                 XSumDisc = XSumDisc + (TNormal + TConsign + TSpecial);
                 if (TNormal + TConsign + TSpecial > 0) {
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
 
@@ -567,9 +558,6 @@ public class MemberDialog extends javax.swing.JDialog {
                 MyArray[i].R_PrSubQuan = 0.0;
                 MyArray[i].R_PrSubDisc = 0.0;
                 MyArray[i].R_PrSubAmt = 0.0;
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
 

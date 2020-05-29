@@ -99,9 +99,6 @@ public class DispInv1 extends javax.swing.JDialog {
             double XAmt1 = 0.0;
             double XAmt2 = 0.0;
             double XAmt3 = 0.0;
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {

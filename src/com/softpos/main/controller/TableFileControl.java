@@ -24,9 +24,6 @@ public class TableFileControl {
     }
 
     public void saveTableFile(TableFileBean tableBean) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -72,9 +69,6 @@ public class TableFileControl {
     }
 
     public void updateTableFile(TableFileBean tableFile) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -116,9 +110,6 @@ public class TableFileControl {
 
     public int checkTableRead(String tableNo, String user) {
         int result;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -173,9 +164,6 @@ public class TableFileControl {
     public ArrayList<TableFileBean> getALlHoldTable() {
         ArrayList<TableFileBean> allTable = new ArrayList<>();
         String sql = "select * from tablefile where TAmount>0";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -253,9 +241,6 @@ public class TableFileControl {
 
     public ArrayList<TableFileBean> getALlTable() {
         ArrayList<TableFileBean> allTable = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -334,9 +319,6 @@ public class TableFileControl {
 
     public ArrayList<TableSetup> getTable(String TCode) {
         ArrayList<TableSetup> allTable = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -366,9 +348,6 @@ public class TableFileControl {
 
     public TableFileBean getData(String table) {
         TableFileBean bean = new TableFileBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -447,9 +426,6 @@ public class TableFileControl {
     }
 
     public void setDefaultTableFile(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //clear = update to default not delete
@@ -480,9 +456,6 @@ public class TableFileControl {
     }
 
     public void updateTableActive(String table, String customer, String emp) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -511,9 +484,6 @@ public class TableFileControl {
     }
 
     public void updateMacno(String table, String username) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -532,9 +502,6 @@ public class TableFileControl {
     }
 
     public void createNewTableSplit(TableFileBean table, String newTable) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -560,9 +527,6 @@ public class TableFileControl {
     }
 
     public String getSplitTable(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -598,9 +562,6 @@ public class TableFileControl {
     }
 
     public static void updateTableFile(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -636,9 +597,6 @@ public class TableFileControl {
     }
 
     public boolean checkTableOpened(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -665,9 +623,6 @@ public class TableFileControl {
     }
 
     public void createNewTable(String tableTemp) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -685,9 +640,6 @@ public class TableFileControl {
     }
 
     public void updateTableNotActive(String TABLE_NO) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -703,9 +655,6 @@ public class TableFileControl {
     }
 
     void updateTableActive(String TABLE_2) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -721,9 +670,6 @@ public class TableFileControl {
     }
 
     public int getItemCount(String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         int countItem = 0;

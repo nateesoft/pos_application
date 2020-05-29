@@ -207,9 +207,6 @@ public class CashBackDialog extends javax.swing.JDialog {
             }
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

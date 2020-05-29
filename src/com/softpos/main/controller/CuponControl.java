@@ -12,7 +12,6 @@ import util.MSG;
 public class CuponControl {
 
     public ArrayList<CuponBean> listCupon() {
-        /*** OPEN CONNECTION ***/
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         
@@ -73,7 +72,6 @@ public class CuponControl {
     }
 
     public ArrayList<CuponBean> listCupon(String CuCode) {
-        /*** OPEN CONNECTION ***/
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         
@@ -134,7 +132,6 @@ public class CuponControl {
     }
 
     public CuponBean getCupon(String CuCode) {
-        /*** OPEN CONNECTION ***/
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         
@@ -191,7 +188,6 @@ public class CuponControl {
     }
 
     public void saveCupon(CuponBean bean) {
-        /*** OPEN CONNECTION ***/
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         
@@ -232,7 +228,6 @@ public class CuponControl {
     }
 
     public void updateCupon(CuponBean bean) {
-        /*** OPEN CONNECTION ***/
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         

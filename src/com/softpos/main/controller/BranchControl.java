@@ -20,9 +20,6 @@ public class BranchControl {
     }
 
     public static void updateKicItemNo() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -42,9 +39,6 @@ public class BranchControl {
 
     public static BranchBean getData() {
         BranchBean bean = new BranchBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -215,9 +209,6 @@ public class BranchControl {
 
     public static String getForm(String kicNo) {
         String form = "1";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

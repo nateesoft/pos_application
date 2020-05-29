@@ -39,9 +39,6 @@ public class VatControl {
         double ServiceAmt = tBean.getServiceAmt();
         double NetTotal = TAmount + ServiceAmt;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -66,9 +63,6 @@ public class VatControl {
         double ServiceAmt = tBean.getServiceAmt();
         double total = TAmount + ServiceAmt;
         double NetTotal = (total * Vat / 100) + total;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

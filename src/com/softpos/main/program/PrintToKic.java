@@ -288,9 +288,6 @@ public class PrintToKic extends javax.swing.JFrame {
                     + "and R_Void<>'V' "
                     + "group by r_kic,r_etd "
                     + "order by r_kic";
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             String sqlGetSaveOrder = "select SaveOrder from branch";

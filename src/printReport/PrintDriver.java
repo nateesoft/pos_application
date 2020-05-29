@@ -154,9 +154,6 @@ public class PrintDriver {
             printKichen();
 
             //update r_kicprint
-            /**
-             * * OPEN CONNECTION **
-             */
             MySQLConnect mysql = new MySQLConnect();
             mysql.open();
             try {

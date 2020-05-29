@@ -266,9 +266,6 @@ public class SetupButtonTable extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void deleteItem() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -285,9 +282,6 @@ public class SetupButtonTable extends javax.swing.JDialog {
     }
 
     private void saveItem() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -338,9 +332,6 @@ public class SetupButtonTable extends javax.swing.JDialog {
     }
 
     private void loadTebleno(String codeid) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

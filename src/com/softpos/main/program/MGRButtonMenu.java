@@ -885,9 +885,6 @@ public class MGRButtonMenu extends javax.swing.JDialog {
         int fontType = Font.PLAIN;
         int layout = 0;
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1073,9 +1070,6 @@ public class MGRButtonMenu extends javax.swing.JDialog {
 
     private void delete(String menucode) {
         String ShortName = txtShortName.getText();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1094,9 +1088,6 @@ public class MGRButtonMenu extends javax.swing.JDialog {
     }
 
     private void saveMenu(MenuMGR mgr) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1125,9 +1116,6 @@ public class MGRButtonMenu extends javax.swing.JDialog {
     }
 
     private void saveMenuAll(MenuMGR mgr) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1171,9 +1159,6 @@ public class MGRButtonMenu extends javax.swing.JDialog {
 
     private void loadInit(String menuCode, int menuIndex) {
         loadFontList();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1415,9 +1400,6 @@ ResultSet rs = stmt.executeQuery(sql);
 
     private void Selectmenu() {
         String pcode = txtPCode.getText();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

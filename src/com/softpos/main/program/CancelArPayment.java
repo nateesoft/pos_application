@@ -78,9 +78,6 @@ public class CancelArPayment extends javax.swing.JDialog {
             model2.removeRow(0);
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -133,9 +130,6 @@ public class CancelArPayment extends javax.swing.JDialog {
     }
 
     public void SaveDataCancelArPayment(String TempBillNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -196,9 +190,6 @@ public class CancelArPayment extends javax.swing.JDialog {
                     prn.print("----------------------------------------");
                     prn.print("อ้างถึงใบเสร็จรับเงินเลขที่           จำนวนเงิน");
                     Double SumAmount = 0.0;
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {

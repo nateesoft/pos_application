@@ -10,9 +10,6 @@ public class StorePlu {
 
     public boolean store(PluButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -33,9 +30,6 @@ public class StorePlu {
 
     public boolean storeUpdate(PluButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

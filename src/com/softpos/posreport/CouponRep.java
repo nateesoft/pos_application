@@ -222,9 +222,6 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
                     prn.print("----------------------------------------");
                     prn.print("บัตรคูปอง                 จำนวน      ส่วนลด ");
                     prn.print("----------------------------------------");
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -305,9 +302,6 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("----------------------------------------------") + "_";
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("บัตรคูปอง" + Space + "จำนวน" + TAB + "ส่วนลด ") + "_";
         t += "colspan=3 align=center><font face=Angsana New size=1>" + ("----------------------------------------------") + "_";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -376,9 +370,6 @@ private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
 //                prn.print("บัตรคูปอง                 จำนวน      ส่วนลด ");
 //                prn.print("----------------------------------------");
 //
-//                /**
-//                 * * OPEN CONNECTION **
-//                 */
 //                MySQLConnect mysql = new MySQLConnect();
 //                mysql.open();
 //                try {

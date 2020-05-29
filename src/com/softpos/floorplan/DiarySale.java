@@ -271,9 +271,6 @@ public class DiarySale extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void LoadSale() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 

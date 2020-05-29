@@ -304,9 +304,6 @@ private void bntOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         String Plu1 = txtPlu1.getText();
         String Plu2 = txtPlu2.getText();        
         List data = new ArrayList();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -364,9 +361,6 @@ private void bntOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         String Plu1 = txtPlu1.getText();
         String Plu2 = txtPlu2.getText();
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -468,9 +462,6 @@ private void bntOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
     }
 
     public void InsertTemp(String XTime, String TCode, String TName, Double TQuan, Double Tamount) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -487,9 +478,6 @@ private void bntOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
     }
 
     public void UpdateTemp(String XTime, String TCode, String TName, Double TQuan, Double Tamount) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -507,9 +495,6 @@ private void bntOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
 
     public Boolean SeekTemp(String XTime, String TCode) {
         Boolean ReturnVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

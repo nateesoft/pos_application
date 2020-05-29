@@ -100,9 +100,6 @@ public class PaidinFrm extends javax.swing.JDialog {
                 Prn.closePrint();
             }
         }
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

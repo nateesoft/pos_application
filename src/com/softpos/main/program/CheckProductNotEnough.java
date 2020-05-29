@@ -320,9 +320,6 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void loadProduct() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -353,9 +350,6 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
     }
 
     private void addProductLost() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -386,9 +380,6 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
     }
 
     private void loadData() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -429,9 +420,6 @@ public class CheckProductNotEnough extends javax.swing.JDialog {
         int row = table.getSelectedRow();
         if (row != -1) {
             String PCode = table.getValueAt(row, 0).toString();
-            /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
             try {

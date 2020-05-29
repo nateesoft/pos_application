@@ -816,9 +816,6 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         String TempCode = M_Code.getText();
         if (!TempCode.equals("")) {
             if (PUtility.ShowConfirmMsg("ยืนยันการลบข้อมูลสมาชิก รายการนี้ ?")) {
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -858,9 +855,6 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 } catch (Exception e) {
                 }
                 if (SeekMember(TempCode)) {
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -887,9 +881,6 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
 
                     ClearVariable();
                 } else {
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     try {
@@ -981,9 +972,6 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         String TempCode = M_Code.getText();
         if (!TempCode.equals("")) {
             if ((M_Code.getText().length() == 7) || (M_Code.getText().length() == 13)) {
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1064,9 +1052,6 @@ private void M_BarcodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
 
     public Boolean SeekMember(String TempCode) {
         Boolean RetVal = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

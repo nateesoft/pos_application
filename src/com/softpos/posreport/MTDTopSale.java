@@ -495,9 +495,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
         String Group1 = txtMacNo1.getText();
         String Group2 = txtMacNo2.getText();
         int CntOrder = Integer.parseInt(txtCntOrder.getText());
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -715,9 +712,6 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
     }
 
     public void InsertTemp(String TGroup, String TCode, String TName, Double TQuan, Double Tamount) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

@@ -49,9 +49,6 @@ public class MenuOrderControl {
     //sample A01
     public ArrayList<ProductBean> getMenuItem(String item) {
         ArrayList<ProductBean> dataProduct = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -95,9 +92,6 @@ public class MenuOrderControl {
 
     public ArrayList<ProductBean> getMenuItem2(String item) {
         ArrayList<ProductBean> dataProduct = new ArrayList<>();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -137,9 +131,6 @@ public class MenuOrderControl {
     }
 
     public ArrayList<MenuSetup> menuAt(String index) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "select * from menusetup where Code_ID like '" + index + "%' "
@@ -171,9 +162,6 @@ public class MenuOrderControl {
     }
 
     public ArrayList<MenuSetup> menuItemAt(String Code_ID) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         String sql = "select * from menusetup where Code_ID = '" + Code_ID + "' group by Code_ID";
@@ -238,9 +226,6 @@ public class MenuOrderControl {
 
     public ArrayList<CompanyMenuBean> getAllMenu() {
         String sqlHead = "select head1, head2, head3, head4 from company";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -394,9 +379,6 @@ public class MenuOrderControl {
 
     public String getMenuItemAt(String pCode) {
         String menuAt = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

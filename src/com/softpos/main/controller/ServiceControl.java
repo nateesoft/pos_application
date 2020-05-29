@@ -26,9 +26,6 @@ public class ServiceControl {
     }
 
     public void updateService(String table) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         DateConvert dc = new DateConvert();
@@ -267,9 +264,6 @@ public class ServiceControl {
         mysql.close();
     }
 //    public void updateService(String table) {
-//        /**
-//         * * OPEN CONNECTION **
-//         */
 //        MySQLConnect mysql = new MySQLConnect();
 //        mysql.open();
 //        try {

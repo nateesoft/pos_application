@@ -948,9 +948,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane1KeyPressed
 
     private void jMenuBar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuBar1MouseClicked
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1109,9 +1106,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
 //            getPrice();
 //        }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1548,9 +1542,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
             }
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1694,9 +1685,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }
 
     private void loadHeaderTab() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1773,9 +1761,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                 //LoadLoginForm
                 clearTemp();
 
-                /**
-                 * * OPEN CONNECTION **
-                 */
                 MySQLConnect mysql = new MySQLConnect();
                 mysql.open();
                 try {
@@ -1815,9 +1800,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }
 
     boolean UpdateLogout(String UserCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1840,9 +1822,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }
 
     private void loadImageHome() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -1865,9 +1844,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     private void returnBill() {
         String tableTemp = Value.TEMP_TABLE_REFUND;
         boolean checkExistTempRefund = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -2176,10 +2152,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
                 //check table is available
                 TableFileControl tfCont = new TableFileControl();
                 if (!tfCont.checkTableOpened(tableNo)) {
-
-                    /**
-                     * * OPEN CONNECTION **
-                     */
                     MySQLConnect mysql = new MySQLConnect();
                     mysql.open();
                     // check P_EmpUse
@@ -2380,9 +2352,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }
 
     private void updateTempTset(BalanceBean bBean, String r_etd, String tableNo) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
 
@@ -2545,9 +2514,6 @@ public class FloorPlanDialog extends javax.swing.JFrame {
     }
 
     private void updateBalanceOptionFromTemp(String R_Index, String TableNo, String PCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

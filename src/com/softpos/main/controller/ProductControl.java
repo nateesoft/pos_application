@@ -25,9 +25,6 @@ public class ProductControl {
                 + "from product "
                 + "where PCode='" + PCode + "'";
         ProductBean productBean = new ProductBean();
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -101,9 +98,6 @@ public class ProductControl {
     }
 
     public ArrayList<ProductBean> searchAllProductBy(String PCode) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -190,9 +184,6 @@ public class ProductControl {
             return arrList;
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -240,9 +231,6 @@ public class ProductControl {
             return arrList;
         }
 
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -287,9 +275,6 @@ public class ProductControl {
     }
 
     public ArrayList<ProductBean> getAllProductByGroup(String PGroup) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -368,9 +353,6 @@ public class ProductControl {
 
     public boolean productExist(String PCode) {
         boolean isExist = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -393,9 +375,6 @@ public class ProductControl {
 
     public boolean productOutStock(String PCode) {
         boolean isExist = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -424,9 +403,6 @@ public class ProductControl {
 
     public static boolean checkProductItem(String menuCode) {
         boolean isProduct = false;
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

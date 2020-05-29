@@ -10,9 +10,6 @@ public class StoreList {
 
     public boolean store(ListButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -34,9 +31,6 @@ public class StoreList {
 
     public boolean storeUpdate(ListButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {

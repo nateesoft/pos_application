@@ -408,9 +408,6 @@ public class MemberDialog extends javax.swing.JDialog {
     private DefaultTableModel model;
 
     private void loadAllMember() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -451,9 +448,6 @@ public class MemberDialog extends javax.swing.JDialog {
     }
 
     private void loadAllMember(String memCode, String memName, String memTel) {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -497,9 +491,6 @@ public class MemberDialog extends javax.swing.JDialog {
     }
 
     private void clearMemberDiscount() {
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         //clear temp cupon

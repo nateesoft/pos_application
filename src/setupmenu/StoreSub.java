@@ -9,9 +9,6 @@ public class StoreSub {
 
     public boolean store(SubButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
@@ -32,9 +29,6 @@ public class StoreSub {
 
     public boolean storeUpdate(SubButtonBean bean) {
         String sql = "";
-        /**
-         * * OPEN CONNECTION **
-         */
         MySQLConnect mysql = new MySQLConnect();
         mysql.open();
         try {
