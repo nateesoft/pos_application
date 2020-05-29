@@ -1,6 +1,5 @@
 package com.softpos.main.model;
 
-import com.softpos.main.program.POSHWSetup;
 import database.MySQLConnect;
 import java.io.BufferedReader;
 import java.io.DataInputStream;

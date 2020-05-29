@@ -17,7 +17,7 @@ import static com.softpos.main.controller.BalanceControl.updateProSerTableMemVIP
 import com.softpos.main.program.CouponDiscount;
 import com.softpos.main.program.MemberDialog;
 import com.softpos.main.program.NumberControl;
-import com.softpos.main.program.POSConfigSetup;
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.model.Value;

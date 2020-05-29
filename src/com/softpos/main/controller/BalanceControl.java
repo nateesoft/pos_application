@@ -1,12 +1,9 @@
 package com.softpos.main.controller;
 
 import com.softpos.main.model.ProductBean;
-import com.softpos.main.controller.ProductControl;
-import com.softpos.main.controller.DiscountControl;
 import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;
-import com.softpos.main.controller.MemberControl;
-import com.softpos.main.program.POSConfigSetup;
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.program.PromotionControl;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.program.ServiceControl;

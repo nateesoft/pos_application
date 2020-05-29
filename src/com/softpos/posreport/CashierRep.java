@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import util.MSG;
 

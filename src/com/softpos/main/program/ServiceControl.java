@@ -1,12 +1,12 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.controller.PosControl;
 import com.softpos.main.model.BalanceBean;
 import database.MySQLConnect;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DecimalFormat;
@@ -405,6 +405,28 @@ public class ServiceControl {
 //        
 //        mysql.close();
 //    }
+    
+    public static double getDouble(double db) {
+        if (POSConfigSetup.Bean().getP_ServiceRound().equalsIgnoreCase("U")) {
+            db = NumberControl.UP_BAHT(db);
+        }
+        if (POSConfigSetup.Bean().getP_ServiceRound().equalsIgnoreCase("D")) {
+            db = NumberControl.DOWN_BAHT(db);
+        }
+        if (POSConfigSetup.Bean().getP_ServiceRound().equalsIgnoreCase("O")) {
+            return db;
+        }
+        if (POSConfigSetup.Bean().getP_ServiceRound().equalsIgnoreCase("N")) {
+            db = NumberControl.UP_DOWN_NATURAL_BAHT(db);
+        }
+        if (POSConfigSetup.Bean().getP_ServiceRound().equalsIgnoreCase("F")) {
+            db = NumberControl.UP_DOWN_25(db);
+        } else {
+            return db;
+        }
+
+        return db;
+    }
 
     public static double getDouble(double db, String type) {
         if (db > 0) {

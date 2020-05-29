@@ -1,5 +1,8 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSHWSetup;
+import com.softpos.main.utils.PUtility;
+import com.softpos.main.model.CreditPaymentRec;
 import com.softpos.main.model.SmpCoupon;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CreditRec;

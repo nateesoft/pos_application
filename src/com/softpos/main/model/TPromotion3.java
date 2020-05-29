@@ -1,13 +1,22 @@
-package com.softpos.webapp.promotion;
+package com.softpos.main.model;
 
-public class TPromotion2 {
+public class TPromotion3 {
 
+    private String R_Index;
     private String TCode;
     private String PCode;
     private String ProCode;
     private double PQuan = 0.00;
     private double PPrice = 0.00;
     private String MacNo;
+
+    public String getR_Index() {
+        return R_Index;
+    }
+
+    public void setR_Index(String R_Index) {
+        this.R_Index = R_Index;
+    }
 
     public String getTCode() {
         return TCode;

@@ -5,6 +5,7 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.model.Value;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.controller.BranchControl;

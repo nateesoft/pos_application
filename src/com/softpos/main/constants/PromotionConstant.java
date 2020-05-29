@@ -1,4 +1,4 @@
-package com.softpos.webapp.promotion;
+package com.softpos.main.constants;
 
 public class PromotionConstant {
     public static final String PROMOTION_TYPE_1 = "1";

@@ -15,7 +15,7 @@ import com.softpos.posreport.HourlyRep;
 import com.softpos.posreport.InvRep;
 import com.softpos.posreport.PLURep;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.posreport.PromotionRep;
 import com.softpos.main.model.PublicVar;
 import com.softpos.posreport.TerminalRep;

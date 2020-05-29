@@ -2,7 +2,7 @@ package com.softpos.main.controller;
 
 import database.MySQLConnect;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.POSConfigSetup;
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.TableFileBean;
 import java.sql.SQLException;
 import java.sql.Statement;

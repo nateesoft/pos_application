@@ -1,5 +1,6 @@
-package com.softpos.main.program;
+package com.softpos.main.utils;
 
+import com.softpos.main.model.CreditPaymentRec;
 import com.softpos.main.model.CouponDetailRec;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.TranRecord;
@@ -7,6 +8,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.HourlyRec;
 import com.softpos.main.model.CouponRec;
+import com.softpos.main.program.PPrint;
 import java.awt.Font;
 import java.sql.ResultSet;
 import java.sql.SQLException;

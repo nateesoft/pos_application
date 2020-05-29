@@ -1,12 +1,13 @@
-package com.softpos.webapp.promotion;
+package com.softpos.main.model;
 
-public class TPromotion5 {
-     private String TCode;
-     private String PCode;
-     private String ProCode;
-     private double PQuan = 0.00;
-     private double PPrice = 0.00;
-     private String MacNo;
+public class TPromotion2 {
+
+    private String TCode;
+    private String PCode;
+    private String ProCode;
+    private double PQuan = 0.00;
+    private double PPrice = 0.00;
+    private String MacNo;
 
     public String getTCode() {
         return TCode;
@@ -55,6 +56,6 @@ public class TPromotion5 {
     public void setMacNo(String MacNo) {
         this.MacNo = MacNo;
     }
-     
-     
+    
+    
 }

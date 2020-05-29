@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CouponRec;
 import com.softpos.main.controller.BalanceControl;

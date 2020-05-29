@@ -5,9 +5,9 @@
  */
 package com.softpos.posreport;
 
-import com.softpos.main.program.POSHWSetup;
+import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import database.MySQLConnect;

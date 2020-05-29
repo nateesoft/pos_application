@@ -1,5 +1,14 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.TPromotionBean;
+import com.softpos.main.model.TPromotion2;
+import com.softpos.main.model.TPromotion5;
+import com.softpos.main.model.TPromotion4;
+import com.softpos.main.model.Promotion;
+import com.softpos.main.model.TPromotion3;
+import com.softpos.main.model.POSConfigSetup;
+import com.softpos.main.model.TempPromotion;
+import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.ProductBean;
 import com.softpos.main.controller.ProductControl;

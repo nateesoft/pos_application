@@ -1,8 +1,8 @@
 package com.softpos.main.controller;
 
 import com.softpos.main.model.CompanyBean;
-import com.softpos.main.program.POSConfigSetup;
-import com.softpos.main.program.POSHWSetup;
+import com.softpos.main.model.POSConfigSetup;
+import com.softpos.main.model.POSHWSetup;
 import database.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;

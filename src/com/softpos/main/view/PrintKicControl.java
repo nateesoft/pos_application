@@ -5,7 +5,7 @@
  */
 package com.softpos.main.view;
 
-import com.softpos.main.program.ThaiUtil;
+import com.softpos.main.utils.ThaiUtil;
 import database.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.Statement;

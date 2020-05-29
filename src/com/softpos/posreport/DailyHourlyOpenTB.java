@@ -5,7 +5,7 @@
  */
 package com.softpos.posreport;
 
-import com.softpos.main.program.POSHWSetup;
+import com.softpos.main.model.POSHWSetup;
 import database.MySQLConnect;
 import java.awt.Frame;
 import java.awt.Point;
@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.KeyBoardDialog;
 import util.DateChooseDialog;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.controller.PosControl;
 import com.softpos.main.model.Value;
 import java.util.Date;

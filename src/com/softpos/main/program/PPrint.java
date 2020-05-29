@@ -1,5 +1,9 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSHWSetup;
+import com.softpos.main.model.POSConfigSetup;
+import com.softpos.main.utils.PUtility;
+import com.softpos.main.model.CreditPaymentRec;
 import com.softpos.main.model.TranRecord;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.PublicVar;

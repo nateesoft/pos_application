@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.model;
 
 public class Promotion {
     public static final String PROMOTION_TYPE_1 = "1";

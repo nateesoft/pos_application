@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.model;
 
 import com.softpos.main.controller.PosControl;
 

@@ -1,6 +1,6 @@
 package com.softpos.posreport;
 
-import com.softpos.main.program.POSConfigSetup;
+import com.softpos.main.model.POSConfigSetup;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,11 +10,11 @@ import java.util.Date;
 import java.util.Locale;
 import database.MySQLConnect;
 import java.sql.Statement;
-import com.softpos.main.program.POSHWSetup;
+import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
-import com.softpos.main.program.ThaiUtil;
+import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import soft.virtual.KeyBoardDialog;

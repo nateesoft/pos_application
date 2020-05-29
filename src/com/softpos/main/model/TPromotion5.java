@@ -1,22 +1,12 @@
-package com.softpos.main.program;
+package com.softpos.main.model;
 
-public class TPromotion4 {
-
-    private String R_Index;
-    private String TCode;
-    private String PCode;
-    private String ProCode;
-    private double PQuan = 0.00;
-    private double PPrice = 0.00;
-    private String MacNo;
-
-    public String getR_Index() {
-        return R_Index;
-    }
-
-    public void setR_Index(String R_Index) {
-        this.R_Index = R_Index;
-    }
+public class TPromotion5 {
+     private String TCode;
+     private String PCode;
+     private String ProCode;
+     private double PQuan = 0.00;
+     private double PPrice = 0.00;
+     private String MacNo;
 
     public String getTCode() {
         return TCode;
@@ -65,6 +55,6 @@ public class TPromotion4 {
     public void setMacNo(String MacNo) {
         this.MacNo = MacNo;
     }
-    
-    
+     
+     
 }

@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSHWSetup;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import java.awt.Color;

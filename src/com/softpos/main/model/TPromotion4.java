@@ -1,4 +1,4 @@
-package com.softpos.webapp.promotion;
+package com.softpos.main.model;
 
 public class TPromotion4 {
 

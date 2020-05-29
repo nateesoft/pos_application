@@ -1,6 +1,6 @@
 package com.softpos.main.model;
 
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import database.MySQLConnect;

@@ -5,6 +5,8 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSHWSetup;
+import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Cursor;

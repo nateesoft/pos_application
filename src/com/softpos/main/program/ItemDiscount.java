@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.model.POSConfigSetup;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;

@@ -1,4 +1,5 @@
 package com.softpos.main.program;
+import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.Value;
 import java.io.BufferedReader;
 import java.io.FileReader;

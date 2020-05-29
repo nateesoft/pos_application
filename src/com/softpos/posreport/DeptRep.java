@@ -9,7 +9,7 @@ import java.sql.Statement;
 import javax.swing.UIManager;
 import com.softpos.main.program.Jdi_depReport;
 import com.softpos.main.program.PPrint;
-import com.softpos.main.program.PUtility;
+import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.Value;
 import util.MSG;
