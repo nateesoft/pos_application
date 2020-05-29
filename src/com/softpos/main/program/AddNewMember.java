@@ -2,7 +2,7 @@ package com.softpos.main.program;
 
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

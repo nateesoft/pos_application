@@ -7,14 +7,14 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 
 public class GiftVoucherRep extends javax.swing.JDialog {
 

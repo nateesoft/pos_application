@@ -1,6 +1,6 @@
 package com.softpos.main.model;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;

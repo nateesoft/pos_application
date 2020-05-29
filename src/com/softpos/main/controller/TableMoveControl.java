@@ -2,7 +2,7 @@ package com.softpos.main.controller;
 
 import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

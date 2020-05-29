@@ -1,6 +1,6 @@
 package com.softpos.main.program;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
@@ -18,7 +18,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileFilter;
-import setupmenu.DlgBrowseProduct;
+import com.softpos.main.view.DlgBrowseProduct;
 import sun.natee.project.util.ThaiUtil;
 import com.softpos.main.utils.MSG;
 

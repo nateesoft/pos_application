@@ -7,7 +7,7 @@ import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;
 import com.softpos.main.controller.ItemDisControl;
 import java.awt.event.KeyEvent;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.text.DecimalFormat;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;

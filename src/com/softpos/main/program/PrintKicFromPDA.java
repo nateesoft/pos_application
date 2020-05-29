@@ -4,10 +4,10 @@ import com.softpos.main.controller.PPrint;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.Value;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Cursor;
 import java.sql.ResultSet;
-import printReport.PrintSimpleForm;
+import com.softpos.main.controller.PrintSimpleForm;
 
 public class PrintKicFromPDA extends javax.swing.JDialog {
 

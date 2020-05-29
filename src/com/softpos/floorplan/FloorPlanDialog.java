@@ -1,7 +1,7 @@
 package com.softpos.floorplan;
 
 import com.softpos.login.FileSettingDialog;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Desktop;

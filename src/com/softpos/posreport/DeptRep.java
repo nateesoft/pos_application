@@ -1,6 +1,6 @@
 package com.softpos.posreport;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Frame;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

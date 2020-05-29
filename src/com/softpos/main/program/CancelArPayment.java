@@ -17,12 +17,12 @@ import java.util.Locale;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.GraphicsEnvironment;
 import java.sql.Statement;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 import sun.natee.project.util.ThaiUtil;
 import com.softpos.main.utils.MSG;
 

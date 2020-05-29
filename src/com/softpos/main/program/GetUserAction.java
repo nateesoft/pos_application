@@ -4,7 +4,7 @@ import com.softpos.main.model.PublicVar;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.utils.KeyBoardDialog;
 import com.softpos.main.utils.MSG;

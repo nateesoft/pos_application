@@ -4,14 +4,14 @@ import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.model.Value;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.controller.BranchControl;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Cursor;
 import java.awt.HeadlessException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFrame;
-import printReport.PrintSimpleForm;
+import com.softpos.main.controller.PrintSimpleForm;
 import com.softpos.main.utils.MSG;
 
 public class PrintToKic extends javax.swing.JFrame {

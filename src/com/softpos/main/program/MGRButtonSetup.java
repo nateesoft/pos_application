@@ -1,13 +1,13 @@
 package com.softpos.main.program;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Font;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
-import setupmenu.DlgBrowseProduct;
+import com.softpos.main.view.DlgBrowseProduct;
 import sun.natee.project.util.ThaiUtil;
 import com.softpos.main.utils.MSG;
 

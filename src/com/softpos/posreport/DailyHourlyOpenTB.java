@@ -1,7 +1,7 @@
 package com.softpos.posreport;
 
 import com.softpos.main.model.POSHWSetup;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -13,7 +13,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.Value;
 import java.util.Date;
 import com.softpos.main.model.PublicVar;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 import com.softpos.main.utils.MSG;
 
 public class DailyHourlyOpenTB extends javax.swing.JDialog {

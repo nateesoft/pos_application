@@ -4,7 +4,7 @@ import com.softpos.main.model.DiscountBean;
 import com.softpos.main.model.CuponBean;
 import com.softpos.main.model.MemberBean;
 import com.softpos.main.controller.MemberControl;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

@@ -1,7 +1,7 @@
 package com.softpos.posreport;
 
 import java.awt.event.KeyEvent;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -16,7 +16,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import java.awt.Frame;
 import java.awt.Point;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
 import com.softpos.main.utils.DateChooseDialog;
 import com.softpos.main.utils.DateConvert;

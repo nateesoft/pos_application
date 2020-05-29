@@ -1,7 +1,7 @@
 package com.softpos.main.program;
 
 import com.softpos.main.model.BalanceBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

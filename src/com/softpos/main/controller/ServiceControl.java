@@ -3,7 +3,7 @@ package com.softpos.main.controller;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.model.BalanceBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DecimalFormat;

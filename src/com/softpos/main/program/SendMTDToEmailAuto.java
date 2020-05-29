@@ -1,6 +1,6 @@
 package com.softpos.main.program;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 
 public class SendMTDToEmailAuto extends javax.swing.JDialog {
 

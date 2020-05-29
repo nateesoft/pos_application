@@ -6,7 +6,7 @@ import com.softpos.main.model.TableFileBean;
 import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

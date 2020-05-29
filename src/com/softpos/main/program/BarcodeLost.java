@@ -6,7 +6,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.Value;
 import com.softpos.main.model.PublicVar;
 import java.awt.event.KeyEvent;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

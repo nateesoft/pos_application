@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.GraphicsEnvironment;
 import java.sql.Statement;
 import com.softpos.main.model.PublicVar;

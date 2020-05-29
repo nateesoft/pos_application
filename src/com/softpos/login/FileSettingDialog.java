@@ -1,6 +1,6 @@
 package com.softpos.login;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import com.softpos.main.utils.FileManager;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;

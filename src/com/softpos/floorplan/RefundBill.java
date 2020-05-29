@@ -4,7 +4,7 @@ import com.softpos.main.utils.TextToImage;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.sql.ResultSet;

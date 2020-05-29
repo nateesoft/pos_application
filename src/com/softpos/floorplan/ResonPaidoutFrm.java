@@ -1,6 +1,6 @@
 package com.softpos.floorplan;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.model.Value;
 import java.sql.SQLException;

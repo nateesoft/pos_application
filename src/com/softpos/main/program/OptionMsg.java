@@ -4,7 +4,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.BalanceBean;
 import java.awt.Color;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

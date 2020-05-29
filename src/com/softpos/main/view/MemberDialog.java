@@ -1,6 +1,6 @@
 package com.softpos.main.view;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Color;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

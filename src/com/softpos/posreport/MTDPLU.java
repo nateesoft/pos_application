@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 import com.softpos.main.utils.DateChooseDialog;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_MTDSalePLU;
 import com.softpos.main.model.POSHWSetup;
@@ -21,7 +21,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
 import com.softpos.main.utils.MSG;
 

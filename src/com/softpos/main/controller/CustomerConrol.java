@@ -1,6 +1,6 @@
 package com.softpos.main.controller;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import com.softpos.main.model.CustomerBean;
 import sun.natee.project.util.ThaiUtil;

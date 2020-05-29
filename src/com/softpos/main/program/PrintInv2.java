@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.PreparedStatement;
 import com.softpos.main.utils.MSG;
 

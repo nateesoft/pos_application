@@ -8,7 +8,7 @@ import com.softpos.main.model.Value;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -16,13 +16,13 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import com.softpos.main.utils.DateConvert;
 import com.softpos.main.utils.MSG;
-import database.ConfigFile;
+import com.softpos.database.util.ConfigFile;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 
 public class SendTerminalReportAuto {
     

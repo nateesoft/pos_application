@@ -3,7 +3,7 @@ package com.softpos.main.program;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
-import printReport.PrintDriver;
+import com.softpos.main.controller.PrintDriver;
 import com.softpos.main.utils.MSG;
 
 public class CashBackDialog extends javax.swing.JDialog {

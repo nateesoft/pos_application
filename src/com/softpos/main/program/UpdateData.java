@@ -1,7 +1,7 @@
 package com.softpos.main.program;
 
-import database.MySQLConnect;
-import database.SQLServerConnect;
+import com.softpos.database.util.MySQLConnect;
+import com.softpos.database.util.SQLServerConnect;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.sql.ResultSet;

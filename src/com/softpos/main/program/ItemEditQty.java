@@ -5,7 +5,7 @@ import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.MemberBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

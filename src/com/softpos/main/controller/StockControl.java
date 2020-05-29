@@ -4,7 +4,7 @@ import com.softpos.main.model.StkFileBean;
 import com.softpos.main.model.STCardBean;
 import com.softpos.main.model.ProductBean;
 import com.softpos.main.model.Value;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

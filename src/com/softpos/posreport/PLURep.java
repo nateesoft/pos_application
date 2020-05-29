@@ -3,7 +3,7 @@ package com.softpos.posreport;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_SalePLU;
 import com.softpos.main.controller.PPrint;

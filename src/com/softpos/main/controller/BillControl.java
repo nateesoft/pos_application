@@ -10,7 +10,7 @@ import com.softpos.main.model.ProductBean;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.TPromotionBean;
 import com.softpos.main.model.TSaleBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

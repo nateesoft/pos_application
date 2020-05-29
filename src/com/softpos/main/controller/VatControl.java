@@ -1,6 +1,6 @@
 package com.softpos.main.controller;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.TableFileBean;
 import java.sql.SQLException;

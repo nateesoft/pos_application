@@ -2,7 +2,7 @@ package com.softpos.main.model;
 
 import com.softpos.main.controller.BranchControl;
 import com.softpos.main.controller.PosControl;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;

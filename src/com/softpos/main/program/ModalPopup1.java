@@ -3,7 +3,7 @@ package com.softpos.main.program;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.TempSetBean;
 import com.softpos.main.controller.TempSetController;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,7 +1,7 @@
 package com.softpos.main.view;
 
 import com.softpos.main.utils.ThaiUtil;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;

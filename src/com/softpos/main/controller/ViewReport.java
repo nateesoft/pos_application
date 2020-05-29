@@ -1,6 +1,6 @@
 package com.softpos.main.controller;
 
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.io.File;
 import java.sql.*;
 import java.text.DecimalFormat;

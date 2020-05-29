@@ -2,7 +2,7 @@ package com.softpos.main.controller;
 
 import com.softpos.main.model.TCuponBean;
 import com.softpos.main.model.TempCuponBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

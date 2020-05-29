@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import com.softpos.main.program.Jdi_dailyReport_Hourly_Plu;

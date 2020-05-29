@@ -12,7 +12,7 @@ import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.model.ProductBean;
 import com.softpos.main.model.ProtabBean;
 import com.softpos.main.model.BalanceBean;
-import database.MySQLConnect;
+import com.softpos.database.util.MySQLConnect;
 import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
