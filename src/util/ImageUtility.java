@@ -115,14 +115,6 @@ public class ImageUtility {
     }
 }
 
-/**
- * The "missing icon" is a white box with a black border and a red x. It's used
- * to display something when there are issues loading an icon from an external
- * location.
- *
- * @author Collin Fagan
- * @date 7/25/2007
- */
 class MissingIcon implements Icon {
 
     private int width;

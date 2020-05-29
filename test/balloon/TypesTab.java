@@ -32,10 +32,6 @@ import net.java.balloontip.CustomBalloonTip;
 import net.java.balloontip.TablecellBalloonTip;
 import test.CompleteExample;
 
-/**
- * Types tab of the demo application; demonstrates the different balloon tip types
- * @author Tim Molderez
- */
 public class TypesTab extends JPanel {
 	/**
 	 * Default constructor

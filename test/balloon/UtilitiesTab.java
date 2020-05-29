@@ -28,16 +28,9 @@ import net.java.balloontip.utils.TimingUtils;
 import net.java.balloontip.utils.ToolTipUtils;
 import test.CompleteExample;
 
-/**
- * Utilities tab of the demo application; demonstrates the various utility functions of Balloon tip
- * @author Tim Molderez
- */
 public class UtilitiesTab extends JPanel {
 	private final BalloonTip tooltipBalloon;
 
-	/**
-	 * Default constructor
-	 */
 	public UtilitiesTab() {
 		super();
 		setLayout(new GridBagLayout());

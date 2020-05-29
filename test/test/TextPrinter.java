@@ -1,35 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test;
 
 import java.awt.*;
 import java.awt.print.*;
 import java.io.*;
 
-/**
- * Utility class to print some lines of text to the default printer. Uses some
- * default font settings, and gets the page size from the PrinterJob object.
- *
- * Note: this little example class does not handle pagination. All the text must
- * fit on a single page.
- *
- * This class can also be used as a standalone utility. If the main method is
- * invoked, it reads lines of text from System.in, and prints them to the
- * default printer.
- */
 public class TextPrinter implements Printable {
 
-    /**
-     * Default font size, 12 point
-     */
     public static final int DEFAULT_FONT_SIZE = 12;
 
-    /**
-     * Default type name, Serif
-     */
     public static final String DEFAULT_FONT_NAME = "Serif";
 
     private PrinterJob job;

@@ -18,17 +18,8 @@ import net.java.balloontip.BalloonTip;
 import net.java.balloontip.TablecellBalloonTip;
 import test.CompleteExample;
 
-/**
- * Contents tab of the demo application; demonstrates that a balloon tip can
- * contain all sorts of components
- *
- * @author Tim Molderez
- */
 public class ContentsTab extends JPanel {
 
-    /**
-     * Default constructor
-     */
     public ContentsTab() {
         super();
         setLayout(new GridBagLayout());

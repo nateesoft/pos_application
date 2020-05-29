@@ -7,10 +7,6 @@ import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.standard.MediaPrintableArea;
 import javax.swing.JEditorPane;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class PrintDriver {
 
     float width = 80f;

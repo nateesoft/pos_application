@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.posreport;
 
 import com.softpos.main.model.POSHWSetup;
@@ -21,10 +16,6 @@ import com.softpos.main.model.PublicVar;
 import printReport.PrintDriver;
 import util.MSG;
 
-/**
- *
- * @author ASUS
- */
 public class DailyHourlyOpenTB extends javax.swing.JDialog {
 
     /**

@@ -3,10 +3,6 @@ package test;
 import javax.print.attribute.standard.MediaSize;
 import javax.print.attribute.standard.MediaSizeName;
 
-/**
- *
- * @author softpos-support
- */
 public class PaperTest {
     public static void main(String[] args) {
         String p = MediaSizeName.ISO_A1.toString();

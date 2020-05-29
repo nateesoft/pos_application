@@ -20,14 +20,7 @@ import java.awt.Insets;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
-/**
- * Panel that contains all tabs of the Balloontip example application
- * @author Tim Molderez
- */
 public class MainPanel extends JPanel {
-	/**
-	 * Default constructor
-	 */
 	public MainPanel() {
 		super();
 		setLayout(new GridBagLayout());

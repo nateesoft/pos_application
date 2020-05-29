@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package test;
 
-/**
- *
- * @author ProGrammer
- */
 public class NewJDialog1 extends javax.swing.JDialog {
 
-    /**
-     * Creates new form NewJDialog1
-     */
     public NewJDialog1(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

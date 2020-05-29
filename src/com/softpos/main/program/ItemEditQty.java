@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.program;
 
 import com.softpos.main.model.POSConfigSetup;
@@ -35,9 +30,6 @@ public class ItemEditQty extends javax.swing.JDialog {
     private MemberBean memberBean;
     private String NewDesc;
 
-    /**
-     * Creates new form ItemEditQty
-     */
     public ItemEditQty(java.awt.Dialog parent, boolean modal, String tableNo, String RIndex, MemberBean memberBean) {
         super(parent, modal);
         initComponents();

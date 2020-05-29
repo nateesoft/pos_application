@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package test;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class EDC extends javax.swing.JDialog {
 
-    /**
-     * Creates new form EDC
-     */
     public EDC(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

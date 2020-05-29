@@ -40,10 +40,6 @@ import net.java.balloontip.styles.TexturedBalloonStyle;
 import net.java.balloontip.styles.ToolTipBalloonStyle;
 import test.CompleteExample;
 
-/**
- * Looks tab of the demo application; lets you experiment with a balloon tip's looks
- * @author Tim Molderez
- */
 public class LooksTab extends JPanel {
 	private final BalloonTip balloonTip;
 	private final JComboBox stylePicker;

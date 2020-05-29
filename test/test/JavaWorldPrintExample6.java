@@ -65,30 +65,8 @@ public class JavaWorldPrintExample6 {
         }
     }
 
-    /**
-     * Class: IntroPage
-     * <p>
-     *
-     * This class defines the painter for the cover page by implementing the
-     * Printable interface.
-     * <p>
-     *
-     * @author Jean-Pierre Dube <jpdube@videotron.ca>
-     * @version 1.0
-     * @since 1.0
-     * @see Printable
-     */
     private class IntroPage implements Printable {
 
-        /**
-         * Method: print
-         * <p>
-         *
-         * @param g a value of type Graphics
-         * @param pageFormat a value of type PageFormat
-         * @param page a value of type int
-         * @return a value of type int
-         */
         public int print(Graphics g, PageFormat pageFormat, int page) {
 
             //--- Create the Graphics2D object
@@ -122,20 +100,6 @@ public class JavaWorldPrintExample6 {
         }
     }
 
-    /**
-     * Class: Document
-     * <p>
-     *
-     * This class is the painter for the document content. In this example, it
-     * will print an image of the Nasa Space Station with a border arround it.
-     * <p>
-     *
-     *
-     * @author Jean-Pierre Dube <jpdube@videotron.ca>
-     * @version 1.0
-     * @since 1.0
-     * @see Printable
-     */
     private class Document extends Component implements Printable {
 
         /**
