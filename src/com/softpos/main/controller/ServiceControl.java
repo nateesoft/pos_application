@@ -10,8 +10,8 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class ServiceControl {
 

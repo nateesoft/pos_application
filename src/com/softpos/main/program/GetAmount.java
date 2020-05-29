@@ -1,7 +1,7 @@
 package com.softpos.main.program;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class GetAmount extends javax.swing.JDialog {
     Double ReturnQty ;

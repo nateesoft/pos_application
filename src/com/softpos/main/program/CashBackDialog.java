@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 import printReport.PrintDriver;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CashBackDialog extends javax.swing.JDialog {
 

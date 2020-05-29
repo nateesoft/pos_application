@@ -28,7 +28,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import printReport.PrintDriver;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class ARPayment extends javax.swing.JDialog {
 

@@ -18,9 +18,9 @@ import java.util.Date;
 import java.util.Locale;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class MTDCoupon extends javax.swing.JDialog {
 

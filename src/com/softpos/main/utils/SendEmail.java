@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import util.MSG;
 
 public class SendEmail {
 

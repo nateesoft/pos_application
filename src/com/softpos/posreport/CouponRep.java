@@ -15,7 +15,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CouponRep extends javax.swing.JDialog {
 

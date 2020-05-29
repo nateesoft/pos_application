@@ -23,7 +23,7 @@ import java.sql.Statement;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.model.Value;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class ShowTable extends javax.swing.JDialog {
 

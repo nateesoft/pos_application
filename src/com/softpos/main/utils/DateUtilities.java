@@ -1,4 +1,4 @@
-package util;
+package com.softpos.main.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

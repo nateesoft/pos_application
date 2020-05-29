@@ -20,7 +20,7 @@ import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileFilter;
 import setupmenu.DlgBrowseProduct;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MGRButtonMenu extends javax.swing.JDialog {
 

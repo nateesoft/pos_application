@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class GetQty extends javax.swing.JDialog {
 

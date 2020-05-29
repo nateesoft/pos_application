@@ -8,7 +8,7 @@ import java.util.Map;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.ThaiUtil;
-import util.JTableUtility;
+import com.softpos.main.utils.JTableUtility;
 
 public class DlgBrowseProduct extends javax.swing.JDialog {
 

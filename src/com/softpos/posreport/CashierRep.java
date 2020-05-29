@@ -12,7 +12,7 @@ import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 
 public class CashierRep extends javax.swing.JDialog {

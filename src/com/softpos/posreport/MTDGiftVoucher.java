@@ -18,8 +18,8 @@ import java.awt.Frame;
 import java.awt.Point;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.DateConvert;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.DateConvert;
 
 public class MTDGiftVoucher extends javax.swing.JDialog {
 

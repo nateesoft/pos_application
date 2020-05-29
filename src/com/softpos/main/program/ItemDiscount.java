@@ -11,7 +11,7 @@ import database.MySQLConnect;
 import java.text.DecimalFormat;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class ItemDiscount extends javax.swing.JDialog {
 

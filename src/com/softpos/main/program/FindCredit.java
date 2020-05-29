@@ -14,7 +14,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class FindCredit extends javax.swing.JDialog {
 

@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
-import util.DateChooseDialog;
+import com.softpos.main.utils.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_MTDSalePLU;
@@ -23,7 +23,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MTDPLU extends javax.swing.JDialog {
 

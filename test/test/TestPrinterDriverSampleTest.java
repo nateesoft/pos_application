@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import javax.swing.JEditorPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class TestPrinterDriverSampleTest {
 

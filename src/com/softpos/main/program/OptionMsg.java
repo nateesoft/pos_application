@@ -18,7 +18,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class OptionMsg extends javax.swing.JDialog {
 

@@ -19,7 +19,7 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class Giftvoucher extends javax.swing.JDialog {
 

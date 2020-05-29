@@ -14,7 +14,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import java.sql.SQLException;
 import java.sql.Statement;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class PaidinFrm extends javax.swing.JDialog {
 

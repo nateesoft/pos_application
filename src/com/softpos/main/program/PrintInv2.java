@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.Locale;
 import database.MySQLConnect;
 import java.sql.PreparedStatement;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class PrintInv2 extends javax.swing.JDialog {
 

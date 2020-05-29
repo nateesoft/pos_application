@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class BarcodeLost extends javax.swing.JDialog {
 

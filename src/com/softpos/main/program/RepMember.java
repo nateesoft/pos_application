@@ -20,8 +20,8 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import util.DateChooseDialog;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.MSG;
 
 public class RepMember extends javax.swing.JDialog {
 
@@ -560,7 +560,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
     Point point = cmdDateChoose2.getLocationOnScreen();
     point.setLocation(point.getX(), point.getY());
-    util.DateChooseDialog dcd = new util.DateChooseDialog(new java.awt.Frame(), true, point);
+    com.softpos.main.utils.DateChooseDialog dcd = new com.softpos.main.utils.DateChooseDialog(new java.awt.Frame(), true, point);
     dcd.setVisible(true);
     //dcd.showDialog(new LookAndFeelFrame(), true, point);
     ardate1.setText(ShowDatefmt.format(dcd.getSelectDate().getTime()));

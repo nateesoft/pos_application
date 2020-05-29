@@ -7,8 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 import java.sql.Statement;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class MemberBean {
 

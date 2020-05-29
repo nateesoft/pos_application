@@ -1,4 +1,4 @@
-package util;
+package com.softpos.main.utils;
 
 import java.awt.Color;
 import java.awt.Point;
@@ -107,7 +107,7 @@ public final class DateChooseDialog extends javax.swing.JDialog {
         });
 
         spYear.setFont(new java.awt.Font("Norasi", 1, 14)); // NOI18N
-        spYear.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(2009), null, null, Integer.valueOf(1)));
+        spYear.setModel(new javax.swing.SpinnerNumberModel(2009, null, null, 1));
         spYear.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 spYearStateChanged(evt);

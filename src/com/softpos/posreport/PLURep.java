@@ -11,7 +11,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class PLURep extends javax.swing.JDialog {
 

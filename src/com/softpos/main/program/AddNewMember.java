@@ -14,8 +14,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
-import util.DateUtilities;
-import util.MSG;
+import com.softpos.main.utils.DateUtilities;
+import com.softpos.main.utils.MSG;
 
 public class AddNewMember extends javax.swing.JDialog {
 
@@ -646,7 +646,7 @@ private void cmdDateChoose2ActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
     Point point = M_Begin.getLocationOnScreen();
     point.setLocation(point.getX(), point.getY());
-    util.DateChooseDialog dcd = new util.DateChooseDialog(new java.awt.Frame(), true, point);
+    com.softpos.main.utils.DateChooseDialog dcd = new com.softpos.main.utils.DateChooseDialog(new java.awt.Frame(), true, point);
     dcd.setVisible(true);
     //dcd.showDialog(new LookAndFeelFrame(), true, point);
     M_Begin.setText(ShowDatefmt.format(dcd.getSelectDate().getTime()));
@@ -659,7 +659,7 @@ private void cmdDateChoose1ActionPerformed(java.awt.event.ActionEvent evt) {//GE
     // TODO add your handling code here:
     Point point = M_Brithday.getLocationOnScreen();
     point.setLocation(point.getX(), point.getY());
-    util.DateChooseDialog dcd = new util.DateChooseDialog(new java.awt.Frame(), true, point);
+    com.softpos.main.utils.DateChooseDialog dcd = new com.softpos.main.utils.DateChooseDialog(new java.awt.Frame(), true, point);
     dcd.setVisible(true);
     //dcd.showDialog(new LookAndFeelFrame(), true, point);
     M_Brithday.setText(ShowDatefmt.format(dcd.getSelectDate().getTime()));

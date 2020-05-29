@@ -14,7 +14,7 @@ import java.sql.Statement;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class FindAr extends javax.swing.JDialog {
      DefaultTableModel model2;

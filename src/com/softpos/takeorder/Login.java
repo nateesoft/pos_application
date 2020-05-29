@@ -26,7 +26,7 @@ import com.softpos.main.model.UserRecord;
 import com.softpos.main.model.Value;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class Login extends javax.swing.JDialog {
 

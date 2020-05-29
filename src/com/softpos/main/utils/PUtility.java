@@ -23,7 +23,6 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
 
 public class PUtility {
 

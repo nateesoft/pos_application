@@ -24,8 +24,8 @@ import java.text.ParseException;
 import com.softpos.main.model.CustomerBean;
 import printReport.PrintDriver;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
-import util.NumberToString;
+import com.softpos.main.utils.MSG;
+import com.softpos.main.utils.NumberToString;
 
 public class PrintInv1 extends javax.swing.JDialog {
 

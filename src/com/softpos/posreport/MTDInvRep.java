@@ -18,9 +18,9 @@ import java.awt.Frame;
 import java.awt.Point;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class MTDInvRep extends javax.swing.JDialog {
 

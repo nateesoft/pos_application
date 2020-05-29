@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class GiftDialogList extends javax.swing.JDialog {
 

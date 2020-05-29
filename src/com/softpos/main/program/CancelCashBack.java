@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CancelCashBack extends javax.swing.JDialog {
 

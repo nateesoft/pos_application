@@ -45,7 +45,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.program.SetupButtonTable;
 import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.model.Value;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 import java.awt.event.MouseAdapter;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -65,9 +65,9 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import sun.natee.project.util.ThaiUtil;
-import util.Option;
+import com.softpos.main.utils.Option;
 import com.softpos.main.model.MemberBean;
-import util.DateConvert;
+import com.softpos.main.utils.DateConvert;
 
 public class FloorPlanDialog extends javax.swing.JFrame {
 

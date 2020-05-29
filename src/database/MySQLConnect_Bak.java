@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.softpos.main.model.Value;
 import javax.swing.JOptionPane;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MySQLConnect_Bak {
 

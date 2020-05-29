@@ -17,7 +17,7 @@ import com.softpos.posreport.MTDCoupon;
 import com.softpos.posreport.MTDGiftVoucher;
 import com.softpos.posreport.MTDHourlyOpenTB;
 import com.softpos.posreport.MTDInvRep;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MTDRep extends javax.swing.JDialog {
 

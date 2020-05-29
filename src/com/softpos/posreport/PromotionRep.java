@@ -17,7 +17,7 @@ import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class PromotionRep extends javax.swing.JDialog {
 

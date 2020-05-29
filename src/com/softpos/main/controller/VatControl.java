@@ -5,7 +5,7 @@ import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.TableFileBean;
 import java.sql.SQLException;
 import java.sql.Statement;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class VatControl {
 

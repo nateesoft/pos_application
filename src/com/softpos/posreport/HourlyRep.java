@@ -10,7 +10,7 @@ import com.softpos.main.program.Jdi_report_HourlyReport;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class HourlyRep extends javax.swing.JDialog {
 

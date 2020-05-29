@@ -7,7 +7,7 @@ import java.sql.Statement;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class ProductSet extends javax.swing.JDialog {
 

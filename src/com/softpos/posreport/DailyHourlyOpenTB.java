@@ -14,7 +14,7 @@ import com.softpos.main.model.Value;
 import java.util.Date;
 import com.softpos.main.model.PublicVar;
 import printReport.PrintDriver;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class DailyHourlyOpenTB extends javax.swing.JDialog {
 

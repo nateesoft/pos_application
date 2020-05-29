@@ -20,7 +20,7 @@ import com.softpos.posreport.TopSaleRep;
 import com.softpos.main.model.UserRecord;
 import com.softpos.main.model.Value;
 import com.softpos.posreport.VoidRep;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 import com.softpos.posreport.DailyHourlyOpenTB;
 
 public class DailyRep extends javax.swing.JDialog {

@@ -8,7 +8,7 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.StyleContext;
 import javax.swing.text.StyledDocument;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class DisplayEJ extends javax.swing.JDialog {
     StyleContext context = new StyleContext();

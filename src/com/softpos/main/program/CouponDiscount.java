@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import javax.swing.table.JTableHeader;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CouponDiscount extends javax.swing.JDialog {
 

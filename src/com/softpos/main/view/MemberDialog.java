@@ -15,7 +15,7 @@ import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.TranRecord;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MemberDialog extends javax.swing.JDialog {
 

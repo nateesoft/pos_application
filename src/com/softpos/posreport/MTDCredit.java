@@ -21,9 +21,9 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class MTDCredit extends javax.swing.JDialog {
 

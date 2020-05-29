@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import sun.natee.project.util.DateFormat;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CuponControl {
 

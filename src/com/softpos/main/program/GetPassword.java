@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class GetPassword extends javax.swing.JDialog {
 

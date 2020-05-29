@@ -18,7 +18,7 @@ import com.softpos.main.utils.ThaiUtil;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class VoidRep extends javax.swing.JDialog {
 

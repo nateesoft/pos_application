@@ -19,7 +19,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class AutoXRep extends javax.swing.JDialog {
 

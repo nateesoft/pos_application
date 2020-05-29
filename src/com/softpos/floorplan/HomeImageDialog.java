@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFileChooser;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class HomeImageDialog extends javax.swing.JDialog {
 

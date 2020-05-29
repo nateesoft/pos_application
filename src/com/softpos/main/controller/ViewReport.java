@@ -18,7 +18,7 @@ import javax.swing.JFrame;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.util.JRLoader;
 import com.softpos.main.utils.convertToChar;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public final class ViewReport {
 

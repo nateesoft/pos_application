@@ -19,12 +19,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import sun.natee.project.util.DateFormat;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.model.Value;
 import com.softpos.main.model.MemberBean;
 import java.text.DecimalFormat;
-import util.DateConvert;
+import com.softpos.main.utils.DateConvert;
 
 public class BillControl {
 

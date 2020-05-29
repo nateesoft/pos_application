@@ -3,7 +3,7 @@ package setupmenu;
 import database.MySQLConnect_Bak;
 import java.util.List;
 import java.util.Map;
-import util.DatabaseUtility;
+import com.softpos.main.utils.DatabaseUtility;
 
 public abstract class DatabaseInfo {
     public static DatabaseUtility du;

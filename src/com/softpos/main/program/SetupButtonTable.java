@@ -11,7 +11,7 @@ import java.util.Locale;
 import javax.swing.JOptionPane;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class SetupButtonTable extends javax.swing.JDialog {
 

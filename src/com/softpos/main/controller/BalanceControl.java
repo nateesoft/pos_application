@@ -16,8 +16,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import sun.natee.project.util.DateFormat;
 import sun.natee.project.util.ThaiUtil;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class BalanceControl {
 

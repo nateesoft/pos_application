@@ -12,7 +12,7 @@ import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.Value;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class DeptRep extends javax.swing.JDialog {
 

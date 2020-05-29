@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.Date;
 import database.MySQLConnect;
 import java.sql.Statement;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class CopyBill extends javax.swing.JDialog {
 

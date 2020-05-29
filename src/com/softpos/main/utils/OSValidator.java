@@ -1,4 +1,4 @@
-package util;
+package com.softpos.main.utils;
 
 public class OSValidator{
 

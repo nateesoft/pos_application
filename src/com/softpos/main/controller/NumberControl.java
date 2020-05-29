@@ -1,7 +1,7 @@
 package com.softpos.main.controller;
 
 import java.text.DecimalFormat;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class NumberControl {
 

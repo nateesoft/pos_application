@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.KeyBoardDialog;
-import util.DateChooseDialog;
+import com.softpos.main.utils.DateChooseDialog;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.Value;
@@ -20,7 +20,7 @@ import java.util.Date;
 import com.softpos.main.model.PublicVar;
 import java.text.ParseException;
 import printReport.PrintDriver;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MTDHourlyOpenTB extends javax.swing.JDialog {
 

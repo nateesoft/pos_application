@@ -5,7 +5,7 @@ import java.sql.Statement;
 import com.softpos.main.model.Value;
 import java.sql.SQLException;
 import sun.natee.project.util.ThaiUtil;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class ResonPaidoutFrm extends javax.swing.JDialog {
 

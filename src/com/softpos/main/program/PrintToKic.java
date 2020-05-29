@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFrame;
 import printReport.PrintSimpleForm;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class PrintToKic extends javax.swing.JFrame {
 

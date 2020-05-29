@@ -1,4 +1,4 @@
-package util;
+package com.softpos.main.utils;
 
 import java.awt.Color;
 import javax.swing.JTable;

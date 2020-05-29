@@ -25,8 +25,8 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import printReport.PrintDriver;
 import sun.natee.project.util.ThaiUtil;
-import util.DateChooseDialog;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.MSG;
 
 public class ArNotPay extends javax.swing.JDialog {
 

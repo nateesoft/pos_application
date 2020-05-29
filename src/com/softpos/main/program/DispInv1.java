@@ -22,8 +22,8 @@ import java.sql.Statement;
 import java.text.ParseException;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import util.DateChooseDialog;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.MSG;
 
 public class DispInv1 extends javax.swing.JDialog {
 

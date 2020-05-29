@@ -9,7 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import util.DateChooseDialog;
+import com.softpos.main.utils.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
@@ -25,8 +25,8 @@ import database.ConfigFile;
 import java.util.ArrayList;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateConvert;
-import util.MSG;
+import com.softpos.main.utils.DateConvert;
+import com.softpos.main.utils.MSG;
 
 public class MTDTerminal extends javax.swing.JDialog {
 

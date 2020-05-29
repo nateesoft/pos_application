@@ -24,8 +24,8 @@ import com.softpos.main.model.Value;
 import java.util.ArrayList;
 import printReport.PrintDriver;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.MSG;
 
 public class MTDDept extends javax.swing.JDialog {
 

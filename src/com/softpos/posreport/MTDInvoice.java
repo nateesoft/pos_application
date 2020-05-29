@@ -10,7 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import util.DateChooseDialog;
+import com.softpos.main.utils.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.model.POSHWSetup;
@@ -19,7 +19,7 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class MTDInvoice extends javax.swing.JDialog {
 

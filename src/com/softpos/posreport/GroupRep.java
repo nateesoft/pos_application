@@ -8,7 +8,7 @@ import java.sql.Statement;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
-import util.MSG;
+import com.softpos.main.utils.MSG;
 
 public class GroupRep extends javax.swing.JDialog {
 

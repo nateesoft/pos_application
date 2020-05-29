@@ -66,8 +66,8 @@ import setupmenu.SetHeaderMenu;
 import static com.softpos.main.utils.JTableControl.alignColumn;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
-import util.Option;
-import util.MSG;
+import com.softpos.main.utils.Option;
+import com.softpos.main.utils.MSG;
 
 public class MainSale extends javax.swing.JDialog {
 

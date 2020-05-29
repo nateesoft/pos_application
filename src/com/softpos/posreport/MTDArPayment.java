@@ -19,8 +19,8 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.DateChooseDialog;
-import util.MSG;
+import com.softpos.main.utils.DateChooseDialog;
+import com.softpos.main.utils.MSG;
 
 public class MTDArPayment extends javax.swing.JDialog {
     SimpleDateFormat Datefmt = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
