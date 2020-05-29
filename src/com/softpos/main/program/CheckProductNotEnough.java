@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

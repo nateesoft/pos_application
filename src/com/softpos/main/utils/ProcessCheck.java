@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

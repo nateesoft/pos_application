@@ -15,7 +15,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 
 /**
  *

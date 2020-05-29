@@ -1,5 +1,6 @@
 package printReport;
 
+import com.softpos.main.utils.convertToChar;
 import database.MySQLConnect;
 import java.awt.HeadlessException;
 import java.io.File;

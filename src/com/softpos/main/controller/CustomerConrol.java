@@ -2,7 +2,7 @@ package com.softpos.main.controller;
 
 import database.MySQLConnect;
 import java.sql.ResultSet;
-import posbean.CustomerBean;
+import com.softpos.main.model.CustomerBean;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

@@ -1,4 +1,4 @@
-package filecontrol;
+package com.softpos.main.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

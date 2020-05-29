@@ -5,7 +5,7 @@ import database.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import util.MSG;

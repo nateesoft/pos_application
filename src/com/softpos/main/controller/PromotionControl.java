@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.controller;
 
 import com.softpos.main.model.TPromotionBean;
 import com.softpos.main.model.TPromotion2;

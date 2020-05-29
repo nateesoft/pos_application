@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Locale;
 import database.MySQLConnect;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import printReport.PrintDriver;
 import com.softpos.main.model.PublicVar;

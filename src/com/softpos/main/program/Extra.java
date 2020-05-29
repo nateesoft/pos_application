@@ -14,7 +14,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.MSG;
 
 public class Extra extends javax.swing.JDialog {

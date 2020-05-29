@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package printReport;
+package com.softpos.main.utils;
 
 public class convertToChar {
 

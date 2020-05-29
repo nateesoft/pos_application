@@ -1,6 +1,6 @@
 package com.softpos.main.program;
 
-import directory_utility.DirectoryUtility;
+import com.softpos.main.utils.DirectoryUtility;
 import java.io.FileWriter;
 
 /**

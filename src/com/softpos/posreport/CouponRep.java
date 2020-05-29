@@ -11,7 +11,7 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;

@@ -1,4 +1,4 @@
-package soft.virtual;
+package com.softpos.main.utils;
 
 import java.awt.AWTException;
 import java.awt.Rectangle;

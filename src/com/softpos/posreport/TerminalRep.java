@@ -8,7 +8,7 @@ import java.sql.Statement;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.model.POSConfigSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import util.MSG;
 
 public class TerminalRep extends javax.swing.JDialog {

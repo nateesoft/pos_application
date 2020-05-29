@@ -11,7 +11,7 @@ import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

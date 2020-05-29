@@ -1,4 +1,4 @@
-package posbean;
+package com.softpos.main.model;
 
 public class CustomerBean {
 

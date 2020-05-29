@@ -20,11 +20,11 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import com.softpos.floorplan.FloorPlanDialog;
 import com.softpos.main.program.GetPassword;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.UserRecord;
 import com.softpos.main.model.Value;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

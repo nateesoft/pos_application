@@ -8,7 +8,7 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.HourlyRec;
 import com.softpos.main.model.CouponRec;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import java.awt.Font;
 import java.sql.ResultSet;
 import java.sql.SQLException;

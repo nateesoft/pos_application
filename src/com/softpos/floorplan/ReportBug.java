@@ -3,7 +3,7 @@ package com.softpos.floorplan;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
-import com.softpos.main.program.SendEmail;
+import com.softpos.main.utils.SendEmail;
 
 public class ReportBug extends javax.swing.JDialog {
 

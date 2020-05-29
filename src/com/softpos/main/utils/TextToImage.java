@@ -1,6 +1,5 @@
-package convert_utility.text_to_image;
+package com.softpos.main.utils;
 
-import directory_utility.DirectoryUtility;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

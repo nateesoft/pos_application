@@ -12,7 +12,7 @@ import com.softpos.main.controller.TableFileControl;
 import com.softpos.main.controller.TableMoveControl;
 import java.sql.SQLException;
 import java.sql.Statement;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.MSG;
 
 public class MoveGroupTable extends javax.swing.JDialog {

@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.controller;
 
 import java.text.DecimalFormat;
 import util.MSG;

@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import com.softpos.main.model.HourlyRec;
 import com.softpos.main.program.Jdi_report_HourlyReport;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.MSG;
 
 public class HourlyRep extends javax.swing.JDialog {

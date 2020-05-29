@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
-import posbean.CustomerBean;
+import com.softpos.main.model.CustomerBean;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

@@ -1,5 +1,5 @@
 
-package soft.virtual;
+package com.softpos.main.utils;
 
 import javax.swing.JTable;
 import javax.swing.SwingConstants;

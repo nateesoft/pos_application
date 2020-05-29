@@ -2,7 +2,7 @@ package com.softpos.main.controller;
 
 import com.softpos.main.model.CompanyMenuBean;
 import com.softpos.main.model.ProductBean;
-import com.softpos.main.program.MenuSetup;
+import com.softpos.main.model.MenuSetup;
 import database.MySQLConnect;
 import java.sql.ResultSet;
 import java.sql.SQLException;

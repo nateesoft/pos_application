@@ -6,10 +6,10 @@ import java.sql.SQLException;
 import database.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_SalePLU;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

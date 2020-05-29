@@ -19,7 +19,7 @@ import java.util.Locale;
 import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.KeyBoardDialog;
 import util.DateChooseDialog;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.controller.PosControl;
 import com.softpos.main.model.Value;

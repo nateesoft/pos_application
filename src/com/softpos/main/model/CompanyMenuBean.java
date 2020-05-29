@@ -1,6 +1,5 @@
 package com.softpos.main.model;
 
-import com.softpos.main.program.MenuSetup;
 import java.util.ArrayList;
 
 public class CompanyMenuBean {

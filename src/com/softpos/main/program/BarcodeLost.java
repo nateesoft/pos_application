@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.Value;

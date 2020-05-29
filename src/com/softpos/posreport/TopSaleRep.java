@@ -16,12 +16,12 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import com.softpos.main.program.Jdi_dailyReport_Topsale;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

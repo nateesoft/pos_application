@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.controller;
 
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.POSConfigSetup;
@@ -18,6 +18,7 @@ import com.softpos.main.model.BillNoBean;
 import com.softpos.main.model.TSaleBean;
 import com.softpos.main.controller.BillControl;
 import com.softpos.main.model.BalanceBean;
+import com.softpos.main.program.TextWriter;
 import database.ConfigFile;
 import printReport.PrintDriver;
 import gnu.io.CommPortIdentifier;

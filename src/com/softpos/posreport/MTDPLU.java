@@ -16,13 +16,13 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.program.Jdi_report_MTDSalePLU;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import printReport.PrintDriver;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.MSG;
 
 public class MTDPLU extends javax.swing.JDialog {

@@ -1,5 +1,6 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.NumberControl;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CouponRec;
@@ -30,7 +31,7 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import java.util.ArrayList;
 import javax.swing.table.JTableHeader;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

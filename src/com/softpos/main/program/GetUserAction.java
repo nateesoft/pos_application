@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import database.MySQLConnect;
 import java.sql.Statement;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.MSG;
 
 public class GetUserAction extends javax.swing.JDialog {

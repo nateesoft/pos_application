@@ -9,7 +9,7 @@ import com.softpos.main.controller.ItemDisControl;
 import java.awt.event.KeyEvent;
 import database.MySQLConnect;
 import java.text.DecimalFormat;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

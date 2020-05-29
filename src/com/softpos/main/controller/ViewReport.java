@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.controller;
 
 import database.MySQLConnect;
 import java.io.File;
@@ -17,7 +17,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.util.JRLoader;
-import printReport.convertToChar;
+import com.softpos.main.utils.convertToChar;
 import util.MSG;
 
 public final class ViewReport {

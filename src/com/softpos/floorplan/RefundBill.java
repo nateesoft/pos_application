@@ -1,6 +1,6 @@
 package com.softpos.floorplan;
 
-import convert_utility.text_to_image.TextToImage;
+import com.softpos.main.utils.TextToImage;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -30,13 +30,13 @@ import com.softpos.main.model.BillNoBean;
 import com.softpos.main.model.CreditPaymentRec;
 import com.softpos.main.program.GetUserAction;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.TranRecord;
 import com.softpos.main.model.UserRecord;
 import com.softpos.main.model.Value;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 

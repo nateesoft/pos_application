@@ -1,6 +1,5 @@
 package com.softpos.main.controller;
 
-import com.softpos.main.program.NumberControl;
 import com.softpos.main.model.POSConfigSetup;
 import database.MySQLConnect;
 import java.sql.ResultSet;

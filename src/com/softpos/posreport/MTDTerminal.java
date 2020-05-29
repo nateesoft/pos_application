@@ -18,7 +18,7 @@ import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import printReport.PrintDriver;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.DateConvert;
 import util.MSG;
 

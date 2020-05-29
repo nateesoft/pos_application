@@ -15,7 +15,7 @@ import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.model.HourlyRec;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PluRec;
 import com.softpos.main.model.PublicVar;

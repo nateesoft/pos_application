@@ -44,7 +44,7 @@ import com.softpos.main.program.GetQty;
 import com.softpos.main.program.GetUserAction;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.program.SetupButtonTable;
 import com.softpos.main.controller.TableFileControl;

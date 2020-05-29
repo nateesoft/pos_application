@@ -3,7 +3,6 @@ package com.softpos.main.controller;
 import com.softpos.main.model.StkFileBean;
 import com.softpos.main.model.STCardBean;
 import com.softpos.main.model.ProductBean;
-import com.softpos.main.program.PropControl;
 import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.sql.ResultSet;

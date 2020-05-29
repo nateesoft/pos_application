@@ -1,4 +1,4 @@
-package com.softpos.main.program;
+package com.softpos.main.controller;
 
 import com.softpos.main.model.Value;
 import com.softpos.main.model.ConnectBean;

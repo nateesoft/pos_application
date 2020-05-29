@@ -20,14 +20,14 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import com.softpos.main.model.POSHWSetup;
-import com.softpos.main.program.PPrint;
+import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.Value;
 import java.awt.Frame;
 import java.awt.Point;
 import printReport.PrintDriver;
-import soft.virtual.KeyBoardDialog;
+import com.softpos.main.utils.KeyBoardDialog;
 import util.DateChooseDialog;
 import util.DateConvert;
 

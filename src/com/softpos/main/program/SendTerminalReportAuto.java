@@ -5,6 +5,7 @@
  */
 package com.softpos.main.program;
 
+import com.softpos.main.utils.SendEmail;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.utils.PUtility;
@@ -13,44 +14,21 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import database.MySQLConnect;
-import java.awt.Cursor;
-import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import util.DateConvert;
 import util.MSG;
-import com.softpos.main.program.PPrint;
 import database.ConfigFile;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Properties;
-import java.util.logging.Level;
-import static java.util.logging.Level.CONFIG;
-import java.util.logging.Logger;
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import printReport.PrintDriver;
-import test.TestSendEmail;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class SendTerminalReportAuto {
     
     SimpleDateFormat Datefmt = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);

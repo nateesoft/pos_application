@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.PPrint;
+import com.softpos.main.controller.NumberControl;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.utils.PUtility;
@@ -70,10 +72,10 @@ import javax.swing.plaf.basic.BasicTabbedPaneUI;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
-import posbean.CustomerBean;
+import com.softpos.main.model.CustomerBean;
 import setupmenu.SetHeaderMenu;
-import static soft.virtual.JTableControl.alignColumn;
-import soft.virtual.KeyBoardDialog;
+import static com.softpos.main.utils.JTableControl.alignColumn;
+import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import util.Option;
 import util.MSG;

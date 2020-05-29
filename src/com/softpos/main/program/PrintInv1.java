@@ -21,7 +21,7 @@ import database.MySQLConnect;
 import java.sql.PreparedStatement;
 import java.text.DecimalFormat;
 import java.text.ParseException;
-import posbean.CustomerBean;
+import com.softpos.main.model.CustomerBean;
 import printReport.PrintDriver;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;

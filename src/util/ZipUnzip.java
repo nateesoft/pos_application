@@ -1,6 +1,6 @@
 package util;
 
-import directory_utility.DirectoryUtility;
+import com.softpos.main.utils.DirectoryUtility;
 import java.awt.Frame;
 import java.io.File;
 

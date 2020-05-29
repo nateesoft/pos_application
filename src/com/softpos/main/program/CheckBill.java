@@ -1,5 +1,7 @@
 package com.softpos.main.program;
 
+import com.softpos.main.controller.PPrint;
+import com.softpos.main.controller.NumberControl;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.utils.PUtility;
@@ -42,7 +44,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import printReport.PrintSimpleForm;
-import soft.virtual.JTableControl;
+import com.softpos.main.utils.JTableControl;
 import sun.natee.project.util.NumberFormat;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;

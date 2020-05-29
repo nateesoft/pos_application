@@ -1,8 +1,6 @@
 package com.softpos.main.controller;
 
 import com.softpos.main.model.BalanceBean;
-import com.softpos.main.program.PromotionControl;
-import com.softpos.main.program.ServiceControl;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.program.TableSetup;
 import com.softpos.main.model.Value;
