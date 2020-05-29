@@ -13,7 +13,6 @@ import java.util.Locale;
 import util.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
@@ -41,9 +40,6 @@ public class MTDTopSale extends javax.swing.JDialog {
     private String Space = " &nbsp; ";
     private String TAB = Space + Space + Space;
 
-    /**
-     * Creates new form MTDTopSale
-     */
     public MTDTopSale(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

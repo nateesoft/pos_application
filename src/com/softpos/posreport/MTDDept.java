@@ -44,9 +44,6 @@ public class MTDDept extends javax.swing.JDialog {
     private String Space = " &nbsp; ";
     private String TAB = Space + Space + Space;
 
-    /**
-     * Creates new form MTDDept
-     */
     public MTDDept(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

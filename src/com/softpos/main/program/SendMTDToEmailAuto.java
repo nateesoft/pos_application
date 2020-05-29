@@ -1,24 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.program;
 
 import database.MySQLConnect;
-import util.DateConvert;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class SendMTDToEmailAuto extends javax.swing.JDialog {
 
     boolean activeProcess = false;
 
-    /**
-     * Creates new form SendMTDToEmailAuto
-     */
     public SendMTDToEmailAuto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

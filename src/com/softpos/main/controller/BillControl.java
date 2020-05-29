@@ -1,9 +1,6 @@
 package com.softpos.main.controller;
 
 import com.softpos.main.model.BalanceBean;
-import com.softpos.main.model.CuponBean;
-import com.softpos.main.controller.TCuponControl;
-import com.softpos.main.controller.TempCuponController;
 import com.softpos.main.model.TCuponBean;
 import com.softpos.main.model.TempCuponBean;
 import com.softpos.main.model.BillNoBean;
@@ -23,7 +20,6 @@ import java.util.Date;
 import sun.natee.project.util.DateFormat;
 import sun.natee.project.util.ThaiUtil;
 import util.MSG;
-import com.softpos.main.model.TableFileBean;
 import com.softpos.main.model.TableFileBean;
 import com.softpos.main.model.Value;
 import com.softpos.main.model.MemberBean;

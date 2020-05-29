@@ -2,7 +2,6 @@ package printReport;
 
 import com.softpos.main.utils.convertToChar;
 import database.MySQLConnect;
-import java.awt.HeadlessException;
 import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,14 +13,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 import util.MSG;
 

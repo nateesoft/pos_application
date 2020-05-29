@@ -10,7 +10,6 @@ import java.awt.geom.Area;
 import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 
-
 public class EditorPanePrinter extends JPanel implements Pageable, Printable {
     JEditorPane sourcePane;
     Paper paper;

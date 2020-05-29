@@ -15,12 +15,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import com.softpos.main.utils.KeyBoardDialog;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class ItemEditQty extends javax.swing.JDialog {
 
     private double XTotal;

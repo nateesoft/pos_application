@@ -11,9 +11,6 @@ import util.MSG;
 
 public class SetHeaderMenu extends javax.swing.JDialog {
 
-    /**
-     * Creates new form SetHeaderMenu
-     */
     public SetHeaderMenu(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

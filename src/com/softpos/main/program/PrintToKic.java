@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.program;
 
 import com.softpos.main.utils.ThaiUtil;
@@ -11,20 +6,14 @@ import com.softpos.main.model.PublicVar;
 import com.softpos.main.controller.BranchControl;
 import database.MySQLConnect;
 import java.awt.Cursor;
-import java.awt.Frame;
 import java.awt.HeadlessException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFrame;
-import javax.swing.WindowConstants;
 import printReport.PrintSimpleForm;
 import util.MSG;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class PrintToKic extends javax.swing.JFrame {
 
     private String tableNo = "";

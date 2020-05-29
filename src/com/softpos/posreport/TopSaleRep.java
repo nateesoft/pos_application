@@ -38,9 +38,6 @@ public class TopSaleRep extends javax.swing.JDialog {
     private String Space = " &nbsp; ";
     private String TAB = Space + Space + Space;
 
-    /**
-     * Creates new form TopSaleRep
-     */
     public TopSaleRep(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         try {

@@ -42,9 +42,6 @@ public class MTDPLU extends javax.swing.JDialog {
     private String Space = " &nbsp; ";
     private String TAB = Space + Space + Space;
 
-    /**
-     * Creates new form MTDPLU
-     */
     public MTDPLU(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

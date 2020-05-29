@@ -1,21 +1,9 @@
 package com.softpos.main.program;
 
 import com.softpos.main.model.BalanceBean;
-import java.awt.Color;
 import database.MySQLConnect;
-import java.awt.Rectangle;
-import java.awt.event.KeyEvent;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
 import com.softpos.main.utils.KeyBoardDialog;
-import util.MSG;
 
 public class Extra extends javax.swing.JDialog {
 

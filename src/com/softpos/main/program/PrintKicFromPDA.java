@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.program;
 
 import com.softpos.main.controller.PPrint;
@@ -11,19 +6,11 @@ import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.model.Value;
 import database.MySQLConnect;
 import java.awt.Cursor;
-import java.io.IOException;
 import java.sql.ResultSet;
 import printReport.PrintSimpleForm;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class PrintKicFromPDA extends javax.swing.JDialog {
 
-    /**
-     * Creates new form PrintKicFromPDA
-     */
     private int refresh;
     private POSHWSetup POSHW;
     private POSConfigSetup CONFIG;

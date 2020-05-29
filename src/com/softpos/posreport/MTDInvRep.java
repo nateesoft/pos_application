@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.posreport;
 
-/**
- *
- * @author Dell-Softpos
- */
 import java.awt.event.KeyEvent;
 import database.MySQLConnect;
 import java.sql.ResultSet;
@@ -33,9 +24,6 @@ import util.MSG;
 
 public class MTDInvRep extends javax.swing.JDialog {
 
-    /**
-     * Creates new form MTDInvRep
-     */
     SimpleDateFormat DatefmtThai = new SimpleDateFormat("dd/MM/yyyy(HH:mm)", Locale.ENGLISH);
     SimpleDateFormat Datefmt = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
     SimpleDateFormat ShowDatefmt = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);

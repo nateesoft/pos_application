@@ -1,10 +1,7 @@
 package com.softpos.main.controller;
 
 import com.softpos.main.model.POSConfigSetup;
-import com.softpos.main.controller.BalanceControl;
 import com.softpos.main.model.TableFileBean;
-import com.softpos.main.controller.TableFileControl;
-import com.softpos.main.controller.PosControl;
 import com.softpos.main.model.BalanceBean;
 import database.MySQLConnect;
 import java.sql.SQLException;

@@ -1,6 +1,5 @@
 package com.softpos.floorplan;
 
-import com.softpos.main.controller.BalanceControl;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;

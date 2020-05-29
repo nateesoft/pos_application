@@ -10,7 +10,6 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import javax.swing.JOptionPane;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
 import com.softpos.main.model.HourlyRec;

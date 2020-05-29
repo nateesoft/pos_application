@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.main.program;
 
 import database.MySQLConnect;
@@ -16,15 +11,8 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import sun.natee.project.util.ThaiUtil;
 
-/**
- *
- * @author ASUS
- */
 public class UpdateData extends javax.swing.JDialog {
 
-    /**
-     * Creates new form UpdateData
-     */
     public UpdateData(java.awt.Dialog parent, boolean modal) {
         super(parent, modal);
         initComponents();

@@ -4,7 +4,6 @@ import com.softpos.main.utils.PUtility;
 import com.softpos.main.model.PublicVar;
 import database.MySQLConnect;
 import java.awt.event.KeyEvent;
-import java.awt.image.ImageObserver;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

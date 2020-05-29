@@ -13,7 +13,6 @@ import java.util.Locale;
 import util.DateChooseDialog;
 import database.MySQLConnect;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;

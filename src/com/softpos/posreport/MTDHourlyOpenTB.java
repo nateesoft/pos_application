@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.softpos.posreport;
 
 import com.softpos.main.model.POSHWSetup;
@@ -11,7 +6,6 @@ import java.awt.Frame;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -21,26 +15,15 @@ import sun.natee.project.util.KeyBoardDialog;
 import util.DateChooseDialog;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;
-import com.softpos.main.controller.PosControl;
 import com.softpos.main.model.Value;
 import java.util.Date;
-import javax.swing.JOptionPane;
 import com.softpos.main.model.PublicVar;
 import java.text.ParseException;
-import javax.swing.JDialog;
 import printReport.PrintDriver;
-import sun.natee.project.util.ThaiUtil;
 import util.MSG;
 
-/**
- *
- * @author ASUS
- */
 public class MTDHourlyOpenTB extends javax.swing.JDialog {
 
-    /**
-     * Creates new form CustPerHour
-     */
     SimpleDateFormat ShowDatefmt = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
     SimpleDateFormat DatefmtShow = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
     SimpleDateFormat Datefmt = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);

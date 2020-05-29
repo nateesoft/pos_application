@@ -1,19 +1,9 @@
 package com.softpos.main.utils;
 
-
 import java.io.File;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-/**
- *
- * @author root
- */
 public class DirectoryUtility {
     
     public boolean createDir(File file) throws IOException{

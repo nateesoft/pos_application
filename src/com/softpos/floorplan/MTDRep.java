@@ -6,20 +6,17 @@ import com.softpos.posreport.MTDArPayment;
 import com.softpos.posreport.MTDCashier;
 import com.softpos.posreport.MTDCredit;
 import com.softpos.posreport.MTDDept;
-import com.softpos.posreport.MTDHourly;
 import com.softpos.posreport.MTDPLU;
 import com.softpos.posreport.MTDSubDiscount;
 import com.softpos.posreport.MTDTerminal;
 import com.softpos.posreport.MTDTopSale;
 import com.softpos.posreport.MTDVoid;
-import java.awt.GraphicsEnvironment;
 import com.softpos.main.model.PublicVar;
 import com.softpos.main.model.UserRecord;
 import com.softpos.posreport.MTDCoupon;
 import com.softpos.posreport.MTDGiftVoucher;
 import com.softpos.posreport.MTDHourlyOpenTB;
 import com.softpos.posreport.MTDInvRep;
-import com.softpos.posreport.MTDInvoice;
 import util.MSG;
 
 public class MTDRep extends javax.swing.JDialog {

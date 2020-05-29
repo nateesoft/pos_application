@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
 
 public class ConfigFile {
     
-//    public static final String FILE_CONFIG = "C:/softpos/connect.ini";
     public static final String FILE_CONFIG = "C:/softpos/connect.ini";
     
     public static String getProperties(String keyword){

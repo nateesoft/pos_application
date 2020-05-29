@@ -17,9 +17,6 @@ public class PLURep extends javax.swing.JDialog {
 
     PPrint prn = new PPrint();
 
-    /**
-     * Creates new form PLURep
-     */
     public PLURep(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

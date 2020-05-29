@@ -3,10 +3,6 @@ package com.softpos.main.program;
 import com.softpos.main.utils.DirectoryUtility;
 import java.io.FileWriter;
 
-/**
- *
- * @author root
- */
 public class TextWriter {
     
     public static void main(String[] args){

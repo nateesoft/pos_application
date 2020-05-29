@@ -10,7 +10,6 @@ import java.util.Locale;
 import database.MySQLConnect;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 import com.softpos.main.model.POSHWSetup;
 import com.softpos.main.controller.PPrint;
 import com.softpos.main.utils.PUtility;

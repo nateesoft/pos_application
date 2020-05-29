@@ -36,9 +36,6 @@ public class MTDInvoice extends javax.swing.JDialog {
     DecimalFormat IntFmt = new DecimalFormat("##,###,##0");
     private POSHWSetup POSHW;
 
-    /**
-     * Creates new form MTDInvoice
-     */
     public MTDInvoice(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

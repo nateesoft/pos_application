@@ -5,10 +5,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-/**
- *
- * @author softpos-support
- */
 public class TestCupnDetailuse {
 
     public String getSpecialCupon(String tableNo) {

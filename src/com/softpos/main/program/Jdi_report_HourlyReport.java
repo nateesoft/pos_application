@@ -4,7 +4,6 @@ package com.softpos.main.program;
 import com.softpos.main.model.HourlyRec;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;

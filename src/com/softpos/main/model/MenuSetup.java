@@ -1,6 +1,5 @@
 package com.softpos.main.model;
 
-import com.softpos.main.model.ProductBean;
 import java.util.ArrayList;
 
 public class MenuSetup {

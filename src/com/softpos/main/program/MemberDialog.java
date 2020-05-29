@@ -1,7 +1,6 @@
 package com.softpos.main.program;
 
 import com.softpos.main.model.Value;
-import com.softpos.main.model.MemberBean;
 import database.MySQLConnect;
 import java.awt.event.KeyEvent;
 import java.sql.ResultSet;

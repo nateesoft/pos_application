@@ -1,8 +1,6 @@
 package com.softpos.main.model;
 
-import com.softpos.main.model.BranchBean;
 import com.softpos.main.controller.BranchControl;
-import com.softpos.main.model.CompanyBean;
 import com.softpos.main.controller.PosControl;
 import database.MySQLConnect;
 import java.sql.ResultSet;

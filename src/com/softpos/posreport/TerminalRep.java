@@ -7,7 +7,6 @@ import database.MySQLConnect;
 import java.sql.Statement;
 import com.softpos.main.model.CreditRec;
 import com.softpos.main.model.FinalcialRec;
-import com.softpos.main.model.POSConfigSetup;
 import com.softpos.main.controller.PPrint;
 import util.MSG;
 

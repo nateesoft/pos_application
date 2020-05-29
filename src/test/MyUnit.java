@@ -1,9 +1,5 @@
 package test;
 
-/**
- *
- * @author ProGrammer
- */
 public class MyUnit {
     
     public int add(String s1, String s2){

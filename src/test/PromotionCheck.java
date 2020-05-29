@@ -1,21 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test;
 
 import database.MySQLConnect;
 import java.sql.ResultSet;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Locale;
 import util.DateConvert;
 
-/**
- *
- * @author Dell-Softpos
- */
 public class PromotionCheck {
 
     public String promotionCheck(String pcode) {

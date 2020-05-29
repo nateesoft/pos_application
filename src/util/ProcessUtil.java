@@ -4,12 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * 
- * @author Natee Sungthongngam
- * @date 15/08/2009
- * @version 1.0
- */
 public class ProcessUtil {
 
     private ProcessUtil() {

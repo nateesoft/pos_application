@@ -11,7 +11,6 @@ import java.awt.Frame;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
-import java.awt.image.ImageObserver;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

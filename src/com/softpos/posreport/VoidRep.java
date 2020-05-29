@@ -34,9 +34,6 @@ public class VoidRep extends javax.swing.JDialog {
     private String TAB = Space + Space + Space;
     private POSConfigSetup CONFIG;
 
-    /**
-     * Creates new form VoidRep
-     */
     public VoidRep(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
