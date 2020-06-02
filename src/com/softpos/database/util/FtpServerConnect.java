@@ -12,7 +12,7 @@ import org.apache.commons.net.ftp.FTPClient;
 
 public class FtpServerConnect {
 
-    public static void main(String[] args) {
+    public void main() {
         String server = "ftp://softerphomeip.net";
         int port = 21;
         String user = "ftpuser";

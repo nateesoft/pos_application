@@ -151,8 +151,4 @@ public class convertToChar {
         return outPrice;
     }
 
-    public static void main(String[] args) {
-        convertToChar c = new convertToChar();
-       
-    }
 }

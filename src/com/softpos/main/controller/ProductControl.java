@@ -395,7 +395,7 @@ public class ProductControl {
         return isExist;
     }
 
-    public static void main(String[] args) {
+    public void main() {
         ProductControl control = new ProductControl();
         control.searchAllProductBy("เหล้า");
         System.out.println(control.getData("11010340180"));

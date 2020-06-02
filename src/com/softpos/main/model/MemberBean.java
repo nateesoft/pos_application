@@ -847,8 +847,4 @@ public class MemberBean {
         }
     }
 
-//    public static void main(String[] args) {
-//        MemberBean bean = new MemberBean();
-//        bean.getMemberPaymentScore("9990200006661");
-//    }
 }

@@ -360,7 +360,7 @@ public class PrintDriver {
         return result;
     }
 
-    public static void main(String[] args) {
+    public void main() {
         Value.printerDriverName = "kic1";
         PrintDriver pd = new PrintDriver();
         //pd.addText("<font size=-6>ทดสอบภาษาไทย</font>abcdefghijklmnopqrstuvwxy<i><font color=red size=-6>z1234567890</font></i>");

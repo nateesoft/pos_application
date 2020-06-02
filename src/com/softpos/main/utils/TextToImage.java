@@ -28,15 +28,6 @@ public class TextToImage {
     public int getCharecter(){
         return charecter;
     }
-    
-    public static void main(String[] args){
-        TextToImage t = new TextToImage();
-        
-        String[] fonts = t.getAvailableFontFamilyNames();
-        for(int i=0; i<fonts.length; i++){
-//            System.out.println(fonts[i]);
-        }
-    }
 
     private String formatImage;
     private String font;

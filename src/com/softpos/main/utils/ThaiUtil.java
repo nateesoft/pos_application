@@ -30,8 +30,4 @@ public class ThaiUtil {
         }
         return unicode.toString(); // แปลงข้อมูลกลับไปเป็นแบบ String เพื่อใช้งานต่อไป
     }
-
-    static Object ASCII2Unicode(Object[] MS) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

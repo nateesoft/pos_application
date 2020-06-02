@@ -89,16 +89,6 @@ public class SerialComm implements Runnable, SerialPortEventListener {
 
     }
 
-    /**
-     * Insert the method's description here. Creation date: (3/20/2001 1:23:49
-     * PM)
-     *
-     * @param args java.lang.String[]
-     */
-    public static void main(String[] args) {
-
-        SerialComm reader = new SerialComm("/dev/ttyUSB0");
-    }
 
     /**
      * When an object implementing interface

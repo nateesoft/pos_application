@@ -14,12 +14,7 @@ import org.apache.commons.net.ftp.FTPReply;
 
 public class FTPUtility {
     private FTPClient ftp;
-    
-    public static void main(String[] args) {
-        FTPUtility ftp = new FTPUtility();
-        ftp.connect("localhost", "fgordering", "bor_ftp", 21);
-        ftp.download("C:rss/rss.txt", "C:/tmp/rss.txt");
-    }
+
     public boolean connect(String server, String user, String pass, int port) {
         ftp = new FTPClient();
         ftp.addProtocolCommandListener(new PrintCommandListener(new PrintWriter(System.out)));

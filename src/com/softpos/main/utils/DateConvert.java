@@ -145,10 +145,4 @@ public class DateConvert {
        
     }
 
-//    public static void main(String args[]) throws ParseException {
-//        DateConvert dc = new DateConvert();
-////        String date = (dc.minusDate(dc.GetCurrentDate(), -60));
-//        dc.getCheckExpireTime("01:00:00", "23:00:00");
-////        MSG.NOTICE(date);
-//    }
 }

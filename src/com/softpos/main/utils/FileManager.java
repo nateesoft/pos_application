@@ -26,8 +26,5 @@ public class FileManager {
             System.out.println(e.getMessage());
         }
     }
-    
-    public static void main(String[] args) {
-        FileManager.copyFileUsingStream(new File("C:/softpos/connect.ini"), new File("C:/softpos/connect.ini.bak"));
-    }
+
 }

@@ -13,7 +13,6 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 import com.softpos.main.controller.BalanceControl;
-import static com.softpos.main.controller.BalanceControl.updateProSerTableMemVIP;
 import com.softpos.main.program.CouponDiscount;
 import com.softpos.main.program.MemberDialog;
 import com.softpos.main.controller.NumberControl;
@@ -914,7 +913,7 @@ public class DiscountDialog extends javax.swing.JDialog {
                 }
                 stmt.close();
                 if (discBean.getMemDiscount() > 0) {
-                    updateProSerTableMemVIP(tableNo, discBean.getStrMemDiscount());
+                    BalanceControl.updateProSerTableMemVIP(tableNo, discBean.getStrMemDiscount());
                     BalanceControl.updateProSerTable(tableNo, memberBean);
                 }
                 BalanceControl.updateProSerTable(tableNo, memberBean);
@@ -1246,42 +1245,6 @@ public class DiscountDialog extends javax.swing.JDialog {
             dispose();
         }
     }//GEN-LAST:event_btnClose1ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        new MySQLConnect();
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DiscountDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DiscountDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DiscountDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DiscountDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBaht;
@@ -1628,10 +1591,6 @@ public class DiscountDialog extends javax.swing.JDialog {
         } else {
             return true;
         }
-    }
-
-    private void input(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private void CheckDis1() {
@@ -2343,5 +2302,9 @@ public class DiscountDialog extends javax.swing.JDialog {
         } finally {
             mysql.close();
         }
+    }
+    
+    private void input(String text) {
+        
     }
 }

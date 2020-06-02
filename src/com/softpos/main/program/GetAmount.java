@@ -197,22 +197,6 @@ if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             StrAmount.requestFocus();
      }
  }
-    /**
-    * @param args the command line arguments
-    */
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                GetQty dialog = new GetQty(new javax.swing.JFrame(), true, "20801");
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFormattedTextField StrAmount;

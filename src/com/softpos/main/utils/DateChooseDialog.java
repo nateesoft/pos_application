@@ -324,23 +324,6 @@ private void tblCalendarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:eve
         }
 }//GEN-LAST:event_tblCalendarKeyPressed
 
-    /**
-    * @param args the command line arguments
-    */
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                DateChooseDialog dialog = new DateChooseDialog(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox cbMonth;
     private javax.swing.JButton cmdBack;

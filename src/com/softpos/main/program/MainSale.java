@@ -24,11 +24,10 @@ import com.softpos.floorplan.PaidinFrm;
 import com.softpos.main.controller.PriceController;
 import com.softpos.main.model.TempSetBean;
 import com.softpos.main.controller.TempSetController;
-import static com.softpos.main.controller.BalanceControl.updateProSerTable;
-import static com.softpos.main.controller.BalanceControl.updateProSerTableMemVIP;
 import com.softpos.main.model.MemberBean;
 import com.softpos.main.controller.MemberControl;
 import com.softpos.database.util.MySQLConnect;
+import com.softpos.main.utils.JTableControl;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -63,7 +62,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import com.softpos.main.view.SetHeaderMenu;
-import static com.softpos.main.utils.JTableControl.alignColumn;
 import com.softpos.main.utils.KeyBoardDialog;
 import sun.natee.project.util.ThaiUtil;
 import com.softpos.main.utils.Option;
@@ -125,7 +123,7 @@ public class MainSale extends javax.swing.JDialog {
                 txtMember1.setText(memberBean.getMember_NameThai());
                 txtMember2.setText("แต้มสะสม " + memberBean.getMember_TotalScore() + " แต้ม");
             } else if (tbBean.getMemDiscAmt() != 0) {
-                updateProSerTableMemVIP(tableNo, tbBean.getMemDisc());
+                BalanceControl.updateProSerTableMemVIP(tableNo, tbBean.getMemDisc());
             }
 
         }
@@ -281,9 +279,9 @@ public class MainSale extends javax.swing.JDialog {
         JTableHeader header = tblShowBalance.getTableHeader();
         header.setFont(new java.awt.Font("Tahoma", java.awt.Font.BOLD, 14));
 
-        alignColumn(tblShowBalance, 2, "right");
-        alignColumn(tblShowBalance, 3, "right");
-        alignColumn(tblShowBalance, 4, "right");
+        JTableControl.alignColumn(tblShowBalance, 2, "right");
+        JTableControl.alignColumn(tblShowBalance, 3, "right");
+        JTableControl.alignColumn(tblShowBalance, 4, "right");
 
         PublicVar.CheckStockOnLine = PUtility.GetStockOnLine();
 
@@ -1992,7 +1990,7 @@ private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         MemberDialog MBD = new MemberDialog(this, true, tableNo);
         MBD.setVisible(true);
         this.memberBean = MemberBean.getMember(MBD.getMemCode());
-        updateProSerTable(tableNo, memberBean);
+        BalanceControl.updateProSerTable(tableNo, memberBean);
         if (!memberBean.getMember_Code().equals("")) {
             txtMember1.setText(memberBean.getMember_NameThai());
             txtMember2.setText(QtyIntFmt.format(memberBean.getMember_TotalScore()));

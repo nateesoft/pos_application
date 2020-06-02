@@ -81,7 +81,7 @@ public class PrintSimpleForm {
         return ans;
     }
 
-    public static void main(String[] args) {
+    public void main() {
         PrintSimpleForm psf = new PrintSimpleForm();
         psf.printTest("KIC1", "ทดสอบการส่งข้อมูลออกปริ้นเตอร Test Test");
     }

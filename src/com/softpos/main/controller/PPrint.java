@@ -80,7 +80,7 @@ public class PPrint {
     private String TAB2 = TAB + TAB;
     private String SPLIT = "=";
 
-    public static void main(String[] args) {
+    public void main() {
         MySQLConnect mySQLConnect = new MySQLConnect();
         PPrint prt = new PPrint();
         prt.OpenPrint("COM2");

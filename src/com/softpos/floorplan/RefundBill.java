@@ -749,26 +749,6 @@ private void txtBillNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         //txtPurseMsg.setVisible(false);
         Cleartblshowplu();
     }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        new MySQLConnect();
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            public void run() {
-                RefundBill dialog = new RefundBill(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntExit;
     private javax.swing.JButton bntNew;

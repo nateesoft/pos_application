@@ -158,9 +158,4 @@ public class NumberToString {
         return numberText + digit;
     }
 
-//    public static void main(String[] args) {
-//        NumberToString numberToText = new NumberToString();
-//        numberToText.number(712.15);
-//        numberToText.number(712);
-//    }
 }

@@ -967,24 +967,5 @@ public class SendTerminalReportAuto {
             MSG.ERR(e.toString());
         }
     }
-    
-    public static void main(String[] args) {
-        SendTerminalReportAuto sendEmailReport = new SendTerminalReportAuto();
-        try {
-            MySQLConnect c = new MySQLConnect();
-            c.open();
-//            for (int i = 0; i < 10; i++) {
 
-            sendEmailReport.beforeProcess();
-//                if (i == 9) {
-//                    i = 0;
-//                }
-
-//            }
-            c.close();
-        } catch (Exception e) {
-            MSG.ERR(e.toString());
-//            
-        }
-    }
 }

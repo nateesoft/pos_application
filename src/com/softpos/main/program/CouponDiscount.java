@@ -640,25 +640,6 @@ private void txtCucodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
         txtCucode.requestFocus(true);
     }
 
-    public static void main(String args[]) {
-        new MySQLConnect();
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                CouponDiscount dialog = new CouponDiscount(new javax.swing.JFrame(), true, "", "", "", 0.00);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable ShowTable;
     private javax.swing.JButton bntExit;

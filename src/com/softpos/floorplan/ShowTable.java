@@ -309,26 +309,6 @@ private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:ev
         }
     }//GEN-LAST:event_ShowTableLoginMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        new MySQLConnect();
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            public void run() {
-                ShowTable dialog = new ShowTable(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
-
     private void LoadDataToGrid() {
         //ให้โปรแกรมคำนวณใหม่อีกครั้งก่อนแสดงข้อมูลในตาราง
         MySQLConnect mysql = new MySQLConnect();

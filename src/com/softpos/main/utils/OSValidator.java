@@ -2,18 +2,6 @@ package com.softpos.main.utils;
 
 public class OSValidator{
 
-    public static void main(String[] args) {
-        if (isWindows()) {
-            System.out.println("This is Windows");
-        } else if (isMac()) {
-            System.out.println("This is Mac");
-        } else if (isUnix()) {
-            System.out.println("This is Unix or Linux");
-        } else {
-            System.out.println("Your OS is not support!!");
-        }
-    }
-
     public static boolean isWindows() {
 
         String os = System.getProperty("os.name").toLowerCase();

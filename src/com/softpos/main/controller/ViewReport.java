@@ -529,15 +529,4 @@ public final class ViewReport {
         mysql.close();
     }
 
-    public static void main(String args[]) {
-        ViewReport view = new ViewReport();
-        view.printReportIVatDaily("01/07/2005", "04/07/2009");
-        //  view.p("1001");
-        // view.printReportTranin("211046");
-        // view.printReportTranout("22/11/46");
-        //view.printReportProLost("14/5/50"); 
-        // view.printReportProFree("16/9/47");
-        // view.printReportIVat("P549000001");
-        ////211046
-    }
 }

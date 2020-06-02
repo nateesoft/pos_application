@@ -18,7 +18,6 @@ import com.softpos.main.model.BalanceBean;
 import com.softpos.main.model.CuponBean;
 import com.softpos.main.model.DiscountBean;
 import com.softpos.main.view.DiscountDialog;
-import static com.softpos.main.controller.BalanceControl.updateProSerTable;
 import com.softpos.main.model.MemberBean;
 import com.softpos.database.util.MySQLConnect;
 import java.awt.Color;
@@ -105,10 +104,6 @@ public class CheckBill extends javax.swing.JDialog {
         BalanceControl.updateProSerTable(tableNo, memberBean);
         initTable();
 
-    }
-
-    public CheckBill(Object object, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @SuppressWarnings("unchecked")
@@ -1674,7 +1669,7 @@ public class CheckBill extends javax.swing.JDialog {
         MBD.setVisible(true);
         try {
             this.memberBean = MemberBean.getMember(MBD.getMemCode());
-            updateProSerTable(tableNo, memberBean);
+            BalanceControl.updateProSerTable(tableNo, memberBean);
             if (memberBean != null) {
                 txtMember1.setText(memberBean.getMember_NameThai());
                 txtMember2.setText("แต้มสะสม : " + memberBean.getMember_TotalScore() + " แต้ม");
@@ -1783,19 +1778,6 @@ public class CheckBill extends javax.swing.JDialog {
             String temp = txtCreditTrackNo.getText().trim();
             txtCreditTrackNo.setText(temp + Str);
         }
-    }
-
-    public static void main(String args[]) {
-        new MySQLConnect();
-//        new MySQLConnect();
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//
-//            @Override
-//            public void run() {
-//                CheckBill dialog = new CheckBill(new javax.swing.JFrame(), true, "1", null);
-//                dialog.setVisible(true);
-//            }
-//        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
